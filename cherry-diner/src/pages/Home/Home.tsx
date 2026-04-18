@@ -1,4 +1,4 @@
-import FeaturedRecipes from "../../components/FeaturedRecipes/FeaturedRecipes";
+import FeaturedRecipes from "../../components/HomeHighlights/HomeHighlights";
 import HomeHero from "../../components/HomeHero/HomeHero";
 
 const Home = () => {
