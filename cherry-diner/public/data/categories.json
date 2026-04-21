@@ -1,0 +1,30 @@
+[
+  {
+    "id": "principais",
+    "title_pt": "Pratos Principais",
+    "title_en": "Main Courses",
+    "span": "md:col-span-2 md:row-span-2",
+    "category": "principais"
+  },
+  {
+    "id": "bebidas",
+    "title_pt": "Bebidas",
+    "title_en": "Drinks",
+    "span": "md:col-span-2 md:row-span-1",
+    "category": "bebidas"
+  },
+  {
+    "id": "entradas",
+    "title_pt": "Entradas",
+    "title_en": "Starters",
+    "span": "md:col-span-1 md:row-span-1",
+    "category": "entradas"
+  },
+  {
+    "id": "sobremesas",
+    "title_pt": "Sobremesas",
+    "title_en": "Desserts",
+    "span": "md:col-span-1 md:row-span-1",
+    "category": "sobremesas"
+  }
+]

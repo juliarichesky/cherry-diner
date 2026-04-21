@@ -5,15 +5,28 @@ import { useLanguage } from "../../context/LanguageContext";
 // importação do background temático de cerejas
 import bgCherries from "../../assets/images/backgrounds/background-cherry.png";
 
+// importação das imagens das categorias
+import imgPrincipais from "../../assets/images/categories/pratos-principais.png";
+import imgBebidas from "../../assets/images/categories/bebidas.png";
+import imgEntradas from "../../assets/images/categories/entradas.png";
+import imgSobremesas from "../../assets/images/categories/sobremesas.png";
+
+// mapa de imagens para vincular o id do json ao asset local importado
+const categoryImages: Record<string, string> = {
+  principais: imgPrincipais,
+  bebidas: imgBebidas,
+  entradas: imgEntradas,
+  sobremesas: imgSobremesas,
+};
+
 /**
  * interface: category
- * define a estrutura das categorias, incluindo o 'span' para o layout do grid.
+ * define a estrutura das categorias consumidas do json
  */
 interface Category {
   id: string;
   title_pt: string;
   title_en: string;
-  image: string;
   span: string; // define o tamanho do card no grid (ex: md:col-span-2)
   category: string;
 }
@@ -99,7 +112,7 @@ const HomePosterWall = () => {
           </h2>
 
           <p className="mt-8 md:mt-12 text-[#8c6b5d] text-md md:text-xl font-medium italic opacity-80 leading-relaxed font-serif">
-            {texts.categoriesSubtitle}
+            — {texts.categoriesSubtitle}
           </p>
         </header>
 
@@ -121,10 +134,10 @@ const HomePosterWall = () => {
                     to={`/receitas?categoria=${item.id}`}
                     className={`${item.span} group relative flex flex-col transition-all duration-500 overflow-hidden rounded-[1rem] border border-[#e5dcd3] shadow-sm h-[250px] md:h-full`}
                   >
-                    {/* container da imagem com efeito de zoom no hover */}
+                    {/* container da imagem buscando do mapa de assets locais */}
                     <div className="absolute inset-0 w-full h-full">
                       <img
-                        src={item.image}
+                        src={categoryImages[item.id]}
                         alt={language === "pt" ? item.title_pt : item.title_en}
                         className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                       />
