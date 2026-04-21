@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useLanguage } from "../../context/LanguageContext";
+import { recipeImages } from "../../utils/recipeImages";
 
 // importação dos assets de background para desktop e mobile
 import bgDesktop from "../../assets/images/backgrounds/background-1.png";
@@ -12,8 +13,9 @@ import bgMobile from "../../assets/images/backgrounds/background-mobile-2.png";
  */
 interface Recipe {
   id: string;
-  category: string;
-  image: string;
+  category: string; // chave para cores (ex: "principais")
+  category_pt: string; // label em português
+  category_en: string; // label em inglês
   title_pt: string;
   title_en: string;
   description_pt: string;
@@ -142,10 +144,10 @@ const HomeHighlights = () => {
                   className="relative flex flex-col h-full group"
                 >
                   <div className="bg-white rounded-[0.75rem] p-4 shadow-sm border border-[#e5dcd3] flex flex-col transition-all hover:shadow-xl hover:-translate-y-2 duration-300 h-full">
-                    {/* imagem da receita com efeito de zoom no hover */}
+                    {/* imagem da receita com efeito de zoom no hover buscando do mapa de assets locais */}
                     <figure className="relative rounded-[0.5rem] overflow-hidden border-2 border-[#eee3d5] mb-4 aspect-square">
                       <img
-                        src={recipe.image}
+                        src={recipeImages[recipe.id]}
                         alt={
                           language === "pt" ? recipe.title_pt : recipe.title_en
                         }
@@ -163,7 +165,7 @@ const HomeHighlights = () => {
                             ? recipe.title_pt
                             : recipe.title_en}
                         </h3>
-                        {/* tag de categoria com cor dinâmica baseada no mapeamento */}
+                        {/* tag de categoria bilingue com cor dinâmica */}
                         <span
                           className="px-3 py-1 ml-3 rounded-[0.25rem] text-[9px] font-black text-white uppercase tracking-wider flex-shrink-0 mt-1"
                           style={{
@@ -171,7 +173,9 @@ const HomeHighlights = () => {
                               tagColors[recipe.category] || "#ca4952",
                           }}
                         >
-                          {recipe.category}
+                          {language === "pt"
+                            ? recipe.category_pt
+                            : recipe.category_en}
                         </span>
                       </div>
 
@@ -214,15 +218,14 @@ const HomeHighlights = () => {
               ))}
           </div>
 
-          {/* botão slider centralizado: muda de cor gradualmente no hover através de estados e opacidade */}
-          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-full flex justify-center px-6">
+          {/* botão slider centralizado com transição de gradiente */}
+          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 flex justify-center z-20">
             <div
-              className="relative bg-[#f3eae0] p-1.5 rounded-full shadow-2xl w-full max-w-[280px] md:max-w-[380px] border-2 border-white transition-all "
+              className="relative bg-[#f3eae0] p-1.5 rounded-full shadow-2xl border-2 border-white transition-all inline-block"
               onMouseEnter={() => setActiveBtn(true)}
               onMouseLeave={() => setActiveBtn(false)}
             >
               <div className="absolute inset-1.5 pointer-events-none">
-                {/* gradiente vermelho (padrão) */}
                 <div
                   className={`absolute inset-0 rounded-full transition-all duration-700 ${activeBtn ? "opacity-0 scale-95" : "opacity-100 scale-100"}`}
                   style={{
@@ -230,7 +233,6 @@ const HomeHighlights = () => {
                       "linear-gradient(180deg, #ff6b6b 0%, #d13a3a 70%, #a82828 100%)",
                   }}
                 />
-                {/* gradiente verde (hover) */}
                 <div
                   className={`absolute inset-0 rounded-full transition-all duration-700 ${activeBtn ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
                   style={{
@@ -239,9 +241,10 @@ const HomeHighlights = () => {
                   }}
                 />
               </div>
+
               <Link
                 to="/receitas"
-                className="relative z-10 flex justify-center items-center py-4 rounded-full text-white font-medium text-xs sm:text-sm md:text-md lg:text-lg whitespace-nowrap"
+                className="relative z-10 flex justify-center items-center py-4 px-10 md:px-16 rounded-full text-white font-medium text-xs sm:text-sm md:text-md lg:text-lg whitespace-nowrap"
               >
                 <span>{texts.searchExplore}</span>
               </Link>

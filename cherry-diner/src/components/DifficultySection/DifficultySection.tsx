@@ -65,13 +65,13 @@ const DifficultySection = () => {
                 className="block text-[#3d5a5a] text-4xl md:text-6xl font-black uppercase"
                 style={{ fontFamily: "'Comfortaa', cursive" }}
               >
-                {language === "pt" ? "escolha por" : "choose by"}
+                {language === "pt" ? "Escolha por" : "Choose by"}
               </span>
               <span
                 className="block text-[#ca4952] text-6xl md:text-9xl mt-2 md:-mt-4"
                 style={{ fontFamily: "'Dancing Script', cursive" }}
               >
-                {language === "pt" ? "dificuldade" : "difficulty"}
+                {language === "pt" ? "Dificuldade" : "Difficulty"}
               </span>
             </h2>
             <p className="mt-12 text-[#8c6b5d] text-md md:text-xl font-medium italic opacity-80 leading-relaxed font-serif">
