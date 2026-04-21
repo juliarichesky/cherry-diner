@@ -1,0 +1,38 @@
+[
+  {
+    "id": "001",
+    "title_pt": "A Dev",
+    "title_en": "The Dev",
+    "desc_pt": "Julia Guimarães não admite ketchup na pizza, mas aceita no hambúrguer (desde que seja Heinz!).",
+    "desc_en": "Julia Guimarães won't allow ketchup on pizza, but accepts it on burgers (as long as it's Heinz!).",
+    "rotate": "rotate-[-1.5deg]",
+    "iconName": "dev"
+  },
+  {
+    "id": "002",
+    "title_pt": "A Criativa",
+    "title_en": "The Creative",
+    "desc_pt": "Julia Spanopoulos pensou no conceito dos anos 50 para o projeto enquanto esperava o intervalo.",
+    "desc_en": "Julia Spanopoulos came up with the 50s concept for the project while waiting for the break.",
+    "rotate": "rotate-[2deg]",
+    "iconName": "design"
+  },
+  {
+    "id": "003",
+    "title_pt": "O Combustível",
+    "title_en": "The Fuel",
+    "desc_pt": "Esse site foi codado à base de 42 milkshakes de paçoca e muita playlist de rock.",
+    "desc_en": "This site was coded powered by 42 peanut butter milkshakes and a lot of rock playlists.",
+    "rotate": "rotate-[-2deg]",
+    "iconName": "fuel"
+  },
+  {
+    "id": "004",
+    "title_pt": "A Missão",
+    "title_en": "The Mission",
+    "desc_pt": "Fazer você sentir o cheiro de batata frita só de abrir o nosso repositório.",
+    "desc_en": "To make you smell French fries just by opening our repository.",
+    "rotate": "rotate-[1deg]",
+    "iconName": "goal"
+  }
+]

@@ -10,7 +10,6 @@ interface HeaderData {
   title_en: string;
   subtitle_pt: string;
   subtitle_en: string;
-  year?: string;
 }
 
 /**
@@ -73,13 +72,6 @@ const PageHeader = ({ page, dynamicTitle }: PageHeaderProps) => {
       <p className="text-[#8c6b5d] text-[10px] md:text-xs font-bold uppercase tracking-[0.4em]">
         {language === "pt" ? data.subtitle_pt : data.subtitle_en}
       </p>
-
-      {/* exibição opcional do ano ou edição do cardápio/coleção */}
-      {data.year && (
-        <span className="text-[#3d5a5a]/40 text-[9px] font-bold uppercase tracking-widest mt-2 block">
-          {data.year}
-        </span>
-      )}
     </header>
   );
 };

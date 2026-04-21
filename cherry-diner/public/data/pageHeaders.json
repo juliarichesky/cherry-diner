@@ -1,0 +1,32 @@
+{
+  "receitas": {
+    "title_pt": "Todas as Receitas",
+    "title_en": "All Recipes",
+    "subtitle_pt": "Escolha sua delícia nostálgica favorita.",
+    "subtitle_en": "Choose your favorite nostalgic delight."
+  },
+  "categorias": {
+    "title_pt": "Categorias",
+    "title_en": "Categories",
+    "subtitle_pt": "Encontre o sabor ideal para cada momento",
+    "subtitle_en": "Find the ideal flavor for every moment"
+  },
+  "sobre": {
+    "title_pt": "Nossa História",
+    "title_en": "Our Story",
+    "subtitle_pt": "Uma jornada de volta aos anos dourados",
+    "subtitle_en": "A journey back to the golden years"
+  },
+  "contato": {
+    "title_pt": "Contato",
+    "title_en": "Contact",
+    "subtitle_pt": "Mande um alô para as Julias!",
+    "subtitle_en": "Say hi to the Julias!"
+  },
+  "dificuldade": {
+    "title_pt": "Nível",
+    "title_en": "Level",
+    "subtitle_pt": "Desafie suas habilidades culinárias",
+    "subtitle_en": "Challenge your culinary skills"
+  }
+}
