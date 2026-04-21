@@ -112,7 +112,7 @@ const HomePosterWall = () => {
           </h2>
 
           <p className="mt-8 md:mt-12 text-[#8c6b5d] text-md md:text-xl font-medium italic opacity-80 leading-relaxed font-serif">
-            {texts.categoriesSubtitle}
+            — {texts.categoriesSubtitle}
           </p>
         </header>
 
@@ -128,7 +128,6 @@ const HomePosterWall = () => {
                   />
                 ))
               : categories.map((item) => (
-                  /* link dinâmico que filtra a categoria na página de receitas */
                   <Link
                     key={item.id}
                     to={`/receitas?categoria=${item.id}`}
