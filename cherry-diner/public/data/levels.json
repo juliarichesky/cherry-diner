@@ -1,0 +1,20 @@
+[
+  {
+    "id": "facil",
+    "stars": 1,
+    "labelKey": "levelBeginnerLabel",
+    "descKey": "levelBeginnerDesc"
+  },
+  {
+    "id": "medio",
+    "stars": 2,
+    "labelKey": "levelInterLabel",
+    "descKey": "levelInterDesc"
+  },
+  {
+    "id": "dificil",
+    "stars": 3,
+    "labelKey": "levelExpertLabel",
+    "descKey": "levelExpertDesc"
+  }
+]
