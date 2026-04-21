@@ -1,0 +1,1323 @@
+[
+  {
+    "id": "hamburguer-classico",
+    "category": "principais",
+    "category_pt": "Pratos Principais",
+    "category_en": "Main Courses",
+    "title_pt": "Hambúrguer Clássico",
+    "title_en": "Classic Burger",
+    "description_pt": "Suculento, simples e icônico — o hambúrguer perfeito dos anos 50.",
+    "description_en": "Juicy, simple, and iconic — the perfect 50s burger.",
+    "prepTime": "20 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "1 pessoa",
+    "servings_en": "1 serving",
+    "calories": 650,
+    "price": "R$ 28,00",
+    "tags_pt": ["carne", "diner", "rapido"],
+    "tags_en": ["meat", "diner", "fast"],
+    "ingredients_pt": [
+      "150g de carne bovina",
+      "Pão brioche",
+      "Queijo cheddar",
+      "Picles",
+      "Ketchup e mostarda"
+    ],
+    "ingredients_en": [
+      "150g beef patty",
+      "Brioche bun",
+      "Cheddar cheese",
+      "Pickles",
+      "Ketchup and mustard"
+    ],
+    "instructions_pt": [
+      "Modele a carne em formato de hambúrguer.",
+      "Grelhe até o ponto desejado.",
+      "Toste o pão na manteiga.",
+      "Monte com queijo, picles e molhos."
+    ],
+    "instructions_en": [
+      "Shape the beef into a patty.",
+      "Grill to desired doneness.",
+      "Toast the bun with butter.",
+      "Assemble with cheese, pickles, and sauces."
+    ]
+  },
+  {
+    "id": "milkshake-morango",
+    "category": "sobremesas",
+    "category_pt": "Sobremesas",
+    "category_en": "Desserts",
+    "title_pt": "Milkshake de Morango",
+    "title_en": "Strawberry Milkshake",
+    "description_pt": "Um batido cremoso e saboroso, perfeito para aqueles que amam morangos.",
+    "description_en": "A creamy and delicious smoothie, perfect for those who love strawberries.",
+    "prepTime": "10 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "1 pessoa",
+    "servings_en": "1 serving",
+    "calories": 650,
+    "tags_pt": ["carne", "diner", "rapido"],
+    "tags_en": ["meat", "diner", "fast"],
+    "ingredients_pt": [
+      "150g de carne bovina",
+      "Pão brioche",
+      "Queijo cheddar",
+      "Picles",
+      "Ketchup e mostarda"
+    ],
+    "ingredients_en": [
+      "150g beef patty",
+      "Brioche bun",
+      "Cheddar cheese",
+      "Pickles",
+      "Ketchup and mustard"
+    ],
+    "instructions_pt": [
+      "Modele a carne em formato de hambúrguer.",
+      "Grelhe até o ponto desejado.",
+      "Toste o pão na manteiga.",
+      "Monte com queijo, picles e molhos."
+    ],
+    "instructions_en": [
+      "Shape the beef into a patty.",
+      "Grill to desired doneness.",
+      "Toast the bun with butter.",
+      "Assemble with cheese, pickles, and sauces."
+    ]
+  },
+  {
+    "id": "moscow-mule",
+    "category": "bebidas",
+    "category_pt": "Bebidas",
+    "category_en": "Drinks",
+    "title_pt": "Moscow Mule",
+    "title_en": "Moscow Mule",
+    "description_pt": "Um drink refrescante e saboroso, perfeito para aqueles que amam cocktails.",
+    "description_en": "A refreshing and delicious cocktail, perfect for those who love mixed drinks.",
+    "prepTime": "10 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "1 pessoa",
+    "servings_en": "1 serving",
+    "calories": 650,
+    "tags_pt": ["carne", "diner", "rapido"],
+    "tags_en": ["meat", "diner", "fast"],
+    "ingredients_pt": [
+      "150g de carne bovina",
+      "Pão brioche",
+      "Queijo cheddar",
+      "Picles",
+      "Ketchup e mostarda"
+    ],
+    "ingredients_en": [
+      "150g beef patty",
+      "Brioche bun",
+      "Cheddar cheese",
+      "Pickles",
+      "Ketchup and mustard"
+    ],
+    "instructions_pt": [
+      "Modele a carne em formato de hambúrguer.",
+      "Grelhe até o ponto desejado.",
+      "Toste o pão na manteiga.",
+      "Monte com queijo, picles e molhos."
+    ],
+    "instructions_en": [
+      "Shape the beef into a patty.",
+      "Grill to desired doneness.",
+      "Toast the bun with butter.",
+      "Assemble with cheese, pickles, and sauces."
+    ]
+  },
+  {
+    "id": "salada-caeser",
+    "category": "entradas",
+    "category_pt": "Entradas",
+    "category_en": "Starters",
+    "title_pt": "Salada Caesar",
+    "title_en": "Caesar Salad",
+    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
+    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
+    "prepTime": "10 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "1 pessoa",
+    "servings_en": "1 serving",
+    "calories": 650,
+    "tags_pt": ["carne", "diner", "rapido"],
+    "tags_en": ["meat", "diner", "fast"],
+    "ingredients_pt": [
+      "150g de carne bovina",
+      "Pão brioche",
+      "Queijo cheddar",
+      "Picles",
+      "Ketchup e mostarda"
+    ],
+    "ingredients_en": [
+      "150g beef patty",
+      "Brioche bun",
+      "Cheddar cheese",
+      "Pickles",
+      "Ketchup and mustard"
+    ],
+    "instructions_pt": [
+      "Modele a carne em formato de hambúrguer.",
+      "Grelhe até o ponto desejado.",
+      "Toste o pão na manteiga.",
+      "Monte com queijo, picles e molhos."
+    ],
+    "instructions_en": [
+      "Shape the beef into a patty.",
+      "Grill to desired doneness.",
+      "Toast the bun with butter.",
+      "Assemble with cheese, pickles, and sauces."
+    ]
+  },
+  {
+    "id": "bolo-de-abacaxi-invertido",
+    "category": "sobremesas",
+    "category_pt": "Sobremesas",
+    "category_en": "Desserts",
+    "title_pt": "Bolo de Abacaxi Invertido",
+    "title_en": "Inverted Pineapple Cake",
+    "description_pt": "Um bolo refrescante e saboroso, perfeito para aqueles que amam sobremesas doces.",
+    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
+    "prepTime": "10 min",
+    "difficulty_pt": "Médio",
+    "difficulty_en": "Medium",
+    "servings_pt": "1 pessoa",
+    "servings_en": "1 serving",
+    "calories": 650,
+    "tags_pt": ["carne", "diner", "rapido"],
+    "tags_en": ["meat", "diner", "fast"],
+    "ingredients_pt": [
+      "150g de carne bovina",
+      "Pão brioche",
+      "Queijo cheddar",
+      "Picles",
+      "Ketchup e mostarda"
+    ],
+    "ingredients_en": [
+      "150g beef patty",
+      "Brioche bun",
+      "Cheddar cheese",
+      "Pickles",
+      "Ketchup and mustard"
+    ],
+    "instructions_pt": [
+      "Modele a carne em formato de hambúrguer.",
+      "Grelhe até o ponto desejado.",
+      "Toste o pão na manteiga.",
+      "Monte com queijo, picles e molhos."
+    ],
+    "instructions_en": [
+      "Shape the beef into a patty.",
+      "Grill to desired doneness.",
+      "Toast the bun with butter.",
+      "Assemble with cheese, pickles, and sauces."
+    ]
+  },
+  {
+    "id": "bolo-de-carne",
+    "category": "principais",
+    "category_pt": "Pratos Principais",
+    "category_en": "Main Courses",
+    "title_pt": "Bolo de Carne",
+    "title_en": "Meat Cake",
+    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
+    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
+    "prepTime": "10 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "1 pessoa",
+    "servings_en": "1 serving",
+    "calories": 650,
+    "tags_pt": ["carne", "diner", "rapido"],
+    "tags_en": ["meat", "diner", "fast"],
+    "ingredients_pt": [
+      "150g de carne bovina",
+      "Pão brioche",
+      "Queijo cheddar",
+      "Picles",
+      "Ketchup e mostarda"
+    ],
+    "ingredients_en": [
+      "150g beef patty",
+      "Brioche bun",
+      "Cheddar cheese",
+      "Pickles",
+      "Ketchup and mustard"
+    ],
+    "instructions_pt": [
+      "Modele a carne em formato de hambúrguer.",
+      "Grelhe até o ponto desejado.",
+      "Toste o pão na manteiga.",
+      "Monte com queijo, picles e molhos."
+    ],
+    "instructions_en": [
+      "Shape the beef into a patty.",
+      "Grill to desired doneness.",
+      "Toast the bun with butter.",
+      "Assemble with cheese, pickles, and sauces."
+    ]
+  },
+  {
+    "id": "gelatina-mosaico",
+    "category": "sobremesas",
+    "category_pt": "Sobremesas",
+    "category_en": "Desserts",
+    "title_pt": "Gelatina Mosaico",
+    "title_en": "Mosaic Jello",
+    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
+    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
+    "prepTime": "10 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "1 pessoa",
+    "servings_en": "1 serving",
+    "calories": 650,
+    "tags_pt": ["carne", "diner", "rapido"],
+    "tags_en": ["meat", "diner", "fast"],
+    "ingredients_pt": [
+      "150g de carne bovina",
+      "Pão brioche",
+      "Queijo cheddar",
+      "Picles",
+      "Ketchup e mostarda"
+    ],
+    "ingredients_en": [
+      "150g beef patty",
+      "Brioche bun",
+      "Cheddar cheese",
+      "Pickles",
+      "Ketchup and mustard"
+    ],
+    "instructions_pt": [
+      "Modele a carne em formato de hambúrguer.",
+      "Grelhe até o ponto desejado.",
+      "Toste o pão na manteiga.",
+      "Monte com queijo, picles e molhos."
+    ],
+    "instructions_en": [
+      "Shape the beef into a patty.",
+      "Grill to desired doneness.",
+      "Toast the bun with butter.",
+      "Assemble with cheese, pickles, and sauces."
+    ]
+  },
+  {
+    "id": "martini",
+    "category": "bebidas",
+    "category_pt": "Bebidas",
+    "category_en": "Drinks",
+    "title_pt": "Martini",
+    "title_en": "Martini",
+    "description_pt": "Um drink clássico e refinado, perfeito para aqueles que apreciam bebidas alcoólicas com sabor equilibrado.",
+    "description_en": "A classic and refined drink, perfect for those who appreciate balanced alcoholic beverages.",
+    "prepTime": "10 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "1 pessoa",
+    "servings_en": "1 serving",
+    "calories": 650,
+    "tags_pt": ["carne", "diner", "rapido"],
+    "tags_en": ["meat", "diner", "fast"],
+    "ingredients_pt": [
+      "150g de carne bovina",
+      "Pão brioche",
+      "Queijo cheddar",
+      "Picles",
+      "Ketchup e mostarda"
+    ],
+    "ingredients_en": [
+      "150g beef patty",
+      "Brioche bun",
+      "Cheddar cheese",
+      "Pickles",
+      "Ketchup and mustard"
+    ],
+    "instructions_pt": [
+      "Modele a carne em formato de hambúrguer.",
+      "Grelhe até o ponto desejado.",
+      "Toste o pão na manteiga.",
+      "Monte com queijo, picles e molhos."
+    ],
+    "instructions_en": [
+      "Shape the beef into a patty.",
+      "Grill to desired doneness.",
+      "Toast the bun with butter.",
+      "Assemble with cheese, pickles, and sauces."
+    ]
+  },
+  {
+    "id": "bolo-de-chocolate",
+    "category": "sobremesas",
+    "category_pt": "Sobremesas",
+    "category_en": "Desserts",
+    "title_pt": "Bolo de Chocolate",
+    "title_en": "Chocolate Cake",
+    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
+    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
+    "prepTime": "10 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "1 pessoa",
+    "servings_en": "1 serving",
+    "calories": 650,
+    "tags_pt": ["carne", "diner", "rapido"],
+    "tags_en": ["meat", "diner", "fast"],
+    "ingredients_pt": [
+      "150g de carne bovina",
+      "Pão brioche",
+      "Queijo cheddar",
+      "Picles",
+      "Ketchup e mostarda"
+    ],
+    "ingredients_en": [
+      "150g beef patty",
+      "Brioche bun",
+      "Cheddar cheese",
+      "Pickles",
+      "Ketchup and mustard"
+    ],
+    "instructions_pt": [
+      "Modele a carne em formato de hambúrguer.",
+      "Grelhe até o ponto desejado.",
+      "Toste o pão na manteiga.",
+      "Monte com queijo, picles e molhos."
+    ],
+    "instructions_en": [
+      "Shape the beef into a patty.",
+      "Grill to desired doneness.",
+      "Toast the bun with butter.",
+      "Assemble with cheese, pickles, and sauces."
+    ]
+  },
+  {
+    "id": "ostras-rockefeller",
+    "category": "entradas",
+    "category_pt": "Entradas",
+    "category_en": "Starters",
+    "title_pt": "Ostras Rockefeller",
+    "title_en": "Rockefeller Oysters",
+    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
+    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
+    "prepTime": "10 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "1 pessoa",
+    "servings_en": "1 serving",
+    "calories": 650,
+    "tags_pt": ["carne", "diner", "rapido"],
+    "tags_en": ["meat", "diner", "fast"],
+    "ingredients_pt": [
+      "150g de carne bovina",
+      "Pão brioche",
+      "Queijo cheddar",
+      "Picles",
+      "Ketchup e mostarda"
+    ],
+    "ingredients_en": [
+      "150g beef patty",
+      "Brioche bun",
+      "Cheddar cheese",
+      "Pickles",
+      "Ketchup and mustard"
+    ],
+    "instructions_pt": [
+      "Modele a carne em formato de hambúrguer.",
+      "Grelhe até o ponto desejado.",
+      "Toste o pão na manteiga.",
+      "Monte com queijo, picles e molhos."
+    ],
+    "instructions_en": [
+      "Shape the beef into a patty.",
+      "Grill to desired doneness.",
+      "Toast the bun with butter.",
+      "Assemble with cheese, pickles, and sauces."
+    ]
+  },
+  {
+    "id": "presunto-assado-com-abacaxi",
+    "category": "principais",
+    "category_pt": "Principais",
+    "category_en": "Main Courses",
+    "title_pt": "Presunto Assado com Abacaxi",
+    "title_en": "Grilled Ham with Pineapple",
+    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
+    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
+    "prepTime": "10 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "1 pessoa",
+    "servings_en": "1 serving",
+    "calories": 650,
+    "tags_pt": ["carne", "diner", "rapido"],
+    "tags_en": ["meat", "diner", "fast"],
+    "ingredients_pt": [
+      "150g de carne bovina",
+      "Pão brioche",
+      "Queijo cheddar",
+      "Picles",
+      "Ketchup e mostarda"
+    ],
+    "ingredients_en": [
+      "150g beef patty",
+      "Brioche bun",
+      "Cheddar cheese",
+      "Pickles",
+      "Ketchup and mustard"
+    ],
+    "instructions_pt": [
+      "Modele a carne em formato de hambúrguer.",
+      "Grelhe até o ponto desejado.",
+      "Toste o pão na manteiga.",
+      "Monte com queijo, picles e molhos."
+    ],
+    "instructions_en": [
+      "Shape the beef into a patty.",
+      "Grill to desired doneness.",
+      "Toast the bun with butter.",
+      "Assemble with cheese, pickles, and sauces."
+    ]
+  },
+  {
+    "id": "salada-de-ambrosia",
+    "category": "sobremesas",
+    "category_pt": "Sobremesas",
+    "category_en": "Desserts",
+    "title_pt": "Salada de Ambrosia",
+    "title_en": "Ambrosia Salad",
+    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
+    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
+    "prepTime": "10 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "1 pessoa",
+    "servings_en": "1 serving",
+    "calories": 650,
+    "tags_pt": ["carne", "diner", "rapido"],
+    "tags_en": ["meat", "diner", "fast"],
+    "ingredients_pt": [
+      "150g de carne bovina",
+      "Pão brioche",
+      "Queijo cheddar",
+      "Picles",
+      "Ketchup e mostarda"
+    ],
+    "ingredients_en": [
+      "150g beef patty",
+      "Brioche bun",
+      "Cheddar cheese",
+      "Pickles",
+      "Ketchup and mustard"
+    ],
+    "instructions_pt": [
+      "Modele a carne em formato de hambúrguer.",
+      "Grelhe até o ponto desejado.",
+      "Toste o pão na manteiga.",
+      "Monte com queijo, picles e molhos."
+    ],
+    "instructions_en": [
+      "Shape the beef into a patty.",
+      "Grill to desired doneness.",
+      "Toast the bun with butter.",
+      "Assemble with cheese, pickles, and sauces."
+    ]
+  },
+  {
+    "id": "torta-de-frango",
+    "category": "principais",
+    "category_pt": "Principais",
+    "category_en": "Main Courses",
+    "title_pt": "Torta de Frango",
+    "title_en": "Chicken Pie",
+    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
+    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
+    "prepTime": "10 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "1 pessoa",
+    "servings_en": "1 serving",
+    "calories": 650,
+    "tags_pt": ["carne", "diner", "rapido"],
+    "tags_en": ["meat", "diner", "fast"],
+    "ingredients_pt": [
+      "150g de carne bovina",
+      "Pão brioche",
+      "Queijo cheddar",
+      "Picles",
+      "Ketchup e mostarda"
+    ],
+    "ingredients_en": [
+      "150g beef patty",
+      "Brioche bun",
+      "Cheddar cheese",
+      "Pickles",
+      "Ketchup and mustard"
+    ],
+    "instructions_pt": [
+      "Modele a carne em formato de hambúrguer.",
+      "Grelhe até o ponto desejado.",
+      "Toste o pão na manteiga.",
+      "Monte com queijo, picles e molhos."
+    ],
+    "instructions_en": [
+      "Shape the beef into a patty.",
+      "Grill to desired doneness.",
+      "Toast the bun with butter.",
+      "Assemble with cheese, pickles, and sauces."
+    ]
+  },
+  {
+    "id": "banana-daiquiri-rum",
+    "category": "bebidas",
+    "category_pt": "Bebidas",
+    "category_en": "Drinks",
+    "title_pt": "Banana Daiquiri (Rum)",
+    "title_en": "Banana Daiquiri (Rum)",
+    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
+    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
+    "prepTime": "10 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "1 pessoa",
+    "servings_en": "1 serving",
+    "calories": 650,
+    "tags_pt": ["carne", "diner", "rapido"],
+    "tags_en": ["meat", "diner", "fast"],
+    "ingredients_pt": [
+      "150g de carne bovina",
+      "Pão brioche",
+      "Queijo cheddar",
+      "Picles",
+      "Ketchup e mostarda"
+    ],
+    "ingredients_en": [
+      "150g beef patty",
+      "Brioche bun",
+      "Cheddar cheese",
+      "Pickles",
+      "Ketchup and mustard"
+    ],
+    "instructions_pt": [
+      "Modele a carne em formato de hambúrguer.",
+      "Grelhe até o ponto desejado.",
+      "Toste o pão na manteiga.",
+      "Monte com queijo, picles e molhos."
+    ],
+    "instructions_en": [
+      "Shape the beef into a patty.",
+      "Grill to desired doneness.",
+      "Toast the bun with butter.",
+      "Assemble with cheese, pickles, and sauces."
+    ]
+  },
+  {
+    "id": "torta-de-maca",
+    "category": "sobremesas",
+    "category_pt": "Sobremesas",
+    "category_en": "Desserts",
+    "title_pt": "Torta de Maçã",
+    "title_en": "Apple Pie",
+    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
+    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
+    "prepTime": "10 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "1 pessoa",
+    "servings_en": "1 serving",
+    "calories": 650,
+    "tags_pt": ["carne", "diner", "rapido"],
+    "tags_en": ["meat", "diner", "fast"],
+    "ingredients_pt": [
+      "150g de carne bovina",
+      "Pão brioche",
+      "Queijo cheddar",
+      "Picles",
+      "Ketchup e mostarda"
+    ],
+    "ingredients_en": [
+      "150g beef patty",
+      "Brioche bun",
+      "Cheddar cheese",
+      "Pickles",
+      "Ketchup and mustard"
+    ],
+    "instructions_pt": [
+      "Modele a carne em formato de hambúrguer.",
+      "Grelhe até o ponto desejado.",
+      "Toste o pão na manteiga.",
+      "Monte com queijo, picles e molhos."
+    ],
+    "instructions_en": [
+      "Shape the beef into a patty.",
+      "Grill to desired doneness.",
+      "Toast the bun with butter.",
+      "Assemble with cheese, pickles, and sauces."
+    ]
+  },
+  {
+    "id": "gin-daisy",
+    "category": "bebidas",
+    "category_pt": "Bebidas",
+    "category_en": "Drinks",
+    "title_pt": "Gin Daisy",
+    "title_en": "Gin Daisy",
+    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
+    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
+    "prepTime": "10 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "1 pessoa",
+    "servings_en": "1 serving",
+    "calories": 650,
+    "tags_pt": ["carne", "diner", "rapido"],
+    "tags_en": ["meat", "diner", "fast"],
+    "ingredients_pt": [
+      "150g de carne bovina",
+      "Pão brioche",
+      "Queijo cheddar",
+      "Picles",
+      "Ketchup e mostarda"
+    ],
+    "ingredients_en": [
+      "150g beef patty",
+      "Brioche bun",
+      "Cheddar cheese",
+      "Pickles",
+      "Ketchup and mustard"
+    ],
+    "instructions_pt": [
+      "Modele a carne em formato de hambúrguer.",
+      "Grelhe até o ponto desejado.",
+      "Toste o pão na manteiga.",
+      "Monte com queijo, picles e molhos."
+    ],
+    "instructions_en": [
+      "Shape the beef into a patty.",
+      "Grill to desired doneness.",
+      "Toast the bun with butter.",
+      "Assemble with cheese, pickles, and sauces."
+    ]
+  },
+  {
+    "id": "pate-de-atum-com-torradas",
+    "category": "entradas",
+    "category_pt": "Entradas",
+    "category_en": "Starters",
+    "title_pt": "Pate de Atum com Torradas",
+    "title_en": "Tuna Pate with Toasted Bread",
+    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
+    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
+    "prepTime": "10 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "1 pessoa",
+    "servings_en": "1 serving",
+    "calories": 650,
+    "tags_pt": ["carne", "diner", "rapido"],
+    "tags_en": ["meat", "diner", "fast"],
+    "ingredients_pt": [
+      "150g de carne bovina",
+      "Pão brioche",
+      "Queijo cheddar",
+      "Picles",
+      "Ketchup e mostarda"
+    ],
+    "ingredients_en": [
+      "150g beef patty",
+      "Brioche bun",
+      "Cheddar cheese",
+      "Pickles",
+      "Ketchup and mustard"
+    ],
+    "instructions_pt": [
+      "Modele a carne em formato de hambúrguer.",
+      "Grelhe até o ponto desejado.",
+      "Toste o pão na manteiga.",
+      "Monte com queijo, picles e molhos."
+    ],
+    "instructions_en": [
+      "Shape the beef into a patty.",
+      "Grill to desired doneness.",
+      "Toast the bun with butter.",
+      "Assemble with cheese, pickles, and sauces."
+    ]
+  },
+  {
+    "id": "ponche-de-champanhe",
+    "category": "bebidas",
+    "category_pt": "Bebidas",
+    "category_en": "Drinks",
+    "title_pt": "Ponche de Champanhe",
+    "title_en": "Champagne Punch",
+    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
+    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
+    "prepTime": "10 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "1 pessoa",
+    "servings_en": "1 serving",
+    "calories": 650,
+    "tags_pt": ["carne", "diner", "rapido"],
+    "tags_en": ["meat", "diner", "fast"],
+    "ingredients_pt": [
+      "150g de carne bovina",
+      "Pão brioche",
+      "Queijo cheddar",
+      "Picles",
+      "Ketchup e mostarda"
+    ],
+    "ingredients_en": [
+      "150g beef patty",
+      "Brioche bun",
+      "Cheddar cheese",
+      "Pickles",
+      "Ketchup and mustard"
+    ],
+    "instructions_pt": [
+      "Modele a carne em formato de hambúrguer.",
+      "Grelhe até o ponto desejado.",
+      "Toste o pão na manteiga.",
+      "Monte com queijo, picles e molhos."
+    ],
+    "instructions_en": [
+      "Shape the beef into a patty.",
+      "Grill to desired doneness.",
+      "Toast the bun with butter.",
+      "Assemble with cheese, pickles, and sauces."
+    ]
+  },
+  {
+    "id": "banana-split",
+    "category": "sobremesas",
+    "category_pt": "Sobremesas",
+    "category_en": "Desserts",
+    "title_pt": "Banana Split",
+    "title_en": "Banana Split",
+    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
+    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
+    "prepTime": "10 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "1 pessoa",
+    "servings_en": "1 serving",
+    "calories": 650,
+    "tags_pt": ["carne", "diner", "rapido"],
+    "tags_en": ["meat", "diner", "fast"],
+    "ingredients_pt": [
+      "150g de carne bovina",
+      "Pão brioche",
+      "Queijo cheddar",
+      "Picles",
+      "Ketchup e mostarda"
+    ],
+    "ingredients_en": [
+      "150g beef patty",
+      "Brioche bun",
+      "Cheddar cheese",
+      "Pickles",
+      "Ketchup and mustard"
+    ],
+    "instructions_pt": [
+      "Modele a carne em formato de hambúrguer.",
+      "Grelhe até o ponto desejado.",
+      "Toste o pão na manteiga.",
+      "Monte com queijo, picles e molhos."
+    ],
+    "instructions_en": [
+      "Shape the beef into a patty.",
+      "Grill to desired doneness.",
+      "Toast the bun with butter.",
+      "Assemble with cheese, pickles, and sauces."
+    ]
+  },
+  {
+    "id": "canapes-de-camarao",
+    "category": "entradas",
+    "category_pt": "Entradas",
+    "category_en": "Starters",
+    "title_pt": "Canapés de Camarão",
+    "title_en": "Shrimp Canapés",
+    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
+    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
+    "prepTime": "10 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "1 pessoa",
+    "servings_en": "1 serving",
+    "calories": 650,
+    "tags_pt": ["carne", "diner", "rapido"],
+    "tags_en": ["meat", "diner", "fast"],
+    "ingredients_pt": [
+      "150g de carne bovina",
+      "Pão brioche",
+      "Queijo cheddar",
+      "Picles",
+      "Ketchup e mostarda"
+    ],
+    "ingredients_en": [
+      "150g beef patty",
+      "Brioche bun",
+      "Cheddar cheese",
+      "Pickles",
+      "Ketchup and mustard"
+    ],
+    "instructions_pt": [
+      "Modele a carne em formato de hambúrguer.",
+      "Grelhe até o ponto desejado.",
+      "Toste o pão na manteiga.",
+      "Monte com queijo, picles e molhos."
+    ],
+    "instructions_en": [
+      "Shape the beef into a patty.",
+      "Grill to desired doneness.",
+      "Toast the bun with butter.",
+      "Assemble with cheese, pickles, and sauces."
+    ]
+  },
+  {
+    "id": "bolo-red-velvet",
+    "category": "sobremesas",
+    "category_pt": "Sobremesas",
+    "category_en": "Desserts",
+    "title_pt": "Bolo de Red Velvet",
+    "title_en": "Red Velvet Cake",
+    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
+    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
+    "prepTime": "10 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "1 pessoa",
+    "servings_en": "1 serving",
+    "calories": 650,
+    "tags_pt": ["carne", "diner", "rapido"],
+    "tags_en": ["meat", "diner", "fast"],
+    "ingredients_pt": [
+      "150g de carne bovina",
+      "Pão brioche",
+      "Queijo cheddar",
+      "Picles",
+      "Ketchup e mostarda"
+    ],
+    "ingredients_en": [
+      "150g beef patty",
+      "Brioche bun",
+      "Cheddar cheese",
+      "Pickles",
+      "Ketchup and mustard"
+    ],
+    "instructions_pt": [
+      "Modele a carne em formato de hambúrguer.",
+      "Grelhe até o ponto desejado.",
+      "Toste o pão na manteiga.",
+      "Monte com queijo, picles e molhos."
+    ],
+    "instructions_en": [
+      "Shape the beef into a patty.",
+      "Grill to desired doneness.",
+      "Toast the bun with butter.",
+      "Assemble with cheese, pickles, and sauces."
+    ]
+  },
+  {
+    "id": "carne-ao-molho-de-cogumelos",
+    "category": "principais",
+    "category_pt": "Pratos Principais",
+    "category_en": "Main Courses",
+    "title_pt": "Carne ao Molho de Cogumelos",
+    "title_en": "Meat in Mushroom Sauce",
+    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
+    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
+    "prepTime": "10 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "1 pessoa",
+    "servings_en": "1 serving",
+    "calories": 650,
+    "tags_pt": ["carne", "diner", "rapido"],
+    "tags_en": ["meat", "diner", "fast"],
+    "ingredients_pt": [
+      "150g de carne bovina",
+      "Pão brioche",
+      "Queijo cheddar",
+      "Picles",
+      "Ketchup e mostarda"
+    ],
+    "ingredients_en": [
+      "150g beef patty",
+      "Brioche bun",
+      "Cheddar cheese",
+      "Pickles",
+      "Ketchup and mustard"
+    ],
+    "instructions_pt": [
+      "Modele a carne em formato de hambúrguer.",
+      "Grelhe até o ponto desejado.",
+      "Toste o pão na manteiga.",
+      "Monte com queijo, picles e molhos."
+    ],
+    "instructions_en": [
+      "Shape the beef into a patty.",
+      "Grill to desired doneness.",
+      "Toast the bun with butter.",
+      "Assemble with cheese, pickles, and sauces."
+    ]
+  },
+  {
+    "id": "grasshopper",
+    "category": "bebidas",
+    "category_pt": "Bebidas",
+    "category_en": "Drinks",
+    "title_pt": "Grasshopper",
+    "title_en": "Grasshopper",
+    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
+    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
+    "prepTime": "10 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "1 pessoa",
+    "servings_en": "1 serving",
+    "calories": 650,
+    "tags_pt": ["carne", "diner", "rapido"],
+    "tags_en": ["meat", "diner", "fast"],
+    "ingredients_pt": [
+      "150g de carne bovina",
+      "Pão brioche",
+      "Queijo cheddar",
+      "Picles",
+      "Ketchup e mostarda"
+    ],
+    "ingredients_en": [
+      "150g beef patty",
+      "Brioche bun",
+      "Cheddar cheese",
+      "Pickles",
+      "Ketchup and mustard"
+    ],
+    "instructions_pt": [
+      "Modele a carne em formato de hambúrguer.",
+      "Grelhe até o ponto desejado.",
+      "Toste o pão na manteiga.",
+      "Monte com queijo, picles e molhos."
+    ],
+    "instructions_en": [
+      "Shape the beef into a patty.",
+      "Grill to desired doneness.",
+      "Toast the bun with butter.",
+      "Assemble with cheese, pickles, and sauces."
+    ]
+  },
+  {
+    "id": "salada-de-batatas",
+    "category": "principais",
+    "category_pt": "Pratos Principais",
+    "category_en": "Main Courses",
+    "title_pt": "Salada de Batatas",
+    "title_en": "Potato Salad",
+    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
+    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
+    "prepTime": "10 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "1 pessoa",
+    "servings_en": "1 serving",
+    "calories": 650,
+    "tags_pt": ["carne", "diner", "rapido"],
+    "tags_en": ["meat", "diner", "fast"],
+    "ingredients_pt": [
+      "150g de carne bovina",
+      "Pão brioche",
+      "Queijo cheddar",
+      "Picles",
+      "Ketchup e mostarda"
+    ],
+    "ingredients_en": [
+      "150g beef patty",
+      "Brioche bun",
+      "Cheddar cheese",
+      "Pickles",
+      "Ketchup and mustard"
+    ],
+    "instructions_pt": [
+      "Modele a carne em formato de hambúrguer.",
+      "Grelhe até o ponto desejado.",
+      "Toste o pão na manteiga.",
+      "Monte com queijo, picles e molhos."
+    ],
+    "instructions_en": [
+      "Shape the beef into a patty.",
+      "Grill to desired doneness.",
+      "Toast the bun with butter.",
+      "Assemble with cheese, pickles, and sauces."
+    ]
+  },
+  {
+    "id": "sopa-de-cebola",
+    "category": "principais",
+    "category_pt": "Pratos Principais",
+    "category_en": "Main Courses",
+    "title_pt": "Sopa de Cebola",
+    "title_en": "Onion Soup",
+    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
+    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
+    "prepTime": "10 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "1 pessoa",
+    "servings_en": "1 serving",
+    "calories": 650,
+    "tags_pt": ["carne", "diner", "rapido"],
+    "tags_en": ["meat", "diner", "fast"],
+    "ingredients_pt": [
+      "150g de carne bovina",
+      "Pão brioche",
+      "Queijo cheddar",
+      "Picles",
+      "Ketchup e mostarda"
+    ],
+    "ingredients_en": [
+      "150g beef patty",
+      "Brioche bun",
+      "Cheddar cheese",
+      "Pickles",
+      "Ketchup and mustard"
+    ],
+    "instructions_pt": [
+      "Modele a carne em formato de hambúrguer.",
+      "Grelhe até o ponto desejado.",
+      "Toste o pão na manteiga.",
+      "Monte com queijo, picles e molhos."
+    ],
+    "instructions_en": [
+      "Shape the beef into a patty.",
+      "Grill to desired doneness.",
+      "Toast the bun with butter.",
+      "Assemble with cheese, pickles, and sauces."
+    ]
+  },
+  {
+    "id": "panqueca-salgada",
+    "category": "principais",
+    "category_pt": "Pratos Principais",
+    "category_en": "Main Courses",
+    "title_pt": "Panqueca Salgada",
+    "title_en": "Salty Pancake",
+    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
+    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
+    "prepTime": "10 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "1 pessoa",
+    "servings_en": "1 serving",
+    "calories": 650,
+    "tags_pt": ["carne", "diner", "rapido"],
+    "tags_en": ["meat", "diner", "fast"],
+    "ingredients_pt": [
+      "150g de carne bovina",
+      "Pão brioche",
+      "Queijo cheddar",
+      "Picles",
+      "Ketchup e mostarda"
+    ],
+    "ingredients_en": [
+      "150g beef patty",
+      "Brioche bun",
+      "Cheddar cheese",
+      "Pickles",
+      "Ketchup and mustard"
+    ],
+    "instructions_pt": [
+      "Modele a carne em formato de hambúrguer.",
+      "Grelhe até o ponto desejado.",
+      "Toste o pão na manteiga.",
+      "Monte com queijo, picles e molhos."
+    ],
+    "instructions_en": [
+      "Shape the beef into a patty.",
+      "Grill to desired doneness.",
+      "Toast the bun with butter.",
+      "Assemble with cheese, pickles, and sauces."
+    ]
+  },
+  {
+    "id": "bolo-de-banana",
+    "category": "sobremesas",
+    "category_pt": "Sobremesas",
+    "category_en": "Desserts",
+    "title_pt": "Bolo de Banana",
+    "title_en": "Banana Cake",
+    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
+    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
+    "prepTime": "10 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "1 pessoa",
+    "servings_en": "1 serving",
+    "calories": 650,
+    "tags_pt": ["carne", "diner", "rapido"],
+    "tags_en": ["meat", "diner", "fast"],
+    "ingredients_pt": [
+      "150g de carne bovina",
+      "Pão brioche",
+      "Queijo cheddar",
+      "Picles",
+      "Ketchup e mostarda"
+    ],
+    "ingredients_en": [
+      "150g beef patty",
+      "Brioche bun",
+      "Cheddar cheese",
+      "Pickles",
+      "Ketchup and mustard"
+    ],
+    "instructions_pt": [
+      "Modele a carne em formato de hambúrguer.",
+      "Grelhe até o ponto desejado.",
+      "Toste o pão na manteiga.",
+      "Monte com queijo, picles e molhos."
+    ],
+    "instructions_en": [
+      "Shape the beef into a patty.",
+      "Grill to desired doneness.",
+      "Toast the bun with butter.",
+      "Assemble with cheese, pickles, and sauces."
+    ]
+  },
+  {
+    "id": "pina-colada",
+    "category": "bebidas",
+    "category_pt": "Bebidas",
+    "category_en": "Drinks",
+    "title_pt": "Pina Colada",
+    "title_en": "Pina Colada",
+    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
+    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
+    "prepTime": "10 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "1 pessoa",
+    "servings_en": "1 serving",
+    "calories": 650,
+    "tags_pt": ["carne", "diner", "rapido"],
+    "tags_en": ["meat", "diner", "fast"],
+    "ingredients_pt": [
+      "150g de carne bovina",
+      "Pão brioche",
+      "Queijo cheddar",
+      "Picles",
+      "Ketchup e mostarda"
+    ],
+    "ingredients_en": [
+      "150g beef patty",
+      "Brioche bun",
+      "Cheddar cheese",
+      "Pickles",
+      "Ketchup and mustard"
+    ],
+    "instructions_pt": [
+      "Modele a carne em formato de hambúrguer.",
+      "Grelhe até o ponto desejado.",
+      "Toste o pão na manteiga.",
+      "Monte com queijo, picles e molhos."
+    ],
+    "instructions_en": [
+      "Shape the beef into a patty.",
+      "Grill to desired doneness.",
+      "Toast the bun with butter.",
+      "Assemble with cheese, pickles, and sauces."
+    ]
+  },
+  {
+    "id": "panqueca-doce",
+    "category": "sobremesas",
+    "category_pt": "Sobremesas",
+    "category_en": "Desserts",
+    "title_pt": "Panqueca Doce",
+    "title_en": "Sweet Pancake",
+    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
+    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
+    "prepTime": "10 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "1 pessoa",
+    "servings_en": "1 serving",
+    "calories": 650,
+    "tags_pt": ["carne", "diner", "rapido"],
+    "tags_en": ["meat", "diner", "fast"],
+    "ingredients_pt": [
+      "150g de carne bovina",
+      "Pão brioche",
+      "Queijo cheddar",
+      "Picles",
+      "Ketchup e mostarda"
+    ],
+    "ingredients_en": [
+      "150g beef patty",
+      "Brioche bun",
+      "Cheddar cheese",
+      "Pickles",
+      "Ketchup and mustard"
+    ],
+    "instructions_pt": [
+      "Modele a carne em formato de hambúrguer.",
+      "Grelhe até o ponto desejado.",
+      "Toste o pão na manteiga.",
+      "Monte com queijo, picles e molhos."
+    ],
+    "instructions_en": [
+      "Shape the beef into a patty.",
+      "Grill to desired doneness.",
+      "Toast the bun with butter.",
+      "Assemble with cheese, pickles, and sauces."
+    ]
+  },
+  {
+    "id": "muffins",
+    "category": "sobremesas",
+    "category_pt": "Sobremesas",
+    "category_en": "Desserts",
+    "title_pt": "Muffins",
+    "title_en": "Muffins",
+    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
+    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
+    "prepTime": "10 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "1 pessoa",
+    "servings_en": "1 serving",
+    "calories": 650,
+    "tags_pt": ["carne", "diner", "rapido"],
+    "tags_en": ["meat", "diner", "fast"],
+    "ingredients_pt": [
+      "150g de carne bovina",
+      "Pão brioche",
+      "Queijo cheddar",
+      "Picles",
+      "Ketchup e mostarda"
+    ],
+    "ingredients_en": [
+      "150g beef patty",
+      "Brioche bun",
+      "Cheddar cheese",
+      "Pickles",
+      "Ketchup and mustard"
+    ],
+    "instructions_pt": [
+      "Modele a carne em formato de hambúrguer.",
+      "Grelhe até o ponto desejado.",
+      "Toste o pão na manteiga.",
+      "Monte com queijo, picles e molhos."
+    ],
+    "instructions_en": [
+      "Shape the beef into a patty.",
+      "Grill to desired doneness.",
+      "Toast the bun with butter.",
+      "Assemble with cheese, pickles, and sauces."
+    ]
+  }
+]
