@@ -29,18 +29,55 @@ import boloBanana from "../assets/images/recipes/bolo-de-banana.png";
 import panquecaDoce from "../assets/images/recipes/panqueca-doce.png";
 import muffins from "../assets/images/recipes/muffins.png";
 import pinaColada from "../assets/images/recipes/pina-colada.png";
-
-// ... adicione as outras aqui
+import frangoParmegiana from "../assets/images/recipes/frango-a-parmegiana.png";
+import steakBatatas from "../assets/images/recipes/steak-com-batatas.png";
+import pudimBaunilha from "../assets/images/recipes/pudim-de-baunilha.png";
+import saladaWaldorf from "../assets/images/recipes/salada-waldorf.png";
+import lasanhaBolonhesa from "../assets/images/recipes/lasanha-bolonhesa.png";
+import manhattan from "../assets/images/recipes/manhattan.png";
+import peruAssado from "../assets/images/recipes/peru-assado.png";
+import tortaLimao from "../assets/images/recipes/torta-de-limao.png";
+import donuts from "../assets/images/recipes/donuts.png";
+import croqueteCarne from "../assets/images/recipes/croquete-de-carne.png";
+import cheesecakeNewYork from "../assets/images/recipes/cheesecake-new-york.png";
+import ovosRecheados from "../assets/images/recipes/ovos-recheados.png";
+import chickenPotPie from "../assets/images/recipes/chicken-pot-pie.png";
+import oldFashioned from "../assets/images/recipes/old-fashioned.png";
+import cupcakeBaunilha from "../assets/images/recipes/cupcake-de-baunilha.png";
+import frangoFrito from "../assets/images/recipes/frango-frito.png";
+import roastBeef from "../assets/images/recipes/roast-beef.png";
+import coquetelCamarao from "../assets/images/recipes/coquetel-de-camarao.png";
+import bolinhasQueijo from "../assets/images/recipes/bolinhas-de-queijo.png";
+import chilliCarne from "../assets/images/recipes/chili-com-carne.png";
+import whiskeySour from "../assets/images/recipes/whiskey-sour.png";
+import bakedAlaska from "../assets/images/recipes/baked-alaska.png";
+import peachCobbler from "../assets/images/recipes/peach-cobbler.png";
+import macarraoQueijo from "../assets/images/recipes/macarrao-com-queijo.png";
+import costelaBBQ from "../assets/images/recipes/costela-bbq.png";
+import brownie from "../assets/images/recipes/brownie.png";
+import ricePudding from "../assets/images/recipes/rice-pudding.png";
+import fishChips from "../assets/images/recipes/fish-and-chips.png";
+import aspicCarne from "../assets/images/recipes/aspic-de-carne.png";
+import tortaCereja from "../assets/images/recipes/torta-de-cereja.png";
+import hotDog from "../assets/images/recipes/hot-dog.png";
 
 // mapa que liga o id do json ao arquivo importado
 export const recipeImages: Record<string, string> = {
-  // entradas
+
+  
+  // entradas (10)
   "salada-caeser": saladaCaeser,
   "canapes-de-camarao": canapesCamarao,
   "pate-de-atum-com-torradas": pateAtumTorradas,
   "ostras-rockefeller": ostrasRockefeller,
+  "salada-waldorf": saladaWaldorf,
+  "coquetel-de-camarao": coquetelCamarao,
+  "ovos-recheados": ovosRecheados,
+  "bolinhas-de-queijo": bolinhasQueijo,
+  "aspic-de-carne": aspicCarne,
+  "croquetes-de-carne": croqueteCarne,
 
-  // pratos principais
+  // pratos principais (20)
   "hamburguer-classico": hamburguerClassico,
   "bolo-de-carne": boloCarne,
   "sopa-de-cebola": sopaCebola,
@@ -49,9 +86,21 @@ export const recipeImages: Record<string, string> = {
   "torta-de-frango": tortaFrango,
   "presunto-assado-com-abacaxi": presutoAssadoAbacaxi,
   "panqueca-salgada": panquecaSalgada,
+  "frango-a-parmegiana": frangoParmegiana,
+  "steak-com-batatas": steakBatatas,
+  "lasanha-bolonhesa": lasanhaBolonhesa,
+  "costela-bbq": costelaBBQ,
+  "fish-and-chips": fishChips,
+  "macarrao-com-queijo": macarraoQueijo,
+  "chilli-com-carne": chilliCarne,
+  "roast-beef": roastBeef,
+  "frango-frito": frangoFrito,
+  "chicken-pot-pie": chickenPotPie,
+  "peru-assado": peruAssado,
+  "hot-dog": hotDog,
 
-  // sobremeses
-  "milkshake-morango": milkshakeMorango,
+  // sobremeses (20)
+  "milkshake-de-morango": milkshakeMorango,
   "bolo-de-abacaxi-invertido": boloAbacaxi,
   "bolo-de-chocolate": boloChocolate,
   "gelatina-mosaico": gelatinaMosaico,
@@ -62,8 +111,18 @@ export const recipeImages: Record<string, string> = {
   "bolo-de-banana": boloBanana,
   muffins: muffins,
   "panqueca-doce": panquecaDoce,
+  "pudim-de-baunilha": pudimBaunilha,
+  "cheesecake-new-york": cheesecakeNewYork,
+  brownie: brownie,
+  "cupcake-de-baunilha": cupcakeBaunilha,
+  "torta-de-limao": tortaLimao,
+  "baked-alaska": bakedAlaska,
+  "torta-de-cereja": tortaCereja,
+  "peach-cobbler": peachCobbler,
+  donuts: donuts,
+  "rice-pudding": ricePudding,
 
-  // bebidas
+  // bebidas (10)
   "moscow-mule": moscowMule,
   martini: martini,
   grasshopper: grasshopper,
@@ -71,4 +130,7 @@ export const recipeImages: Record<string, string> = {
   "gin-daisy": ginDaisy,
   "banana-daiquiri-rum": bananaDaiquiriRum,
   "pina-colada": pinaColada,
+  "old-fashioned": oldFashioned,
+  "whiskey-sour": whiskeySour,
+  manhattan: manhattan,
 };

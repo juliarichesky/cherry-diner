@@ -44,8 +44,12 @@
       "Assemble with cheese, pickles, and sauces."
     ]
   },
+
+
+
+
   {
-    "id": "milkshake-morango",
+    "id": "milkshake-de-morango",
     "category": "sobremesas",
     "category_pt": "Sobremesas",
     "category_en": "Desserts",
@@ -88,6 +92,10 @@
       "Assemble with cheese, pickles, and sauces."
     ]
   },
+
+
+
+
   {
     "id": "moscow-mule",
     "category": "bebidas",
@@ -132,6 +140,11 @@
       "Assemble with cheese, pickles, and sauces."
     ]
   },
+
+
+
+
+
   {
     "id": "salada-caeser",
     "category": "entradas",
@@ -176,6 +189,10 @@
       "Assemble with cheese, pickles, and sauces."
     ]
   },
+
+
+
+
   {
     "id": "bolo-de-abacaxi-invertido",
     "category": "sobremesas",
@@ -220,6 +237,12 @@
       "Assemble with cheese, pickles, and sauces."
     ]
   },
+
+
+
+
+
+
   {
     "id": "bolo-de-carne",
     "category": "principais",
@@ -264,6 +287,13 @@
       "Assemble with cheese, pickles, and sauces."
     ]
   },
+
+
+
+
+
+
+
   {
     "id": "gelatina-mosaico",
     "category": "sobremesas",
@@ -308,6 +338,16 @@
       "Assemble with cheese, pickles, and sauces."
     ]
   },
+
+
+
+
+
+
+
+
+
+
   {
     "id": "martini",
     "category": "bebidas",
@@ -352,6 +392,16 @@
       "Assemble with cheese, pickles, and sauces."
     ]
   },
+
+
+
+
+
+
+
+
+
+
   {
     "id": "bolo-de-chocolate",
     "category": "sobremesas",
@@ -396,6 +446,18 @@
       "Assemble with cheese, pickles, and sauces."
     ]
   },
+
+
+
+
+
+
+
+
+
+
+
+
   {
     "id": "ostras-rockefeller",
     "category": "entradas",
@@ -440,6 +502,16 @@
       "Assemble with cheese, pickles, and sauces."
     ]
   },
+
+
+
+
+
+
+
+
+
+
   {
     "id": "presunto-assado-com-abacaxi",
     "category": "principais",
@@ -484,6 +556,15 @@
       "Assemble with cheese, pickles, and sauces."
     ]
   },
+
+
+
+
+
+
+
+
+
   {
     "id": "salada-de-ambrosia",
     "category": "sobremesas",
@@ -528,6 +609,16 @@
       "Assemble with cheese, pickles, and sauces."
     ]
   },
+
+
+
+
+
+
+
+
+
+
   {
     "id": "torta-de-frango",
     "category": "principais",
@@ -572,6 +663,15 @@
       "Assemble with cheese, pickles, and sauces."
     ]
   },
+
+
+
+
+
+
+
+
+
   {
     "id": "banana-daiquiri-rum",
     "category": "bebidas",
@@ -616,6 +716,15 @@
       "Assemble with cheese, pickles, and sauces."
     ]
   },
+
+
+
+
+
+
+
+
+
   {
     "id": "torta-de-maca",
     "category": "sobremesas",
@@ -660,6 +769,16 @@
       "Assemble with cheese, pickles, and sauces."
     ]
   },
+
+
+
+
+
+
+
+
+
+
   {
     "id": "gin-daisy",
     "category": "bebidas",
@@ -704,6 +823,15 @@
       "Assemble with cheese, pickles, and sauces."
     ]
   },
+
+
+
+
+
+
+
+
+  
   {
     "id": "pate-de-atum-com-torradas",
     "category": "entradas",
@@ -748,6 +876,17 @@
       "Assemble with cheese, pickles, and sauces."
     ]
   },
+
+
+
+
+
+
+
+
+
+
+
   {
     "id": "ponche-de-champanhe",
     "category": "bebidas",
@@ -792,6 +931,15 @@
       "Assemble with cheese, pickles, and sauces."
     ]
   },
+
+
+
+
+
+
+
+
+
   {
     "id": "banana-split",
     "category": "sobremesas",
@@ -836,6 +984,14 @@
       "Assemble with cheese, pickles, and sauces."
     ]
   },
+
+
+
+
+
+
+
+
   {
     "id": "canapes-de-camarao",
     "category": "entradas",
@@ -880,6 +1036,15 @@
       "Assemble with cheese, pickles, and sauces."
     ]
   },
+
+
+
+
+
+
+
+
+
   {
     "id": "bolo-red-velvet",
     "category": "sobremesas",
@@ -924,6 +1089,14 @@
       "Assemble with cheese, pickles, and sauces."
     ]
   },
+
+
+
+
+
+
+
+
   {
     "id": "carne-ao-molho-de-cogumelos",
     "category": "principais",
@@ -968,6 +1141,15 @@
       "Assemble with cheese, pickles, and sauces."
     ]
   },
+
+
+
+
+
+
+
+
+
   {
     "id": "grasshopper",
     "category": "bebidas",
@@ -1012,6 +1194,14 @@
       "Assemble with cheese, pickles, and sauces."
     ]
   },
+
+
+
+
+
+
+
+
   {
     "id": "salada-de-batatas",
     "category": "principais",
@@ -1056,6 +1246,13 @@
       "Assemble with cheese, pickles, and sauces."
     ]
   },
+
+
+
+
+
+
+
   {
     "id": "sopa-de-cebola",
     "category": "principais",
@@ -1100,6 +1297,15 @@
       "Assemble with cheese, pickles, and sauces."
     ]
   },
+
+
+
+
+
+
+
+
+
   {
     "id": "panqueca-salgada",
     "category": "principais",
@@ -1144,6 +1350,13 @@
       "Assemble with cheese, pickles, and sauces."
     ]
   },
+
+
+
+
+
+
+
   {
     "id": "bolo-de-banana",
     "category": "sobremesas",
@@ -1188,6 +1401,13 @@
       "Assemble with cheese, pickles, and sauces."
     ]
   },
+
+
+
+
+
+
+
   {
     "id": "pina-colada",
     "category": "bebidas",
@@ -1232,6 +1452,14 @@
       "Assemble with cheese, pickles, and sauces."
     ]
   },
+
+
+
+
+
+
+
+
   {
     "id": "panqueca-doce",
     "category": "sobremesas",
@@ -1276,6 +1504,13 @@
       "Assemble with cheese, pickles, and sauces."
     ]
   },
+
+
+
+
+
+
+
   {
     "id": "muffins",
     "category": "sobremesas",
@@ -1293,6 +1528,286 @@
     "calories": 650,
     "tags_pt": ["carne", "diner", "rapido"],
     "tags_en": ["meat", "diner", "fast"],
+    "ingredients_pt": [
+      "150g de carne bovina",
+      "Pão brioche",
+      "Queijo cheddar",
+      "Picles",
+      "Ketchup e mostarda"
+    ],
+    "ingredients_en": [
+      "150g beef patty",
+      "Brioche bun",
+      "Cheddar cheese",
+      "Pickles",
+      "Ketchup and mustard"
+    ],
+    "instructions_pt": [
+      "Modele a carne em formato de hambúrguer.",
+      "Grelhe até o ponto desejado.",
+      "Toste o pão na manteiga.",
+      "Monte com queijo, picles e molhos."
+    ],
+    "instructions_en": [
+      "Shape the beef into a patty.",
+      "Grill to desired doneness.",
+      "Toast the bun with butter.",
+      "Assemble with cheese, pickles, and sauces."
+    ]
+  },
+
+
+
+
+    {
+    "id": "frango-a-parmegiana",
+    "category": "principais",
+    "category_pt": "Pratos Principais",
+    "category_en": "Main Courses",
+    "title_pt": "Frango a Parmegiana",
+    "title_en": "Chicken Parmigiana",
+    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
+    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
+    "prepTime": "10 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "1 pessoa",
+    "servings_en": "1 serving",
+    "calories": 650,
+    "ingredients_pt": [
+      "150g de carne bovina",
+      "Pão brioche",
+      "Queijo cheddar",
+      "Picles",
+      "Ketchup e mostarda"
+    ],
+    "ingredients_en": [
+      "150g beef patty",
+      "Brioche bun",
+      "Cheddar cheese",
+      "Pickles",
+      "Ketchup and mustard"
+    ],
+    "instructions_pt": [
+      "Modele a carne em formato de hambúrguer.",
+      "Grelhe até o ponto desejado.",
+      "Toste o pão na manteiga.",
+      "Monte com queijo, picles e molhos."
+    ],
+    "instructions_en": [
+      "Shape the beef into a patty.",
+      "Grill to desired doneness.",
+      "Toast the bun with butter.",
+      "Assemble with cheese, pickles, and sauces."
+    ]
+  },
+
+
+
+
+
+      {
+    "id": "steak-com-batatas",
+    "category": "principais",
+    "category_pt": "Pratos Principais",
+    "category_en": "Main Courses",
+    "title_pt": "Carne com Batatas",
+    "title_en": "Steak with Potatoes",
+    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
+    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
+    "prepTime": "10 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "1 pessoa",
+    "servings_en": "1 serving",
+    "calories": 650,
+    "ingredients_pt": [
+      "150g de carne bovina",
+      "Pão brioche",
+      "Queijo cheddar",
+      "Picles",
+      "Ketchup e mostarda"
+    ],
+    "ingredients_en": [
+      "150g beef patty",
+      "Brioche bun",
+      "Cheddar cheese",
+      "Pickles",
+      "Ketchup and mustard"
+    ],
+    "instructions_pt": [
+      "Modele a carne em formato de hambúrguer.",
+      "Grelhe até o ponto desejado.",
+      "Toste o pão na manteiga.",
+      "Monte com queijo, picles e molhos."
+    ],
+    "instructions_en": [
+      "Shape the beef into a patty.",
+      "Grill to desired doneness.",
+      "Toast the bun with butter.",
+      "Assemble with cheese, pickles, and sauces."
+    ]
+  },
+
+
+
+
+
+      {
+    "id": "pudim-de-baunilha",
+    "category": "sobremesas",
+    "category_pt": "Sobremesas",
+    "category_en": "Desserts",
+    "title_pt": "Pudim de Baunilha",
+    "title_en": "Vanilla Pudding",
+    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
+    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
+    "prepTime": "10 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "1 pessoa",
+    "servings_en": "1 serving",
+    "calories": 650,
+    "ingredients_pt": [
+      "150g de carne bovina",
+      "Pão brioche",
+      "Queijo cheddar",
+      "Picles",
+      "Ketchup e mostarda"
+    ],
+    "ingredients_en": [
+      "150g beef patty",
+      "Brioche bun",
+      "Cheddar cheese",
+      "Pickles",
+      "Ketchup and mustard"
+    ],
+    "instructions_pt": [
+      "Modele a carne em formato de hambúrguer.",
+      "Grelhe até o ponto desejado.",
+      "Toste o pão na manteiga.",
+      "Monte com queijo, picles e molhos."
+    ],
+    "instructions_en": [
+      "Shape the beef into a patty.",
+      "Grill to desired doneness.",
+      "Toast the bun with butter.",
+      "Assemble with cheese, pickles, and sauces."
+    ]
+  },
+
+  
+
+
+
+
+        {
+    "id": "salada-waldorf",
+    "category": "sobremesas",
+    "category_pt": "Sobremesas",
+    "category_en": "Desserts",
+    "title_pt": "Pudim de Baunilha",
+    "title_en": "Vanilla Pudding",
+    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
+    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
+    "prepTime": "10 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "1 pessoa",
+    "servings_en": "1 serving",
+    "calories": 650,
+    "ingredients_pt": [
+      "150g de carne bovina",
+      "Pão brioche",
+      "Queijo cheddar",
+      "Picles",
+      "Ketchup e mostarda"
+    ],
+    "ingredients_en": [
+      "150g beef patty",
+      "Brioche bun",
+      "Cheddar cheese",
+      "Pickles",
+      "Ketchup and mustard"
+    ],
+    "instructions_pt": [
+      "Modele a carne em formato de hambúrguer.",
+      "Grelhe até o ponto desejado.",
+      "Toste o pão na manteiga.",
+      "Monte com queijo, picles e molhos."
+    ],
+    "instructions_en": [
+      "Shape the beef into a patty.",
+      "Grill to desired doneness.",
+      "Toast the bun with butter.",
+      "Assemble with cheese, pickles, and sauces."
+    ]
+  },
+
+
+
+          {
+    "id": "lasanha-bolonhesa",
+    "category": "sobremesas",
+    "category_pt": "Sobremesas",
+    "category_en": "Desserts",
+    "title_pt": "Pudim de Baunilha",
+    "title_en": "Vanilla Pudding",
+    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
+    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
+    "prepTime": "10 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "1 pessoa",
+    "servings_en": "1 serving",
+    "calories": 650,
+    "ingredients_pt": [
+      "150g de carne bovina",
+      "Pão brioche",
+      "Queijo cheddar",
+      "Picles",
+      "Ketchup e mostarda"
+    ],
+    "ingredients_en": [
+      "150g beef patty",
+      "Brioche bun",
+      "Cheddar cheese",
+      "Pickles",
+      "Ketchup and mustard"
+    ],
+    "instructions_pt": [
+      "Modele a carne em formato de hambúrguer.",
+      "Grelhe até o ponto desejado.",
+      "Toste o pão na manteiga.",
+      "Monte com queijo, picles e molhos."
+    ],
+    "instructions_en": [
+      "Shape the beef into a patty.",
+      "Grill to desired doneness.",
+      "Toast the bun with butter.",
+      "Assemble with cheese, pickles, and sauces."
+    ]
+  },
+
+
+
+
+
+          {
+    "id": "salada-waldorf",
+    "category": "sobremesas",
+    "category_pt": "Sobremesas",
+    "category_en": "Desserts",
+    "title_pt": "Pudim de Baunilha",
+    "title_en": "Vanilla Pudding",
+    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
+    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
+    "prepTime": "10 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "1 pessoa",
+    "servings_en": "1 serving",
+    "calories": 650,
     "ingredients_pt": [
       "150g de carne bovina",
       "Pão brioche",
