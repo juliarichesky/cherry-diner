@@ -1,0 +1,26 @@
+[
+  {
+    "id": "entradas",
+    "color": "#3d5a5a",
+    "labelKey": "entradas",
+    "descKey": "catDescEntradas"
+  },
+  {
+    "id": "principais",
+    "color": "#ca4952",
+    "labelKey": "pratos principais",
+    "descKey": "catDescPrincipais"
+  },
+  {
+    "id": "bebidas",
+    "color": "#3d5a5a",
+    "labelKey": "bebidas",
+    "descKey": "catDescBebidas"
+  },
+  {
+    "id": "sobremesas",
+    "color": "#ca4952",
+    "labelKey": "sobremesas",
+    "descKey": "catDescSobremesas"
+  }
+]
