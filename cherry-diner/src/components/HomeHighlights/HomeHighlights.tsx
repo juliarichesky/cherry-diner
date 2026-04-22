@@ -3,19 +3,14 @@ import { useState, useEffect } from "react";
 import { useLanguage } from "../../context/LanguageContext";
 import { recipeImages } from "../../utils/recipeImages";
 
-// importação dos assets de background para desktop e mobile
 import bgDesktop from "../../assets/images/backgrounds/background-1.png";
 import bgMobile from "../../assets/images/backgrounds/background-mobile-2.png";
 
-/**
- * interface: recipe
- * define a estrutura de dados para uma receita, suportando conteúdo bilíngue.
- */
 interface Recipe {
   id: string;
-  category: string; // chave para cores (ex: "principais")
-  category_pt: string; // label em português
-  category_en: string; // label em inglês
+  category: string;
+  category_pt: string;
+  category_en: string;
   title_pt: string;
   title_en: string;
   description_pt: string;
@@ -24,13 +19,12 @@ interface Recipe {
 }
 
 const HomeHighlights = () => {
-  // hooks para contexto de idioma, controle de hover do botão e estado das receitas
   const { texts, language } = useLanguage();
   const [activeBtn, setActiveBtn] = useState(false);
   const [recipes, setRecipes] = useState<Recipe[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
-  // mapeamento de cores para as tags de categoria
+  /* mapeamento de cores para as etiquetas de categoria baseado no valor do json. */
   const tagColors: Record<string, string> = {
     principais: "#6b8e8e",
     bebidas: "#929292",
@@ -38,16 +32,13 @@ const HomeHighlights = () => {
     entradas: "#ca4952",
   };
 
-  /**
-   * busca os dados das receitas em destaque no arquivo local json ao montar o componente
-   */
   useEffect(() => {
     const fetchHighlights = async () => {
       try {
         const response = await fetch("/data/recipes.json");
         const data = await response.json();
-        // seleciona apenas as 3 primeiras receitas para o destaque da home
-        setRecipes(data.slice(0, 3));
+        /* limitacao de 4 itens para preencher corretamente o grid em resolucoes de tablet (2x2). */
+        setRecipes(data.slice(0, 4));
       } catch (error) {
         console.error("erro ao carregar destaques:", error);
       } finally {
@@ -59,8 +50,7 @@ const HomeHighlights = () => {
 
   return (
     <section className="relative w-full pt-40 md:pt-60 pb-32 md:pb-50 lg:pb-58 overflow-hidden">
-      {/* backgrounds responsivos com efeito de overlay para legibilidade */}
-      {/* versão mobile */}
+      {/* fundo exclusivo para mobile: utiliza imagem vertical e overlay claro. */}
       <div
         className="absolute inset-0 z-0 block md:hidden"
         style={{
@@ -72,7 +62,7 @@ const HomeHighlights = () => {
         <div className="absolute inset-0 bg-white/70"></div>
       </div>
 
-      {/* versão desktop com efeito de fundo fixo (parallax) */}
+      {/* fundo para desktop e tablet: utiliza efeito fixed para parallax e overlay tonalidade creme. */}
       <div
         className="absolute inset-0 z-0 hidden md:block"
         style={{
@@ -86,10 +76,8 @@ const HomeHighlights = () => {
       </div>
 
       <div className="relative z-10 max-w-[1300px] mx-auto px-6">
-        {/* cabeçalho da seção com tipografia estilizada e suporte a tradução */}
         <header className="mb-12 text-center flex flex-col items-center">
           <div className="mb-6 text-[#ca4952]">
-            {/* ícone decorativo em svg */}
             <svg
               width="50"
               height="50"
@@ -134,17 +122,18 @@ const HomeHighlights = () => {
           </p>
         </header>
 
-        {/* vitrine de receitas: grid que agrupa os cards buscados do json */}
+        {/* container de cards: possui borda superior colorida e sombra profunda para destaque. */}
         <div className="relative bg-[#fdfaf5]/90 border-t-4 border-t-[#ca4952] border-x border-b border-[#e9dcc9] rounded-[1rem] p-8 md:p-16 shadow-[0_25px_80px_-20px_rgba(0,0,0,0.15)] flex flex-col items-center">
+          {/* configuracao do grid: altera o numero de colunas de 1 (mobile) para 2 (tablet) e 3 (desktop). */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-14 w-full mb-16 md:mb-20">
             {!isLoading &&
-              recipes.map((recipe) => (
+              recipes.map((recipe, index) => (
                 <article
                   key={recipe.id}
-                  className="relative flex flex-col h-full group"
+                  /* logica de visibilidade: o quarto card (indice 3) aparece apenas no tablet para manter o equilibrio visual do grid 2x2. */
+                  className={`relative flex-col h-full group ${index === 3 ? "hidden md:flex lg:hidden" : "flex"}`}
                 >
                   <div className="bg-white rounded-[0.75rem] p-4 shadow-sm border border-[#e5dcd3] flex flex-col transition-all hover:shadow-xl hover:-translate-y-2 duration-300 h-full">
-                    {/* imagem da receita com efeito de zoom no hover buscando do mapa de assets locais */}
                     <figure className="relative rounded-[0.5rem] overflow-hidden border-2 border-[#eee3d5] mb-4 aspect-square">
                       <img
                         src={recipeImages[recipe.id]}
@@ -156,7 +145,8 @@ const HomeHighlights = () => {
                     </figure>
 
                     <div className="flex flex-col flex-grow text-left">
-                      <div className="flex flex-col md:flex-row md:justify-between items-start mb-3 gap-2 md:gap-0">
+                      {/* header do card: agrupa titulo e categoria em coluna para evitar quebras em nomes longos. */}
+                      <div className="flex flex-col items-start mb-3 gap-2">
                         <h3
                           className="text-[#3d5a5a] text-xl md:text-2xl font-black mb-0 transition-colors group-hover:text-[#ca4952] leading-tight"
                           style={{ fontFamily: "'Comfortaa', cursive" }}
@@ -166,9 +156,8 @@ const HomeHighlights = () => {
                             : recipe.title_en}
                         </h3>
 
-                        {/* tag de categoria */}
                         <span
-                          className="px-3 py-1 rounded-[0.25rem] text-[9px] font-black text-white uppercase tracking-wider flex-shrink-0 md:ml-3 md:mt-1"
+                          className="px-3 py-1 rounded-[0.25rem] text-[9px] font-black text-white uppercase tracking-wider"
                           style={{
                             backgroundColor:
                               tagColors[recipe.category] || "#ca4952",
@@ -179,12 +168,14 @@ const HomeHighlights = () => {
                             : recipe.category_en}
                         </span>
                       </div>
+
                       <p className="text-[#8c6b5d] text-xs md:text-sm leading-relaxed mb-6 opacity-80">
                         {language === "pt"
                           ? recipe.description_pt
                           : recipe.description_en}
                       </p>
-                      {/* rodapé do card com tempo de preparo e link para detalhe */}
+
+                      {/* rodape do card: exibe tempo de preparo e link de navegacao com alinhamento na base. */}
                       <footer className="mt-auto flex items-center justify-between pt-4 border-t-2 border-[#e5dcd3] border-dashed">
                         <div className="flex items-center gap-2.5 text-[#8c6b5d] font-bold text-[11px] md:text-sm">
                           <svg
@@ -217,7 +208,7 @@ const HomeHighlights = () => {
               ))}
           </div>
 
-          {/* botão slider centralizado com transição de gradiente */}
+          {/* botao de acao flutuante: posicionado no centro da borda inferior. troca de cor via gradiente no hover. */}
           <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 flex justify-center z-20">
             <div
               className="relative bg-[#f3eae0] p-1.5 rounded-full shadow-2xl border-2 border-white transition-all inline-block"
@@ -225,6 +216,7 @@ const HomeHighlights = () => {
               onMouseLeave={() => setActiveBtn(false)}
             >
               <div className="absolute inset-1.5 pointer-events-none">
+                {/* camada de cor padrao (vermelho) */}
                 <div
                   className={`absolute inset-0 rounded-full transition-all duration-700 ${activeBtn ? "opacity-0 scale-95" : "opacity-100 scale-100"}`}
                   style={{
@@ -232,6 +224,7 @@ const HomeHighlights = () => {
                       "linear-gradient(180deg, #ff6b6b 0%, #d13a3a 70%, #a82828 100%)",
                   }}
                 />
+                {/* camada de cor hover (verde) */}
                 <div
                   className={`absolute inset-0 rounded-full transition-all duration-700 ${activeBtn ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
                   style={{

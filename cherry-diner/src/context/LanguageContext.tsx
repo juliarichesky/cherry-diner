@@ -106,7 +106,7 @@ const translations = {
     aboutHighlightPost: "imaginário e o melhor burger da cidade.",
     // contato.tsx
     contactSlogan:
-      "Pegue uma caneta e sinta-se em casa. Sua carta é o ponto alto do nosso dia.",
+      "Puxe uma cadeira, peça um café e deixe sua mensagem. Adoramos uma boa conversa no balcão.",
     phoneLabel: "Telefone",
     emailLabel: "Email",
     // contactletter.tsx
@@ -249,7 +249,7 @@ const translations = {
     aboutHighlightPost: "and the best burger in town.",
     // contato.tsx
     contactSlogan:
-      "Grab a pen and make yourself at home. Your letter is the highlight of our day.",
+      "Pull up a chair, grab a coffee, and leave your message. We love a good chat at the counter.",
     phoneLabel: "Phone",
     emailLabel: "Email",
     // contactletter.tsx

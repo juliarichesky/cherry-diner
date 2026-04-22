@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useLanguage } from "../../context/LanguageContext";
 import { recipeImages } from "../../utils/recipeImages";
+import NotFound from "../../pages/NotFound/NotFound";
 
 /**
  * interface: recipe
@@ -89,15 +90,7 @@ const RecipeDetail = () => {
 
   // fallback para receita não encontrada (404)
   if (!recipe) {
-    return (
-      <div className="min-h-screen flex flex-col items-center justify-center bg-[#f4f1ea] font-serif text-center px-4">
-        <h1 className="text-6xl text-[#ca4952] font-black mb-4">404</h1>
-        <p className="text-[#3d5a5a] text-xl italic mb-6">
-          {texts.recipeNotFoundDetail ||
-            "Puxa, parece que essa receita não está mais no nosso cardápio! 🍒"}
-        </p>
-      </div>
-    );
+    return <NotFound />;
   }
 
   // computação das constantes de idioma

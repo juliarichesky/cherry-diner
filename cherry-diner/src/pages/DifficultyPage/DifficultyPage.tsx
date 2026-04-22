@@ -140,13 +140,11 @@ const DifficultyPage = () => {
             </>
           ) : (
             /* feedback visual caso nenhuma receita seja encontrada para o filtro */
-            <div className="py-32 flex flex-col items-center justify-center border-4 border-double border-[#e5dcd3] bg-white/40">
+            <div className="py-32 flex flex-col items-center justify-center border-4 border-double rounded-4xl border-[#e5dcd3] bg-white/40 tracking-tighter">
               <span className="text-4xl mb-4">🍒</span>
-              <h2 className="text-2xl italic text-[#3d5a5a] text-center mb-6">
-                "
+              <h2 className="text-2xl text-[#3d5a5a] text-center mb-6">
                 {texts.noRecipesLevel ||
                   "Não encontramos receitas para esse nível ainda."}
-                "
               </h2>
             </div>
           )}

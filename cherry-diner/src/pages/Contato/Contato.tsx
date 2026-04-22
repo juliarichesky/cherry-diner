@@ -46,12 +46,12 @@ const Contato = () => {
               centralizada em dispositivos móveis e alinhada à esquerda no desktop.
           */}
           <aside className="lg:col-span-4 space-y-12 animate-fadeIn pt-4 flex flex-col items-center lg:items-start text-center lg:text-left">
-            <div className="space-y-6 w-full max-w-md lg:max-w-none">
+            <div className="space-y-6 w-full max-sm:max-w-md md:max-w-none">
               {/* slogan da página de contato com borda lateral temática */}
-              <p className="text-[#3d5a5a] font-serif italic text-xl leading-relaxed border-l-4 lg:border-l-4 border-[#ca4952] pl-6 py-2 text-left">
+              <p className="text-[#3d5a5a] font-serif italic text-xl leading-relaxed border-l-4 border-[#ca4952] pl-6 py-2 text-left">
                 "
                 {texts.contactSlogan ||
-                  "pegue uma caneta e sinta-se em casa. sua carta é o ponto alto do nosso dia."}
+                  "Pegue uma caneta e sinta-se em casa. Sua carta é o ponto alto do nosso dia."}
                 "
               </p>
             </div>

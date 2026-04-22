@@ -144,9 +144,10 @@ const Navbar = () => {
       {/* barra de navegação principal (sticky) */}
       <header className="sticky top-0 z-50 w-full bg-[#fdf8f1] border-b-2 border-[#e9dcc9]">
         <nav className="max-w-[1300px] mx-auto px-6 h-24 flex items-center justify-between relative">
+          {/* logo visível no mobile, some no tablet (md:hidden), volta no desktop (lg:block) */}
           <Link
             to="/"
-            className="hover:scale-105 transition-transform duration-300"
+            className="block md:hidden lg:block hover:scale-105 transition-transform duration-300 flex-shrink-0"
           >
             <img
               src={logoImg}
@@ -155,41 +156,61 @@ const Navbar = () => {
             />
           </Link>
 
-          {/* links de navegação para desktop */}
-          <ul className="hidden md:flex items-center gap-2">
-            {[
-              { path: "/", label: texts.navHome },
-              { path: "/receitas", label: texts.navRecipes },
-              {
-                path: "/categorias",
-                label: language === "pt" ? "CATEGORIAS" : "CATEGORIES",
-              },
-              { path: "/sobre", label: texts.navAbout },
-              {
-                path: "/contato",
-                label: language === "pt" ? "CONTATO" : "CONTACT",
-              },
-            ].map((item, index) => (
-              <li key={item.path} className="flex items-center">
-                <Link to={item.path} className={getLinkStyle(item.path)}>
-                  {item.label.toUpperCase()}
-                </Link>
-                {index < 4 && (
-                  <span className="text-[#dfd2c2] mx-2 opacity-50">•</span>
-                )}
-              </li>
-            ))}
-          </ul>
-
           {/* grupo de controles: busca, login e menu mobile */}
-          <div className="flex items-center gap-3">
+          <nav className="hidden md:flex flex-1 justify-center items-center px-4">
+            <ul className="flex items-center gap-4 lg:gap-8">
+              {[
+                { path: "/", label: texts.navHome },
+                { path: "/receitas", label: texts.navRecipes },
+                {
+                  path: "/categorias",
+                  label: language === "pt" ? "CATEGORIAS" : "CATEGORIES",
+                },
+                { path: "/sobre", label: texts.navAbout },
+                {
+                  path: "/contato",
+                  label: language === "pt" ? "CONTATO" : "CONTACT",
+                },
+              ].map((item, index) => (
+                <li key={item.path} className="flex items-center">
+                  <Link
+                    to={item.path}
+                    className={`${getLinkStyle(item.path)} !px-3 lg:!px-5 text-[12px] lg:text-[13px] whitespace-nowrap`}
+                  >
+                    {item.label.toUpperCase()}
+                  </Link>
+                  {index < 4 && (
+                    <span className="hidden lg:block text-[#dfd2c2] mx-2 opacity-50">
+                      •
+                    </span>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          {/* portugues/ingles */}
+          <div className="flex items-center gap-3 flex-shrink-0">
+            <div className="absolute top-full right-6 md:right-10 flex bg-[#fdf8f1] rounded-b-2xl px-2 pb-1.5 pt-0.5 border-x-2 border-b-2 border-[#e9dcc9] shadow-sm z-[40]">
+              <button
+                onClick={() => setLanguage("pt")}
+                className={`px-3 py-1 rounded-lg text-[9px] font-black cursor-pointer transition-all ${language === "pt" ? "bg-[#ca4952] text-white shadow-sm" : "text-[#a89d91] hover:text-[#5c3d2e]"}`}
+              >
+                PT
+              </button>
+              <div className="w-[1px] h-3 bg-[#e9dcc9] mx-1 self-center"></div>
+              <button
+                onClick={() => setLanguage("en")}
+                className={`px-3 py-1 rounded-lg text-[9px] font-black cursor-pointer transition-all ${language === "en" ? "bg-[#ca4952] text-white shadow-sm" : "text-[#a89d91] hover:text-[#5c3d2e]"}`}
+              >
+                EN
+              </button>
+            </div>
+
             <button
               onClick={() => setIsSearchOpen(true)}
-              className="group flex items-center bg-[#f3ede4] border-1 border-[#e9dcc9] hover:border-[#d13a3a] px-4 py-2 rounded-full text-[#5c3d2e] transition-all cursor-pointer"
+              className="group flex items-center bg-[#f3ede4] border-1 border-[#e9dcc9] hover:border-[#d13a3a] px-3 md:px-4 py-2 rounded-full text-[#5c3d2e] transition-all cursor-pointer"
             >
-              <span className="hidden lg:inline mr-3 font-bold text-xs ">
-                {language === "pt" ? "BUSCAR" : "SEARCH"}
-              </span>
               <svg
                 width="18"
                 height="18"
@@ -206,9 +227,9 @@ const Navbar = () => {
 
             {/* condicional de exibição: usuário logado vs link de login */}
             {userName ? (
-              <div className="flex items-center bg-white border-2 border-[#e9dcc9] rounded-full pl-4 pr-1.5 py-1.5 shadow-sm">
-                <span className="text-[#5c3d2e] font-bold text-[13px] mr-3 truncate max-w-[100px]">
-                  {language === "pt" ? "Olá" : "Hi"}, {userName.split(" ")[0]}
+              <div className="flex items-center bg-white border-2 border-[#e9dcc9] rounded-full pl-3 md:pl-4 pr-1.5 py-1.5 shadow-sm">
+                <span className="text-[#5c3d2e] font-bold text-[12px] md:text-[13px] mr-2 md:mr-3 truncate max-w-[80px]">
+                  {userName.split(" ")[0]}
                 </span>
                 <button
                   onClick={handleLogout}
@@ -247,7 +268,6 @@ const Navbar = () => {
               </Link>
             )}
 
-            {/* botão hambúrguer para mobile */}
             <button
               onClick={() => setIsMenuOpen(true)}
               className="md:hidden p-2.5 bg-[#d13a3a] text-white rounded-xl shadow-md cursor-pointer transition-all"
@@ -264,23 +284,6 @@ const Navbar = () => {
                 <line x1="4" x2="20" y1="6" y2="6" />
                 <line x1="4" x2="20" y1="18" y2="18" />
               </svg>
-            </button>
-          </div>
-
-          {/* seletor de idioma: posicionado de forma absoluta abaixo da navbar */}
-          <div className="absolute top-full right-6 md:right-10 flex bg-[#fdf8f1] rounded-b-2xl px-2 pb-1.5 pt-0.5 border-x-2 border-b-2 border-[#e9dcc9] shadow-sm z-[40]">
-            <button
-              onClick={() => setLanguage("pt")}
-              className={`px-3 py-1 rounded-lg text-[9px] font-black cursor-pointer transition-all ${language === "pt" ? "bg-[#ca4952] text-white shadow-sm" : "text-[#a89d91] hover:text-[#5c3d2e]"}`}
-            >
-              PT
-            </button>
-            <div className="w-[1px] h-3 bg-[#e9dcc9] mx-1 self-center"></div>
-            <button
-              onClick={() => setLanguage("en")}
-              className={`px-3 py-1 rounded-lg text-[9px] font-black cursor-pointer transition-all ${language === "en" ? "bg-[#ca4952] text-white shadow-sm" : "text-[#a89d91] hover:text-[#5c3d2e]"}`}
-            >
-              EN
             </button>
           </div>
         </nav>

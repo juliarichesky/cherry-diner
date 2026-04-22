@@ -2,16 +2,16 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useLanguage } from "../../context/LanguageContext";
 
-// importação do background temático de cerejas
+/* importacao do background tematico de cerejas */
 import bgCherries from "../../assets/images/backgrounds/background-cherry.png";
 
-// importação das imagens das categorias
+/* importacao das imagens das categorias */
 import imgPrincipais from "../../assets/images/categories/pratos-principais.png";
 import imgBebidas from "../../assets/images/categories/bebidas.png";
 import imgEntradas from "../../assets/images/categories/entradas.png";
 import imgSobremesas from "../../assets/images/categories/sobremesas.png";
 
-// mapa de imagens para vincular o id do json ao asset local importado
+/* mapa de imagens para vincular o id do json ao asset local importado. */
 const categoryImages: Record<string, string> = {
   principais: imgPrincipais,
   bebidas: imgBebidas,
@@ -21,13 +21,13 @@ const categoryImages: Record<string, string> = {
 
 /**
  * interface: category
- * define a estrutura das categorias consumidas do json
+ * define a estrutura das categorias consumidas do json.
  */
 interface Category {
   id: string;
   title_pt: string;
   title_en: string;
-  span: string; // define o tamanho do card no grid (ex: md:col-span-2)
+  span: string; /* define o tamanho do card no grid (ex: md:col-span-2) */
   category: string;
 }
 
@@ -36,9 +36,6 @@ const HomePosterWall = () => {
   const [categories, setCategories] = useState<Category[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
-  /**
-   * busca as categorias no arquivo json para alimentar o mural
-   */
   useEffect(() => {
     const fetchCategories = async () => {
       try {
@@ -56,7 +53,7 @@ const HomePosterWall = () => {
 
   return (
     <section className="relative w-full py-20 md:py-48 overflow-hidden bg-[#f9f4ef]">
-      {/* background texturizado com cerejas e efeito de fixação (parallax) */}
+      {/* background decorativo: utiliza imagem fixa para efeito de profundidade e opacidade reduzida. */}
       <div
         className="absolute inset-0 z-0 opacity-40 pointer-events-none"
         style={{
@@ -65,11 +62,10 @@ const HomePosterWall = () => {
           backgroundAttachment: "fixed",
         }}
       ></div>
-      {/* overlay para suavizar o fundo e garantir contraste */}
       <div className="absolute inset-0 bg-[#f9f4ef]/80 z-0"></div>
 
       <div className="relative z-10 max-w-[1300px] mx-auto px-4 md:px-6">
-        {/* cabeçalho da seção sincronizado visualmente com os outros componentes */}
+        {/* cabecalho da secao: centralizado com tipografia artistica e iconografia em svg. */}
         <header className="mb-12 md:mb-16 text-center flex flex-col items-center">
           <div className="mb-6 text-[#ca4952]">
             <svg
@@ -116,24 +112,26 @@ const HomePosterWall = () => {
           </p>
         </header>
 
-        {/* container vitrine: mural estilo bento grid ou poster wall */}
-        <div className="relative bg-[#fdfaf5]/90 border-t-[4px] border-t-[#ca4952] border-x border-b border-[#e9dcc9] rounded-[1rem] p-4 md:p-12 shadow-[0_25px_80px_-20px_rgba(0,0,0,0.15)]">
-          <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 md:gap-8 h-auto md:h-[750px]">
-            {/* skeleton screen: exibido enquanto os dados carregam */}
+        {/* container do grid: possui borda superior colorida e sombra suave. altura adaptavel no mobile e fixa no desktop. */}
+        <div className="relative bg-[#fdfaf5]/90 border-t-[4px] border-t-[#ca4952] border-x border-b border-[#e9dcc9] rounded-[1rem] p-4 md:p-12 shadow-[0_25px_80_px_-20px_rgba(0,0,0,0.15)]">
+          {/* grid de categorias: empilhado no mobile/tablet e organizado em mosaico (4 colunas) no desktop (lg). */}
+          <div className="grid grid-cols-1 lg:grid-cols-4 lg:grid-rows-2 gap-4 md:gap-8 h-auto lg:h-[750px]">
             {isLoading
               ? [...Array(4)].map((_, i) => (
+                  /* esqueleto de carregamento: mantem a estrutura visual enquanto os dados sao buscados. */
                   <div
                     key={i}
-                    className={`bg-gray-200 animate-pulse rounded-[1rem] h-[250px] md:h-full ${i === 0 ? "md:col-span-2 md:row-span-2" : ""}`}
+                    className={`bg-gray-200 animate-pulse rounded-[1rem] h-[250px] lg:h-full ${i === 0 ? "lg:col-span-2 lg:row-span-2" : ""}`}
                   />
                 ))
               : categories.map((item) => (
                   <Link
                     key={item.id}
                     to={`/receitas?categoria=${item.id}`}
-                    className={`${item.span} group relative flex flex-col transition-all duration-500 overflow-hidden rounded-[1rem] border border-[#e5dcd3] shadow-sm h-[250px] md:h-full`}
+                    /* aplicacao de span dinamico: converte classes de tablet para desktop garantindo o layout em mosaico. */
+                    className={`${item.span.replace("md:", "lg:")} group relative flex flex-col transition-all duration-500 overflow-hidden rounded-[1rem] border border-[#e5dcd3] shadow-sm h-[250px] lg:h-full`}
                   >
-                    {/* container da imagem buscando do mapa de assets locais */}
+                    {/* imagem de fundo da categoria com efeito de zoom no hover. */}
                     <div className="absolute inset-0 w-full h-full">
                       <img
                         src={categoryImages[item.id]}
@@ -142,7 +140,7 @@ const HomePosterWall = () => {
                       />
                     </div>
 
-                    {/* rodapé do card com efeito de desfoque e título da categoria */}
+                    {/* overlay inferior: exibe o titulo da categoria com fundo desfocado (glassmorphism). */}
                     <div className="absolute bottom-0 left-0 w-full z-30">
                       <div className="bg-[#fdfaf5]/95 backdrop-blur-sm p-4 md:p-6 border-t border-[#e5dcd3] text-center flex items-center justify-center min-h-[60px]">
                         <h3
