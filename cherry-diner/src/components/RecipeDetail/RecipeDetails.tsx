@@ -77,9 +77,14 @@ const RecipeDetail = () => {
   // estado de carregamento com animação temática
   if (isLoading) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-[#f4f1ea] font-serif">
+      <div
+        className="min-h-screen flex items-center justify-center bg-[#f4f1ea] font-serif"
+        aria-live="polite"
+      >
         <div className="animate-pulse text-center">
-          <span className="text-4xl">🍒</span>
+          <span className="text-4xl" aria-hidden="true">
+            🍒
+          </span>
           <p className="mt-4 text-[#ca4952] font-black uppercase tracking-widest text-sm">
             {texts.loadingRecipeDetail || "Preparando a mesa..."}
           </p>
@@ -103,7 +108,10 @@ const RecipeDetail = () => {
   return (
     <article className="w-full py-10 md:py-20 bg-[#f4f1ea] min-h-screen text-[#553636] font-serif relative overflow-hidden text-left">
       {/* textura de papel fibra para reforçar o visual vintage */}
-      <div className="absolute inset-0 opacity-40 pointer-events-none z-0 bg-[url('https://www.transparenttextures.com/patterns/paper-fibers.png')]"></div>
+      <div
+        className="absolute inset-0 opacity-40 pointer-events-none z-0 bg-[url('https://www.transparenttextures.com/patterns/paper-fibers.png')]"
+        aria-hidden="true"
+      ></div>
 
       <div className="max-w-[1100px] mx-auto px-6 relative z-10">
         <header className="mb-16 pb-8 border-b-4 border-[#fc2c37]">
@@ -123,17 +131,19 @@ const RecipeDetail = () => {
 
           {/* sistema de avaliação por estrelas e indicador de dificuldade */}
           <div className="mt-8 flex flex-col md:flex-row items-start md:items-center gap-6">
-            <div className="flex gap-1">
+            <nav className="flex gap-1" aria-label="Avaliar receita">
               {[1, 2, 3, 4, 5].map((star) => (
                 <button
                   key={star}
                   onClick={() => handleRating(star)}
+                  aria-label={`Avaliar com ${star} estrelas`}
+                  aria-pressed={star <= rating}
                   className={`text-2xl transition-all hover:scale-125 cursor-pointer ${star <= rating ? "text-[#ca4952]" : "text-gray-300"}`}
                 >
                   ★
                 </button>
               ))}
-            </div>
+            </nav>
 
             <div className="flex items-center gap-2">
               <span className="text-[10px] font-black uppercase tracking-widest text-[#3d5a5a]">
@@ -150,62 +160,74 @@ const RecipeDetail = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
           {/* coluna lateral: imagem "polaroide" e nota da julia */}
-          <div className="md:col-span-5 flex flex-col gap-10">
-            <div className="relative group p-4 bg-white shadow-xl rotate-[-1.5deg] border border-gray-200">
+          <aside className="md:col-span-5 flex flex-col gap-10">
+            <figure className="relative group p-4 bg-white shadow-xl rotate-[-1.5deg] border border-gray-200">
               <img
                 src={recipeImages[recipe.id]}
                 alt={title}
                 className="w-full aspect-[4/5] object-cover grayscale-[15%] sepia-[10%]"
               />
-              <p className="mt-4 text-center font-serif italic text-gray-500">
+              <figcaption className="mt-4 text-center font-serif italic text-gray-500">
                 {texts.recipePhotoCaption || "O sabor de"}{" "}
                 <span className="font-bold">{title}</span>{" "}
                 {texts.recipePhotoCaptionEnd || "é inesquecível!"}
-              </p>
+              </figcaption>
 
               {/* selo de calorias flutuante */}
-              <div className="absolute -top-6 -right-6 z-20 bg-[#ca4952] text-white w-24 h-24 rounded-full flex flex-col items-center justify-center rotate-12 font-black shadow-2xl border-4 border-white">
-                <span className="text-[10px] uppercase leading-none text-center">
+              <div
+                className="absolute -top-6 -right-6 z-20 bg-[#ca4952] text-white w-24 h-24 rounded-full flex flex-col items-center justify-center rotate-12 font-black shadow-2xl border-4 border-white"
+                aria-label={`${recipe.calories} ${texts.caloriesText || "Calorias"}`}
+              >
+                <span
+                  className="text-[10px] uppercase leading-none text-center"
+                  aria-hidden="true"
+                >
                   {texts.onlyText || "Apenas"}
                 </span>
-                <span className="text-2xl leading-none">{recipe.calories}</span>
-                <span className="text-[10px] uppercase">
+                <span className="text-2xl leading-none" aria-hidden="true">
+                  {recipe.calories}
+                </span>
+                <span className="text-[10px] uppercase" aria-hidden="true">
                   {texts.caloriesText || "Calorias"}
                 </span>
               </div>
-            </div>
+            </figure>
 
             {/* bloco 'nota da julia' com inclinação oposta à imagem */}
-            <div className="bg-[#3d5a5a] text-white p-6 shadow-lg rotate-[1deg]">
+            <section className="bg-[#3d5a5a] text-white p-6 shadow-lg rotate-[1deg]">
               <h3 className="font-black text-xl uppercase mb-2">
                 {texts.juliaNote || "Nota da Julia"}:
               </h3>
-              <p className="italic text-sm leading-relaxed opacity-90 text-justify">
+              <blockquote className="italic text-sm leading-relaxed opacity-90 text-justify">
                 "
                 {language === "pt"
                   ? recipe.description_pt
                   : recipe.description_en}
                 "
-              </p>
-            </div>
-          </div>
+              </blockquote>
+            </section>
+          </aside>
 
           {/* coluna principal: card da receita estilo 'recorte e guarde' */}
-          <div className="md:col-span-7">
+          <section className="md:col-span-7">
             <div className="border-4 border-dashed border-[#ca4952] p-8 md:p-12 bg-white shadow-2xl relative">
-              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#f4f1ea] px-6 text-[10px] font-black text-[#ca4952] uppercase tracking-[0.4em] whitespace-nowrap">
+              <div
+                className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#f4f1ea] px-6 text-[10px] font-black text-[#ca4952] uppercase tracking-[0.4em] whitespace-nowrap"
+                aria-hidden="true"
+              >
                 {texts.cutAndKeep || "Recorte e Guarde"}
               </div>
 
-              <div className="mb-10 text-center border-b border-double border-gray-300 pb-6">
+              <header className="mb-10 text-center border-b border-double border-gray-300 pb-6">
                 <h2 className="text-[#3d5a5a] text-4xl font-black uppercase tracking-tighter mb-2">
                   {title}
                 </h2>
                 <div className="flex justify-center gap-6 text-[10px] font-black uppercase tracking-widest text-gray-400">
-                  <span>
-                    {texts.prepLabel || "Preparo"}: {recipe.prepTime}
+                  <span className="flex items-center gap-1">
+                    {texts.prepLabel || "Preparo"}:{" "}
+                    <time>{recipe.prepTime}</time>
                   </span>
-                  <span>•</span>
+                  <span aria-hidden="true">•</span>
                   <span>
                     {texts.servingsLabel || "Rende"}:{" "}
                     {language === "pt"
@@ -213,11 +235,11 @@ const RecipeDetail = () => {
                       : recipe.servings_en}
                   </span>
                 </div>
-              </div>
+              </header>
 
               <div className="space-y-10">
                 {/* lista de ingredientes com checkboxes interativos */}
-                <div>
+                <section>
                   <h4 className="font-black uppercase text-sm mb-6 text-[#ca4952] underline underline-offset-8 decoration-double text-left">
                     {texts.ingredientsLabel || "Ingredientes"}:
                   </h4>
@@ -236,34 +258,37 @@ const RecipeDetail = () => {
                       </li>
                     ))}
                   </ul>
-                </div>
+                </section>
 
                 {/* modo de fazer com capitulares (letras iniciais grandes) */}
-                <div>
+                <section>
                   <h4 className="font-black uppercase text-sm mb-8 text-[#ca4952] underline underline-offset-8 decoration-double text-left">
                     {texts.instructionsLabel || "Modo de Fazer"}:
                   </h4>
-                  <div className="space-y-8 text-left">
+                  <ol className="space-y-8 text-left">
                     {instructions.map((step, i) => (
-                      <div key={i} className="text-lg leading-relaxed">
-                        <p className="first-letter:text-6xl first-letter:font-black first-letter:text-[#ca4952] first-letter:float-left first-letter:mr-1 first-letter:leading-[0.85] first-letter:mt-1">
+                      <li key={i} className="text-lg leading-relaxed">
+                        <p className="first-letter:text-5xl first-letter:font-black first-letter:text-[#ca4952] first-letter:float-left first-letter:mr-1 first-letter:leading-[0.85] first-letter:mt-1">
                           {step}
                         </p>
                         <div className="clear-both"></div>
-                      </div>
+                      </li>
                     ))}
-                  </div>
-                </div>
+                  </ol>
+                </section>
               </div>
             </div>
-          </div>
+          </section>
         </div>
 
         {/* rodapé temático da página de detalhes */}
         <footer className="md:col-span-12 mt-24 border-t-4 border-[#fc2c37] pt-16 mb-10 text-center">
-          <h2 className="text-[80px] md:text-[150px] text-[#ca4952] font-black uppercase leading-[0.7] tracking-tighter italic">
+          <span
+            className="text-[80px] md:text-[150px] text-[#ca4952] font-black uppercase leading-[0.7] tracking-tighter italic block"
+            aria-hidden="true"
+          >
             CHERRY
-          </h2>
+          </span>
           <div className="inline-block bg-[#3d5a5a] text-white px-10 py-2 -mt-4 rotate-[-1deg]">
             <p className="text-2xl md:text-4xl font-black uppercase tracking-tight">
               {texts.dinerQuality || "Qualidade Diner!"}

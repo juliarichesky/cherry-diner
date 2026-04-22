@@ -12,6 +12,7 @@ const BackIcon = () => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     className="transition-transform group-hover:-translate-x-1"
+    aria-hidden="true"
   >
     <path
       d="M19 12H5M5 12L12 19M5 12L12 5"
@@ -35,6 +36,7 @@ const HomeIcon = () => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     className="opacity-70 group-hover:opacity-100 transition-opacity"
+    aria-hidden="true"
   >
     <path
       d="M3 10V21C3 21.5523 3.44772 22 4 22H20C20.5523 22 21 21.5523 21 21V10M12 2L21 10M12 2L3 10M12 2V12"
@@ -66,11 +68,11 @@ const Breadcrumbs = () => {
 
   return (
     <nav
-      aria-label="breadcrumb"
+      aria-label="Breadcrumb"
       className="w-full bg-[#fdf8f1] border-b border-[#e5dcd3] py-4"
     >
       <div className="max-w-[1300px] mx-auto px-6 md:px-10 flex items-center justify-between">
-        <ol className="flex items-center space-x-2 md:space-x-3 text-[#8c6b5d]">
+        <ol className="flex items-center space-x-2 md:space-x-3 text-[#8c6b5d] list-none p-0 m-0">
           {/* item: botão voltar
               utiliza o histórico do navegador e força o scroll para o topo 
               para garantir a melhor experiência de leitura.
@@ -82,6 +84,7 @@ const Breadcrumbs = () => {
                 // o timeout garante que o scroll ocorra após a troca de rota
                 setTimeout(() => window.scrollTo(0, 0), 0);
               }}
+              aria-label={texts.backBtn || "Voltar para a página anterior"}
               className="group flex items-center gap-2 text-[10px] md:text-xs font-black uppercase tracking-[0.2em] text-[#ca4952] hover:opacity-70 transition-all cursor-pointer"
             >
               <BackIcon />
@@ -119,10 +122,15 @@ const Breadcrumbs = () => {
 
             return (
               <li key={to} className="flex items-center gap-2">
-                <span className="opacity-30 text-lg">/</span>
+                <span className="opacity-30 text-lg" aria-hidden="true">
+                  /
+                </span>
                 {/* se for o último item, exibe apenas texto; caso contrário, exibe link */}
                 {last ? (
-                  <span className="text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-[#ca4952]">
+                  <span
+                    className="text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-[#ca4952]"
+                    aria-current="page"
+                  >
                     {displayName}
                   </span>
                 ) : (

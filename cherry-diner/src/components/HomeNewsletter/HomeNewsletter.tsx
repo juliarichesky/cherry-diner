@@ -46,8 +46,12 @@ const HomeNewsletterBar = () => {
     <section className="relative z-20 w-full bg-[#d66c73] pt-8 md:pt-10">
       <div className="max-w-[1200px] mx-auto px-6 pb-6 md:pb-8">
         {isSubscribed ? (
-          /* feedback de sucesso com animações fade-in e bounce */
-          <div className="flex justify-center items-center gap-3 text-white font-black uppercase tracking-widest text-sm py-4 animate-fadeIn">
+          /* feedback de sucesso com papel de status para ser anunciado por leitores de tela */
+          <div
+            role="status"
+            aria-live="polite"
+            className="flex justify-center items-center gap-3 text-white font-black uppercase tracking-widest text-sm py-4 animate-fadeIn"
+          >
             <span style={{ fontFamily: "'Comfortaa', cursive" }}>
               {texts.newsSuccess}
             </span>
@@ -62,7 +66,8 @@ const HomeNewsletterBar = () => {
               className="flex flex-col md:flex-row items-center justify-center gap-6 w-full"
             >
               <label
-                className="text-white font-black uppercase tracking-[0.2em] text-xs md:text-sm whitespace-nowrap"
+                htmlFor="newsletter-email"
+                className="text-white font-black uppercase tracking-[0.2em] text-xs md:text-sm whitespace-nowrap cursor-pointer"
                 style={{ fontFamily: "'Comfortaa', cursive" }}
               >
                 {texts.newsLabel}
@@ -72,9 +77,12 @@ const HomeNewsletterBar = () => {
               <div className="flex flex-col w-full md:w-auto max-w-[500px]">
                 <div className="flex gap-2 relative">
                   <input
+                    id="newsletter-email"
                     type="email"
                     placeholder={texts.newsPlaceholder}
                     value={email}
+                    aria-invalid={!!error}
+                    aria-describedby={error ? "newsletter-error" : undefined}
                     onChange={(e) => {
                       setEmail(e.target.value);
                       if (error) setError(""); // remove o erro enquanto o usuário digita
@@ -89,9 +97,13 @@ const HomeNewsletterBar = () => {
                   </button>
                 </div>
 
-                {/* exibição da mensagem de erro */}
+                {/* exibição da mensagem de erro com id para conexão com o input */}
                 {error && (
-                  <p className="text-white text-[10px] font-medium uppercase tracking-widest mt-2 pl-6">
+                  <p
+                    id="newsletter-error"
+                    role="alert"
+                    className="text-white text-[10px] font-medium uppercase tracking-widest mt-2 pl-6"
+                  >
                     {error}
                   </p>
                 )}
@@ -101,8 +113,11 @@ const HomeNewsletterBar = () => {
         )}
       </div>
 
-      {/* elemento visual decorativo (onda) posicionado no rodapé da seção */}
-      <div className="absolute left-0 bottom-0 w-full overflow-hidden leading-[0] translate-y-[98%]">
+      {/* elemento visual decorativo (onda) - escondido de tecnologias assistivas */}
+      <div
+        className="absolute left-0 bottom-0 w-full overflow-hidden leading-[0] translate-y-[98%]"
+        aria-hidden="true"
+      >
         <svg
           viewBox="0 0 1200 120"
           preserveAspectRatio="none"

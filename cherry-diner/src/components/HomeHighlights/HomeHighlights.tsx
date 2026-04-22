@@ -53,6 +53,7 @@ const HomeHighlights = () => {
       {/* fundo exclusivo para mobile: utiliza imagem vertical e overlay claro. */}
       <div
         className="absolute inset-0 z-0 block md:hidden"
+        aria-hidden="true"
         style={{
           backgroundImage: `url(${bgMobile})`,
           backgroundSize: "cover",
@@ -65,6 +66,7 @@ const HomeHighlights = () => {
       {/* fundo para desktop e tablet: utiliza efeito fixed para parallax e overlay tonalidade creme. */}
       <div
         className="absolute inset-0 z-0 hidden md:block"
+        aria-hidden="true"
         style={{
           backgroundImage: `url(${bgDesktop})`,
           backgroundSize: "cover",
@@ -77,7 +79,7 @@ const HomeHighlights = () => {
 
       <div className="relative z-10 max-w-[1300px] mx-auto px-6">
         <header className="mb-12 text-center flex flex-col items-center">
-          <div className="mb-6 text-[#ca4952]">
+          <div className="mb-6 text-[#ca4952]" aria-hidden="true">
             <svg
               width="50"
               height="50"
@@ -124,16 +126,16 @@ const HomeHighlights = () => {
 
         {/* container de cards: possui borda superior colorida e sombra profunda para destaque. */}
         <div className="relative bg-[#fdfaf5]/90 border-t-4 border-t-[#ca4952] border-x border-b border-[#e9dcc9] rounded-[1rem] p-8 md:p-16 shadow-[0_25px_80px_-20px_rgba(0,0,0,0.15)] flex flex-col items-center">
-          {/* configuracao do grid: altera o numero de colunas de 1 (mobile) para 2 (tablet) e 3 (desktop). */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-14 w-full mb-16 md:mb-20">
+          {/* grid de destaques organizado semanticamente em uma lista (ul). */}
+          <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-14 w-full mb-16 md:mb-20 list-none p-0">
             {!isLoading &&
               recipes.map((recipe, index) => (
-                <article
+                <li
                   key={recipe.id}
-                  /* logica de visibilidade: o quarto card (indice 3) aparece apenas no tablet para manter o equilibrio visual do grid 2x2. */
+                  /* logica de visibilidade: o quarto card aparece apenas no tablet para manter o equilibrio visual. */
                   className={`relative flex-col h-full group ${index === 3 ? "hidden md:flex lg:hidden" : "flex"}`}
                 >
-                  <div className="bg-white rounded-[0.75rem] p-4 shadow-sm border border-[#e5dcd3] flex flex-col transition-all hover:shadow-xl hover:-translate-y-2 duration-300 h-full">
+                  <article className="bg-white rounded-[0.75rem] p-4 shadow-sm border border-[#e5dcd3] flex flex-col transition-all hover:shadow-xl hover:-translate-y-2 duration-300 h-full">
                     <figure className="relative rounded-[0.5rem] overflow-hidden border-2 border-[#eee3d5] mb-4 aspect-square">
                       <img
                         src={recipeImages[recipe.id]}
@@ -145,8 +147,8 @@ const HomeHighlights = () => {
                     </figure>
 
                     <div className="flex flex-col flex-grow text-left">
-                      {/* header do card: agrupa titulo e categoria em coluna para evitar quebras em nomes longos. */}
-                      <div className="flex flex-col items-start mb-3 gap-2">
+                      {/* header do card: agrupa titulo e categoria em coluna. */}
+                      <header className="flex flex-col items-start mb-3 gap-2">
                         <h3
                           className="text-[#3d5a5a] text-xl md:text-2xl font-black mb-0 transition-colors group-hover:text-[#ca4952] leading-tight"
                           style={{ fontFamily: "'Comfortaa', cursive" }}
@@ -167,7 +169,7 @@ const HomeHighlights = () => {
                             ? recipe.category_pt
                             : recipe.category_en}
                         </span>
-                      </div>
+                      </header>
 
                       <p className="text-[#8c6b5d] text-xs md:text-sm leading-relaxed mb-6 opacity-80">
                         {language === "pt"
@@ -175,7 +177,7 @@ const HomeHighlights = () => {
                           : recipe.description_en}
                       </p>
 
-                      {/* rodape do card: exibe tempo de preparo e link de navegacao com alinhamento na base. */}
+                      {/* rodape do card: exibe tempo de preparo e link de navegacao. */}
                       <footer className="mt-auto flex items-center justify-between pt-4 border-t-2 border-[#e5dcd3] border-dashed">
                         <div className="flex items-center gap-2.5 text-[#8c6b5d] font-bold text-[11px] md:text-sm">
                           <svg
@@ -188,6 +190,7 @@ const HomeHighlights = () => {
                             strokeLinecap="round"
                             strokeLinejoin="round"
                             className="text-[#ca4952]"
+                            aria-hidden="true"
                           >
                             <circle cx="12" cy="12" r="10" />
                             <polyline points="12 6 12 12 16 14" />
@@ -197,26 +200,29 @@ const HomeHighlights = () => {
 
                         <Link
                           to={`/receitas/${recipe.id}`}
+                          aria-label={`${language === "pt" ? "Ver receita de" : "View recipe for"} ${language === "pt" ? recipe.title_pt : recipe.title_en}`}
                           className="bg-[#3d5a5a] text-white px-5 py-2 rounded-[0.35rem] text-xs font-bold uppercase tracking-widest hover:bg-[#ca4952] transition-colors"
                         >
                           {texts.viewBtn}
                         </Link>
                       </footer>
                     </div>
-                  </div>
-                </article>
+                  </article>
+                </li>
               ))}
-          </div>
+          </ul>
 
-          {/* botao de acao flutuante: posicionado no centro da borda inferior. troca de cor via gradiente no hover. */}
+          {/* botao de acao flutuante: centralizado na borda inferior. */}
           <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 flex justify-center z-20">
-            <div
+            <nav
               className="relative bg-[#f3eae0] p-1.5 rounded-full shadow-2xl border-2 border-white transition-all inline-block"
               onMouseEnter={() => setActiveBtn(true)}
               onMouseLeave={() => setActiveBtn(false)}
             >
-              <div className="absolute inset-1.5 pointer-events-none">
-                {/* camada de cor padrao (vermelho) */}
+              <div
+                className="absolute inset-1.5 pointer-events-none"
+                aria-hidden="true"
+              >
                 <div
                   className={`absolute inset-0 rounded-full transition-all duration-700 ${activeBtn ? "opacity-0 scale-95" : "opacity-100 scale-100"}`}
                   style={{
@@ -224,7 +230,6 @@ const HomeHighlights = () => {
                       "linear-gradient(180deg, #ff6b6b 0%, #d13a3a 70%, #a82828 100%)",
                   }}
                 />
-                {/* camada de cor hover (verde) */}
                 <div
                   className={`absolute inset-0 rounded-full transition-all duration-700 ${activeBtn ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
                   style={{
@@ -238,9 +243,9 @@ const HomeHighlights = () => {
                 to="/receitas"
                 className="relative z-10 flex justify-center items-center py-4 px-10 md:px-16 rounded-full text-white font-medium text-xs sm:text-sm md:text-md lg:text-lg whitespace-nowrap"
               >
-                <span>{texts.searchExplore}</span>
+                {texts.searchExplore}
               </Link>
-            </div>
+            </nav>
           </div>
         </div>
       </div>

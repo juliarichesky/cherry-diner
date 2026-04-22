@@ -1,4 +1,4 @@
-import { useEffect } from "react"; // Adicionado para controlar o reset
+import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { useLanguage } from "../../context/LanguageContext";
 
@@ -30,7 +30,7 @@ const ContactLetter = ({ enviado, onSubmit }: ContactLetterProps) => {
   const {
     register,
     handleSubmit,
-    reset, // 🛠️ Implementado o método reset
+    reset,
     formState: { errors },
   } = useForm<ContactFormData>();
 
@@ -44,11 +44,10 @@ const ContactLetter = ({ enviado, onSubmit }: ContactLetterProps) => {
   return (
     <div className="w-full max-w-[1000px] bg-white p-1 shadow-[0_40px_80px_rgba(0,0,0,0.15)] transform rotate-[-0.5deg] font-serif">
       <div className="border-[12px] border-white outline outline-1 outline-[#e5dcd3] relative p-8 md:p-16">
-        {/* bordas decorativas estilo air mail:
-            utiliza um gradiente linear repetitivo para criar as listras vermelhas e azuis.
-        */}
+        {/* bordas decorativas estilo air mail: ocultas para acessibilidade pois sao visuais */}
         <div
           className="absolute inset-0 pointer-events-none border-[10px] border-transparent"
+          aria-hidden="true"
           style={{
             borderImageSource:
               "repeating-linear-gradient(45deg, #ca4952, #ca4952 20px, transparent 20px, transparent 40px, #3d5a5a 40px, #3d5a5a 60px, transparent 60px, transparent 80px)",
@@ -58,8 +57,12 @@ const ContactLetter = ({ enviado, onSubmit }: ContactLetterProps) => {
 
         {/* estado de sucesso: exibido após o submit bem-sucedido */}
         {enviado ? (
-          <div className="py-24 text-center space-y-8 animate-fadeIn">
-            <div className="relative inline-block">
+          <div
+            role="status"
+            aria-live="polite"
+            className="py-24 text-center space-y-8 animate-fadeIn"
+          >
+            <div className="relative inline-block" aria-hidden="true">
               <div className="w-24 h-24 bg-[#ce7279] rounded-full flex items-center justify-center border-4 border-white shadow-xl rotate-12">
                 <span className="text-white font-black text-xs uppercase tracking-widest">
                   {language === "pt" ? "Enviado!" : "Sent!"}
@@ -81,13 +84,13 @@ const ContactLetter = ({ enviado, onSubmit }: ContactLetterProps) => {
             </p>
           </div>
         ) : (
-          /* formulário principal: utiliza a lógica de 'inline inputs' para simular escrita em papel */
+          /* formulário principal: simula escrita em papel */
           <form
             onSubmit={handleSubmit(onSubmit)}
             className="relative z-10 space-y-12"
           >
             {/* cabeçalho da carta: saudação e carimbo decorativo */}
-            <div className="flex flex-col md:flex-row justify-between items-start border-b-2 border-[#f3eae0] pb-8 mb-4">
+            <header className="flex flex-col md:flex-row justify-between items-start border-b-2 border-[#f3eae0] pb-8 mb-4">
               <div className="space-y-1">
                 <h3
                   className="text-3xl md:text-5xl font-black italic text-[#ca4952] tracking-tighter"
@@ -97,34 +100,44 @@ const ContactLetter = ({ enviado, onSubmit }: ContactLetterProps) => {
                 </h3>
                 <p className="text-[10px] font-black uppercase tracking-[0.1em] text-[#3d5a5a] italic">
                   {language === "pt" ? "data" : "date"}:{" "}
-                  {new Date().toLocaleDateString(
-                    language === "pt" ? "pt-BR" : "en-US",
-                  )}
+                  <time>
+                    {new Date().toLocaleDateString(
+                      language === "pt" ? "pt-BR" : "en-US",
+                    )}
+                  </time>
                 </p>
               </div>
 
-              {/* carimbo decorativo 'priority mail' */}
-              <div className="hidden md:flex w-24 h-24 border-4 border-[#3d5a5a]/80 rounded-full items-center justify-center rotate-12 border-double">
+              {/* carimbo decorativo 'priority mail' - aria-hidden pois e visual */}
+              <div
+                className="hidden md:flex w-24 h-24 border-4 border-[#3d5a5a]/80 rounded-full items-center justify-center rotate-12 border-double"
+                aria-hidden="true"
+              >
                 <span className="text-[10px] font-black uppercase text-[#3d5a5a]/80 text-center">
                   priority <br /> mail <br /> 🍒
                 </span>
               </div>
-            </div>
+            </header>
 
-            {/* campos de entrada: estilizados para parecerem espaços em branco em um formulário físico */}
+            {/* campos de entrada */}
             <div className="space-y-14">
               {/* campo: nome */}
               <div className="relative group">
                 <div className="flex flex-wrap items-end gap-x-4 gap-y-2 relative">
-                  <span className="text-lg text-[#3d5a5a] font-bold select-none pb-2">
+                  <label
+                    htmlFor="nome"
+                    className="text-lg text-[#3d5a5a] font-bold select-none pb-2"
+                  >
                     {texts.formNameLabel || "meu nome é"}
-                  </span>
+                  </label>
                   <input
+                    id="nome"
                     {...register("nome", {
                       required:
                         texts.errorName || "assine seu nome, por favor.",
                     })}
                     type="text"
+                    aria-invalid={errors.nome ? "true" : "false"}
                     placeholder={
                       language === "pt"
                         ? "escreva seu nome aqui..."
@@ -133,21 +146,31 @@ const ContactLetter = ({ enviado, onSubmit }: ContactLetterProps) => {
                     className="flex-1 min-w-[250px] bg-transparent border-none text-md md:text-lg text-[#ca4952] font-black italic focus:outline-none focus:ring-0 placeholder:text-[#d8c9ba] transition-all py-2"
                   />
                 </div>
-                <div className="h-[2px] w-full bg-[#f3eae0] group-focus-within:bg-[#ca4952] transition-colors" />
+                <div
+                  className="h-[2px] w-full bg-[#f3eae0] group-focus-within:bg-[#ca4952] transition-colors"
+                  aria-hidden="true"
+                />
                 {errors.nome && (
-                  <p className="text-[10px] text-red-500 font-bold uppercase mt-2 absolute">
+                  <p
+                    role="alert"
+                    className="text-[10px] text-red-500 font-bold uppercase mt-2 absolute"
+                  >
                     {errors.nome.message}
                   </p>
                 )}
               </div>
 
-              {/* campo: e-mail com validação de regex */}
+              {/* campo: e-mail */}
               <div className="relative group">
                 <div className="flex flex-wrap items-end gap-x-4 gap-y-2 relative">
-                  <span className="text-lg text-[#3d5a5a] font-bold select-none pb-2">
+                  <label
+                    htmlFor="email"
+                    className="text-lg text-[#3d5a5a] font-bold select-none pb-2"
+                  >
                     {texts.formEmailLabel || "podem me responder no"}
-                  </span>
+                  </label>
                   <input
+                    id="email"
                     {...register("email", {
                       required: texts.errorEmailReq || "e-mail obrigatório.",
                       pattern: {
@@ -156,30 +179,40 @@ const ContactLetter = ({ enviado, onSubmit }: ContactLetterProps) => {
                       },
                     })}
                     type="email"
+                    aria-invalid={errors.email ? "true" : "false"}
                     placeholder="seu@email.com"
                     className="flex-1 min-w-[250px] bg-transparent border-none text-md md:text-lg text-[#ca4952] font-black italic focus:outline-none focus:ring-0 placeholder:text-[#d8c9ba] transition-all py-2"
                   />
                 </div>
-                <div className="h-[2px] w-full bg-[#f3eae0] group-focus-within:bg-[#ca4952] transition-colors" />
+                <div
+                  className="h-[2px] w-full bg-[#f3eae0] group-focus-within:bg-[#ca4952] transition-colors"
+                  aria-hidden="true"
+                />
                 {errors.email && (
-                  <p className="text-[10px] text-red-500 font-bold uppercase mt-2 absolute">
+                  <p
+                    role="alert"
+                    className="text-[10px] text-red-500 font-bold uppercase mt-2 absolute"
+                  >
                     {errors.email.message}
                   </p>
                 )}
               </div>
 
-              {/* campo: mensagem (textarea)
-                  estilizado com fundo suave e borda pontilhada.
-              */}
+              {/* campo: mensagem (textarea) */}
               <div className="space-y-4 relative pt-4">
-                <label className="text-lg text-[#3d5a5a] font-bold block select-none">
+                <label
+                  htmlFor="mensagem"
+                  className="text-lg text-[#3d5a5a] font-bold block select-none"
+                >
                   {texts.formMsgLabel || "queria dizer que..."}
                 </label>
                 <textarea
+                  id="mensagem"
                   {...register("mensagem", {
                     required: texts.errorMsg || "a carta está vazia!",
                   })}
                   rows={6}
+                  aria-invalid={errors.mensagem ? "true" : "false"}
                   placeholder={
                     language === "pt"
                       ? "escreva sua história aqui..."
@@ -188,15 +221,18 @@ const ContactLetter = ({ enviado, onSubmit }: ContactLetterProps) => {
                   className="w-full bg-[#fdfaf5]/50 border-2 border-dashed border-[#e5dcd3] p-6 text-md md:text-lg text-[#3d5a5a] italic focus:outline-none focus:ring-0 focus:border-[#ca4952] focus:bg-white rounded-xl resize-none transition-all"
                 />
                 {errors.mensagem && (
-                  <p className="text-[10px] text-red-500 font-bold uppercase absolute -bottom-6">
+                  <p
+                    role="alert"
+                    className="text-[10px] text-red-500 font-bold uppercase absolute -bottom-6"
+                  >
                     {errors.mensagem.message}
                   </p>
                 )}
               </div>
             </div>
 
-            {/* rodapé do formulário: inclui disclaimer e o botão de envio com sombra 3d */}
-            <div className="flex flex-col md:flex-row justify-between items-center gap-10 pt-10 border-t border-[#f3eae0]">
+            {/* rodapé do formulário */}
+            <footer className="flex flex-col md:flex-row justify-between items-center gap-10 pt-10 border-t border-[#f3eae0]">
               <p className="text-s text-[#8c6b5d] italic max-w-xs text-center md:text-left mt-4 md:mt-0">
                 *{" "}
                 {texts.formDisclaimer ||
@@ -208,7 +244,7 @@ const ContactLetter = ({ enviado, onSubmit }: ContactLetterProps) => {
               >
                 {texts.formSubmitBtn || "enviar para o correio!"}
               </button>
-            </div>
+            </footer>
           </form>
         )}
       </div>

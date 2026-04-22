@@ -26,6 +26,8 @@ const CategorySection = ({
   return (
     <Link
       to={`/receitas?categoria=${catId}`}
+      /* aria-label: fornece contexto claro para o link, unindo a acao ao nome da categoria. */
+      aria-label={`${texts.exploreSectionBtn || "Explorar"} ${label}`}
       /* container principal: utiliza flex-row ou flex-row-reverse no desktop para criar o efeito de zigue-zague. */
       className={`group relative flex flex-col ${isEven ? "md:flex-row" : "md:flex-row-reverse"} items-center gap-10 md:gap-16 transition-all duration-1000`}
     >
@@ -35,17 +37,23 @@ const CategorySection = ({
           <div className="aspect-[16/10] overflow-hidden rounded-lg">
             <img
               src={image}
-              alt={label}
+              alt=""
+              /* aria-hidden: a imagem e puramente ilustrativa dentro de um link ja rotulado. */
+              aria-hidden="true"
               className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-110"
             />
           </div>
           {/* overlay de gradiente interno para suavizar as bordas da imagem. */}
-          <div className="absolute inset-3 rounded-lg bg-gradient-to-tr from-black/20 via-transparent to-transparent opacity-60"></div>
+          <div
+            className="absolute inset-3 rounded-lg bg-gradient-to-tr from-black/20 via-transparent to-transparent opacity-60"
+            aria-hidden="true"
+          ></div>
         </div>
 
-        {/* numero decorativo: posicionado de forma absoluta em relacao a imagem, alternando os lados conforme o layout. */}
+        {/* numero decorativo: posicionado de forma absoluta, escondido de tecnologias assistivas pois e estetico. */}
         <div
           className={`absolute -bottom-6 ${isEven ? "-right-6" : "-left-6"} hidden md:flex w-24 h-24 items-center justify-center rounded-full bg-white shadow-xl z-20 border border-[#eee3d5] text-2xl font-black transition-transform duration-700 group-hover:rotate-12`}
+          aria-hidden="true"
           style={{
             color: color,
             fontFamily: "'Dancing Script', cursive",
@@ -77,7 +85,10 @@ const CategorySection = ({
         </h3>
 
         {/* separador visual minimalista. */}
-        <div className="h-[1px] w-20 mb-8 bg-[#e5dcd3]"></div>
+        <div
+          className="h-[1px] w-20 mb-8 bg-[#e5dcd3]"
+          aria-hidden="true"
+        ></div>
 
         <p className="text-[#8c6b5d] text-lg font-serif italic leading-relaxed opacity-80 mb-10 px-4 md:px-0">
           {desc}
@@ -94,6 +105,7 @@ const CategorySection = ({
               height="14"
               viewBox="0 0 24 24"
               fill="none"
+              aria-hidden="true"
               className=" text-[#d13a3a] group-hover/btn:text-white transition-colors"
             >
               <path

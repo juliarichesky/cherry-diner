@@ -56,25 +56,38 @@ const Pagination = ({
   const visiblePages = getVisiblePages();
 
   return (
-    <nav className="flex flex-col md:flex-row justify-center items-center gap-6 mt-20 mb-10">
-      <div className="flex items-center gap-4">
-        {/* botão de voltar: desabilitado se estiver na página 01 */}
-        <button
-          onClick={() => onPageChange(currentPage - 1)}
-          disabled={currentPage === 1}
-          className="px-5 py-2 text-[10px] font-bold uppercase tracking-widest text-[#3d5a5a] border rounded-full cursor-pointer border-[#e5dcd3] disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[#ca4952] hover:text-white transition-all active:scale-95"
-        >
-          « {texts.prevBtn || "anterior"}
-        </button>
+    /* utilizacao da tag nav para identificar a area de navegacao de paginacao. */
+    <nav
+      className="flex flex-col md:flex-row justify-center items-center gap-6 mt-20 mb-10"
+      aria-label="Paginação"
+    >
+      {/* agredando botoes em uma lista para melhor semantica de acessibilidade. */}
+      <ul className="flex items-center gap-4 list-none p-0">
+        <li>
+          {/* botão de voltar: desabilitado se estiver na página 01 */}
+          <button
+            onClick={() => onPageChange(currentPage - 1)}
+            disabled={currentPage === 1}
+            aria-label="Página anterior"
+            className="px-5 py-2 text-[10px] font-bold uppercase tracking-widest text-[#3d5a5a] border rounded-full cursor-pointer border-[#e5dcd3] disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[#ca4952] hover:text-white transition-all active:scale-95"
+          >
+            « {texts.prevBtn || "anterior"}
+          </button>
+        </li>
 
-        {/* container dos números: renderiza dinamicamente o array de visibilidade */}
-        <div className="flex items-center gap-1 md:gap-2">
+        <li className="flex items-center gap-1 md:gap-2">
           {visiblePages.map((page, index) => (
             <button
               key={index}
               /* só permite o clique se o item for um número, ignorando as reticências */
               onClick={() => typeof page === "number" && onPageChange(page)}
               disabled={typeof page !== "number"}
+              /* aria-current: indica semanticamente qual e a pagina ativa no momento. */
+              aria-current={currentPage === page ? "page" : undefined}
+              /* aria-label: fornece contexto claro para o numero da pagina. */
+              aria-label={
+                typeof page === "number" ? `Ir para página ${page}` : undefined
+              }
               /* estilo condicional: destaca a página ativa com a cor principal (cereja) */
               className={`w-10 h-10 flex items-center justify-center text-[11px] font-black transition-all border-b-2 ${
                 currentPage === page
@@ -90,17 +103,20 @@ const Pagination = ({
                 : page}
             </button>
           ))}
-        </div>
+        </li>
 
-        {/* botão de avançar: desabilitado se estiver na última página */}
-        <button
-          onClick={() => onPageChange(currentPage + 1)}
-          disabled={currentPage === totalPages}
-          className="px-5 py-2 text-[10px] font-bold uppercase tracking-widest text-[#3d5a5a] border rounded-full cursor-pointer border-[#e5dcd3] disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[#ca4952] hover:text-white transition-all active:scale-95"
-        >
-          {texts.nextBtn || "próxima"} »
-        </button>
-      </div>
+        <li>
+          {/* botão de avançar: desabilitado se estiver na última página */}
+          <button
+            onClick={() => onPageChange(currentPage + 1)}
+            disabled={currentPage === totalPages}
+            aria-label="Próxima página"
+            className="px-5 py-2 text-[10px] font-bold uppercase tracking-widest text-[#3d5a5a] border rounded-full cursor-pointer border-[#e5dcd3] disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[#ca4952] hover:text-white transition-all active:scale-95"
+          >
+            {texts.nextBtn || "próxima"} »
+          </button>
+        </li>
+      </ul>
     </nav>
   );
 };

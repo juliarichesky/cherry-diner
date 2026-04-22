@@ -56,18 +56,22 @@ const HomePosterWall = () => {
       {/* background decorativo: utiliza imagem fixa para efeito de profundidade e opacidade reduzida. */}
       <div
         className="absolute inset-0 z-0 opacity-40 pointer-events-none"
+        aria-hidden="true"
         style={{
           backgroundImage: `url(${bgCherries})`,
           backgroundSize: "cover",
           backgroundAttachment: "fixed",
         }}
       ></div>
-      <div className="absolute inset-0 bg-[#f9f4ef]/80 z-0"></div>
+      <div
+        className="absolute inset-0 bg-[#f9f4ef]/80 z-0"
+        aria-hidden="true"
+      ></div>
 
       <div className="relative z-10 max-w-[1300px] mx-auto px-4 md:px-6">
         {/* cabecalho da secao: centralizado com tipografia artistica e iconografia em svg. */}
         <header className="mb-12 md:mb-16 text-center flex flex-col items-center">
-          <div className="mb-6 text-[#ca4952]">
+          <div className="mb-6 text-[#ca4952]" aria-hidden="true">
             <svg
               width="50"
               height="50"
@@ -112,49 +116,59 @@ const HomePosterWall = () => {
           </p>
         </header>
 
-        {/* container do grid: possui borda superior colorida e sombra suave. altura adaptavel no mobile e fixa no desktop. */}
-        <div className="relative bg-[#fdfaf5]/90 border-t-[4px] border-t-[#ca4952] border-x border-b border-[#e9dcc9] rounded-[1rem] p-4 md:p-12 shadow-[0_25px_80_px_-20px_rgba(0,0,0,0.15)]">
-          {/* grid de categorias: empilhado no mobile/tablet e organizado em mosaico (4 colunas) no desktop (lg). */}
-          <div className="grid grid-cols-1 lg:grid-cols-4 lg:grid-rows-2 gap-4 md:gap-8 h-auto lg:h-[750px]">
+        {/* container do grid: possui borda superior colorida e sombra suave. */}
+        <nav
+          className="relative bg-[#fdfaf5]/90 border-t-[4px] border-t-[#ca4952] border-x border-b border-[#e9dcc9] rounded-[1rem] p-4 md:p-12 shadow-[0_25px_80_px_-20px_rgba(0,0,0,0.15)]"
+          aria-label={
+            language === "pt" ? "Menu de categorias" : "Categories menu"
+          }
+        >
+          {/* grid de categorias: organizado em uma lista (ul) para melhor semantica. */}
+          <ul className="grid grid-cols-1 lg:grid-cols-4 lg:grid-rows-2 gap-4 md:gap-8 h-auto lg:h-[750px] list-none p-0">
             {isLoading
               ? [...Array(4)].map((_, i) => (
-                  /* esqueleto de carregamento: mantem a estrutura visual enquanto os dados sao buscados. */
-                  <div
+                  <li
                     key={i}
                     className={`bg-gray-200 animate-pulse rounded-[1rem] h-[250px] lg:h-full ${i === 0 ? "lg:col-span-2 lg:row-span-2" : ""}`}
                   />
                 ))
               : categories.map((item) => (
-                  <Link
+                  <li
                     key={item.id}
-                    to={`/receitas?categoria=${item.id}`}
-                    /* aplicacao de span dinamico: converte classes de tablet para desktop garantindo o layout em mosaico. */
-                    className={`${item.span.replace("md:", "lg:")} group relative flex flex-col transition-all duration-500 overflow-hidden rounded-[1rem] border border-[#e5dcd3] shadow-sm h-[250px] lg:h-full`}
+                    className={`${item.span.replace("md:", "lg:")}`}
                   >
-                    {/* imagem de fundo da categoria com efeito de zoom no hover. */}
-                    <div className="absolute inset-0 w-full h-full">
-                      <img
-                        src={categoryImages[item.id]}
-                        alt={language === "pt" ? item.title_pt : item.title_en}
-                        className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
-                      />
-                    </div>
-
-                    {/* overlay inferior: exibe o titulo da categoria com fundo desfocado (glassmorphism). */}
-                    <div className="absolute bottom-0 left-0 w-full z-30">
-                      <div className="bg-[#fdfaf5]/95 backdrop-blur-sm p-4 md:p-6 border-t border-[#e5dcd3] text-center flex items-center justify-center min-h-[60px]">
-                        <h3
-                          className="text-[#3d5a5a] text-sm md:text-xl font-black uppercase tracking-[0.15em] leading-none transition-colors group-hover:text-[#ca4952]"
-                          style={{ fontFamily: "'Comfortaa', cursive" }}
-                        >
-                          {language === "pt" ? item.title_pt : item.title_en}
-                        </h3>
+                    <Link
+                      to={`/receitas?categoria=${item.id}`}
+                      /* aria-label para descrever o destino do link de forma clara. */
+                      aria-label={`${language === "pt" ? "Ver receitas de" : "View recipes for"} ${language === "pt" ? item.title_pt : item.title_en}`}
+                      className="group relative flex flex-col transition-all duration-500 overflow-hidden rounded-[1rem] border border-[#e5dcd3] shadow-sm h-[250px] lg:h-full w-full"
+                    >
+                      {/* imagem de fundo da categoria com efeito de zoom. */}
+                      <div className="absolute inset-0 w-full h-full">
+                        <img
+                          src={categoryImages[item.id]}
+                          alt=""
+                          aria-hidden="true"
+                          className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                        />
                       </div>
-                    </div>
-                  </Link>
+
+                      {/* overlay inferior: exibe o titulo da categoria. */}
+                      <div className="absolute bottom-0 left-0 w-full z-30">
+                        <div className="bg-[#fdfaf5]/95 backdrop-blur-sm p-4 md:p-6 border-t border-[#e5dcd3] text-center flex items-center justify-center min-h-[60px]">
+                          <h3
+                            className="text-[#3d5a5a] text-sm md:text-xl font-black uppercase tracking-[0.15em] leading-none transition-colors group-hover:text-[#ca4952]"
+                            style={{ fontFamily: "'Comfortaa', cursive" }}
+                          >
+                            {language === "pt" ? item.title_pt : item.title_en}
+                          </h3>
+                        </div>
+                      </div>
+                    </Link>
+                  </li>
                 ))}
-          </div>
-        </div>
+          </ul>
+        </nav>
       </div>
     </section>
   );

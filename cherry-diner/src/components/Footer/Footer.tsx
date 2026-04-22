@@ -27,9 +27,13 @@ const Footer = () => {
     <footer className="w-full bg-[#fdf8f1] border-t-2 border-[#eee3d5] overflow-hidden">
       <div className="max-w-[1200px] mx-auto px-6 pt-16 pb-8 relative z-10">
         <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start gap-12 pb-12 border-b border-[#eee3d5] text-center lg:text-left">
-          {/* LADO ESQUERDO: LOGO + FRASE (FOCO AQUI) */}
-          <div className="flex flex-col items-center lg:items-start">
-            <Link to="/" className="transition-transform hover:scale-105">
+          {/* LADO ESQUERDO: LOGO + FRASE */}
+          <section className="flex flex-col items-center lg:items-start">
+            <Link
+              to="/"
+              className="transition-transform hover:scale-105"
+              aria-label="Voltar para o início"
+            >
               <img
                 src={logoImg}
                 alt="Cherry Diner Logo"
@@ -37,66 +41,76 @@ const Footer = () => {
               />
             </Link>
             <p className="text-[#8c6b5d] text-md italic max-w-xs font-serif leading-relaxed opacity-80">
-              {/* Esta é a frase que estava sumindo! */}
               {texts.footerSlogan}
             </p>
-          </div>
+          </section>
 
           <div className="flex flex-col md:flex-row gap-10 md:gap-16 lg:mt-4">
-            <div className="flex flex-col items-center lg:items-start">
+            {/* Informações de contato envoltas na tag address para semântica correta */}
+            <address className="flex flex-col items-center lg:items-start not-italic">
               <span className="text-[10px] font-black uppercase tracking-[0.3em] mb-3 text-[#ca4952]">
                 {texts.navContact}
               </span>
-              <p
-                className="text-[#3d5a5a] text-sm md:text-base font-bold leading-tight mb-1"
+              <a
+                href="mailto:hello@cherrydiner.com"
+                className="text-[#3d5a5a] text-sm md:text-base font-bold leading-tight mb-1 hover:text-[#ca4952] transition-colors"
                 style={{ fontFamily: "'Comfortaa', cursive" }}
               >
                 hello@cherrydiner.com
-              </p>
-              <span className="text-[#8c6b5d] text-xs font-medium opacity-70">
-                (11) 99999-9999
-              </span>
-            </div>
-
-            {staff.map((membro, index) => (
-              <div
-                key={index}
-                className="flex flex-col items-center lg:items-start max-w-[200px]"
+              </a>
+              <a
+                href="tel:+5511999999999"
+                className="text-[#8c6b5d] text-xs font-medium opacity-70 hover:text-[#ca4952] transition-colors"
               >
-                <span className="text-[10px] font-black uppercase tracking-[0.3em] mb-3 text-[#ca4952]">
-                  {texts.staffRole}
-                </span>
-                <p
-                  className="text-[#3d5a5a] text-lg md:text-xl font-bold leading-tight"
-                  style={{ fontFamily: "'Comfortaa', cursive" }}
+                (11) 99999-9999
+              </a>
+            </address>
+
+            {/* Lista de desenvolvedores estruturada semanticamente */}
+            <ul className="flex flex-col md:flex-row gap-10 md:gap-16 list-none p-0">
+              {staff.map((membro, index) => (
+                <li
+                  key={index}
+                  className="flex flex-col items-center lg:items-start max-w-[200px]"
                 >
-                  {membro.nome}
-                </p>
-                <span className="text-[#8c6b5d] text-xs font-medium mt-2 opacity-60">
-                  RM: {membro.rm}
-                </span>
-              </div>
-            ))}
+                  <span className="text-[10px] font-black uppercase tracking-[0.3em] mb-3 text-[#ca4952]">
+                    {texts.staffRole}
+                  </span>
+                  <p
+                    className="text-[#3d5a5a] text-lg md:text-xl font-bold leading-tight"
+                    style={{ fontFamily: "'Comfortaa', cursive" }}
+                  >
+                    {membro.nome}
+                  </p>
+                  <span className="text-[#8c6b5d] text-xs font-medium mt-2 opacity-60">
+                    RM: {membro.rm}
+                  </span>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
 
         <div className="mt-8 flex flex-col md:flex-row justify-between items-center gap-10 md:gap-6 text-center md:text-left">
-          <nav className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8">
-            {[
-              { label: texts.navHome, path: "/" },
-              { label: texts.navRecipes, path: "/receitas" },
-              { label: texts.navCategories, path: "/categorias" },
-              { label: texts.navAbout, path: "/sobre" },
-              { label: texts.navContact, path: "/contato" },
-            ].map((item) => (
-              <Link
-                key={item.path}
-                to={item.path}
-                className="text-[#3d5a5a] text-[10px] font-black uppercase tracking-[0.2em] hover:text-[#ca4952] transition-colors"
-              >
-                {item.label}
-              </Link>
-            ))}
+          <nav aria-label="Navegação secundária do rodapé">
+            <ul className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8 list-none p-0">
+              {[
+                { label: texts.navHome, path: "/" },
+                { label: texts.navRecipes, path: "/receitas" },
+                { label: texts.navCategories, path: "/categorias" },
+                { label: texts.navAbout, path: "/sobre" },
+                { label: texts.navContact, path: "/contato" },
+              ].map((item) => (
+                <li key={item.path}>
+                  <Link
+                    to={item.path}
+                    className="text-[#3d5a5a] text-[10px] font-black uppercase tracking-[0.2em] hover:text-[#ca4952] transition-colors"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </nav>
 
           <div className="flex flex-col items-center md:items-end text-center md:text-right">
@@ -107,9 +121,11 @@ const Footer = () => {
         </div>
       </div>
 
+      {/* Detalhe xadrez decorativo - aria-hidden esconde do leitor de tela */}
       <div
         className="w-full h-10 mt-5 border-t border-[#b2dbbb]"
         style={checkerboardStyle}
+        aria-hidden="true"
       ></div>
     </footer>
   );
