@@ -133,7 +133,7 @@ const Login = () => {
         <div className="flex items-center gap-3 mb-10">
           <Link
             to="/"
-            className="flex items-center gap-2 text-[#ca4952] font-bold uppercase text-xs tracking-widest hover:-translate-x-2 transition-transform bg-white/80 backdrop-blur-md px-4 py-2 rounded-full border-2 border-[#e9dcc9] shadow-sm"
+            className="flex items-center gap-2 text-[#ca4952] font-bold uppercase text-xs  hover:-translate-x-1 transition-transform bg-[#f3ede4] backdrop-blur-md px-4 py-2 rounded-full border-1 border-[#e9dcc9] shadow-sm"
           >
             <svg
               width="20"

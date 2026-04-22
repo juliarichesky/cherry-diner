@@ -2,14 +2,14 @@
   "receitas": {
     "title_pt": "Todas as Receitas",
     "title_en": "All Recipes",
-    "subtitle_pt": "Escolha sua delícia nostálgica favorita.",
-    "subtitle_en": "Choose your favorite nostalgic delight."
+    "subtitle_pt": "Escolha sua delícia nostálgica favorita",
+    "subtitle_en": "Choose your favorite nostalgic delight"
   },
   "categorias": {
     "title_pt": "Categorias",
     "title_en": "Categories",
-    "subtitle_pt": "Encontre o sabor ideal para cada momento",
-    "subtitle_en": "Find the ideal flavor for every moment"
+    "subtitle_pt": "Encontre a receita ideal para cada momento",
+    "subtitle_en": "Find the ideal recipe for every moment"
   },
   "sobre": {
     "title_pt": "Nossa História",

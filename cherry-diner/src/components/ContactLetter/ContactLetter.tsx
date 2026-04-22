@@ -24,7 +24,7 @@ interface ContactLetterProps {
 const ContactLetter = ({ enviado, onSubmit }: ContactLetterProps) => {
   // acesso ao contexto de idioma para textos bilingues
   const { texts, language } = useLanguage();
-  
+
   // inicialização do formulário com desestruturação para registro e validação
   const {
     register,
@@ -35,7 +35,6 @@ const ContactLetter = ({ enviado, onSubmit }: ContactLetterProps) => {
   return (
     <div className="w-full max-w-[1000px] bg-white p-1 shadow-[0_40px_80px_rgba(0,0,0,0.15)] transform rotate-[-0.5deg] font-serif">
       <div className="border-[12px] border-white outline outline-1 outline-[#e5dcd3] relative p-8 md:p-16">
-        
         {/* bordas decorativas estilo air mail:
             utiliza um gradiente linear repetitivo para criar as listras vermelhas e azuis.
         */}
@@ -68,7 +67,8 @@ const ContactLetter = ({ enviado, onSubmit }: ContactLetterProps) => {
               {texts.letterSuccessTitle || "sua carta foi postada!"}
             </h2>
             <p className="text-[#8c6b5d] text-lg italic">
-              {texts.letterSuccessDesc || "as julias responderão assim que o cadillac estacionar!"}
+              {texts.letterSuccessDesc ||
+                "as julias responderão assim que o cadillac estacionar!"}
             </p>
           </div>
         ) : (
@@ -87,10 +87,13 @@ const ContactLetter = ({ enviado, onSubmit }: ContactLetterProps) => {
                   {texts.letterSalutation || "querido cherry diner,"}
                 </h3>
                 <p className="text-[10px] font-black uppercase tracking-[0.1em] text-[#3d5a5a] italic">
-                  {language === "pt" ? "data" : "date"}: {new Date().toLocaleDateString(language === "pt" ? "pt-BR" : "en-US")}
+                  {language === "pt" ? "data" : "date"}:{" "}
+                  {new Date().toLocaleDateString(
+                    language === "pt" ? "pt-BR" : "en-US",
+                  )}
                 </p>
               </div>
-              
+
               {/* carimbo decorativo 'priority mail' */}
               <div className="hidden md:flex w-24 h-24 border-4 border-[#3d5a5a]/80 rounded-full items-center justify-center rotate-12 border-double">
                 <span className="text-[10px] font-black uppercase text-[#3d5a5a]/80 text-center">
@@ -109,11 +112,16 @@ const ContactLetter = ({ enviado, onSubmit }: ContactLetterProps) => {
                   </span>
                   <input
                     {...register("nome", {
-                      required: texts.errorName || "assine seu nome, por favor.",
+                      required:
+                        texts.errorName || "assine seu nome, por favor.",
                     })}
                     type="text"
-                    placeholder={language === "pt" ? "escreva seu nome aqui..." : "write your name here..."}
-                    className="flex-1 min-w-[250px] bg-transparent border-none text-2xl text-[#ca4952] font-black italic focus:outline-none focus:ring-0 placeholder:text-[#d8c9ba] transition-all py-2"
+                    placeholder={
+                      language === "pt"
+                        ? "escreva seu nome aqui..."
+                        : "write your name here..."
+                    }
+                    className="flex-1 min-w-[250px] bg-transparent border-none text-md md:text-lg text-[#ca4952] font-black italic focus:outline-none focus:ring-0 placeholder:text-[#d8c9ba] transition-all py-2"
                   />
                 </div>
                 <div className="h-[2px] w-full bg-[#f3eae0] group-focus-within:bg-[#ca4952] transition-colors" />
@@ -140,7 +148,7 @@ const ContactLetter = ({ enviado, onSubmit }: ContactLetterProps) => {
                     })}
                     type="email"
                     placeholder="seu@email.com"
-                    className="flex-1 min-w-[250px] bg-transparent border-none text-xl text-[#ca4952] font-black italic focus:outline-none focus:ring-0 placeholder:text-[#d8c9ba] transition-all py-2"
+                    className="flex-1 min-w-[250px] bg-transparent border-none text-md md:text-lg text-[#ca4952] font-black italic focus:outline-none focus:ring-0 placeholder:text-[#d8c9ba] transition-all py-2"
                   />
                 </div>
                 <div className="h-[2px] w-full bg-[#f3eae0] group-focus-within:bg-[#ca4952] transition-colors" />
@@ -159,10 +167,16 @@ const ContactLetter = ({ enviado, onSubmit }: ContactLetterProps) => {
                   {texts.formMsgLabel || "queria dizer que..."}
                 </label>
                 <textarea
-                  {...register("mensagem", { required: texts.errorMsg || "a carta está vazia!" })}
+                  {...register("mensagem", {
+                    required: texts.errorMsg || "a carta está vazia!",
+                  })}
                   rows={6}
-                  placeholder={language === "pt" ? "escreva sua história aqui..." : "write your story here..."}
-                  className="w-full bg-[#fdfaf5]/50 border-2 border-dashed border-[#e5dcd3] p-6 text-lg text-[#3d5a5a] italic focus:outline-none focus:ring-0 focus:border-[#ca4952] focus:bg-white rounded-xl resize-none transition-all"
+                  placeholder={
+                    language === "pt"
+                      ? "escreva sua história aqui..."
+                      : "write your story here..."
+                  }
+                  className="w-full bg-[#fdfaf5]/50 border-2 border-dashed border-[#e5dcd3] p-6 text-md md:text-lg text-[#3d5a5a] italic focus:outline-none focus:ring-0 focus:border-[#ca4952] focus:bg-white rounded-xl resize-none transition-all"
                 />
                 {errors.mensagem && (
                   <p className="text-[10px] text-red-500 font-bold uppercase absolute -bottom-6">
@@ -175,7 +189,9 @@ const ContactLetter = ({ enviado, onSubmit }: ContactLetterProps) => {
             {/* rodapé do formulário: inclui disclaimer e o botão de envio com sombra 3d */}
             <div className="flex flex-col md:flex-row justify-between items-center gap-10 pt-10 border-t border-[#f3eae0]">
               <p className="text-s text-[#8c6b5d] italic max-w-xs text-center md:text-left mt-4 md:mt-0">
-                * {texts.formDisclaimer || "prometemos que sua mensagem será lida com um milkshake na mão."}
+                *{" "}
+                {texts.formDisclaimer ||
+                  "prometemos que sua mensagem será lida com um milkshake na mão."}
               </p>
               <button
                 type="submit"

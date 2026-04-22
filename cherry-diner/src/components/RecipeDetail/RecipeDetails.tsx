@@ -21,8 +21,6 @@ interface Recipe {
   servings_en: string;
   calories: number;
   price: string;
-  tags_pt: string[];
-  tags_en: string[];
   image: string;
   ingredients_pt: string[];
   ingredients_en: string[];

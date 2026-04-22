@@ -187,7 +187,7 @@ const Navbar = () => {
               onClick={() => setIsSearchOpen(true)}
               className="group flex items-center bg-[#f3ede4] border-1 border-[#e9dcc9] hover:border-[#d13a3a] px-4 py-2 rounded-full text-[#5c3d2e] transition-all cursor-pointer"
             >
-              <span className="hidden lg:inline mr-3 font-bold text-xs tracking-widest">
+              <span className="hidden lg:inline mr-3 font-bold text-xs ">
                 {language === "pt" ? "BUSCAR" : "SEARCH"}
               </span>
               <svg

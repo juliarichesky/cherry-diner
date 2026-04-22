@@ -156,7 +156,7 @@ const HomeHighlights = () => {
                     </figure>
 
                     <div className="flex flex-col flex-grow text-left">
-                      <div className="flex justify-between items-start mb-3">
+                      <div className="flex flex-col md:flex-row md:justify-between items-start mb-3 gap-2 md:gap-0">
                         <h3
                           className="text-[#3d5a5a] text-xl md:text-2xl font-black mb-0 transition-colors group-hover:text-[#ca4952] leading-tight"
                           style={{ fontFamily: "'Comfortaa', cursive" }}
@@ -165,9 +165,10 @@ const HomeHighlights = () => {
                             ? recipe.title_pt
                             : recipe.title_en}
                         </h3>
-                        {/* tag de categoria bilingue com cor dinâmica */}
+
+                        {/* tag de categoria */}
                         <span
-                          className="px-3 py-1 ml-3 rounded-[0.25rem] text-[9px] font-black text-white uppercase tracking-wider flex-shrink-0 mt-1"
+                          className="px-3 py-1 rounded-[0.25rem] text-[9px] font-black text-white uppercase tracking-wider flex-shrink-0 md:ml-3 md:mt-1"
                           style={{
                             backgroundColor:
                               tagColors[recipe.category] || "#ca4952",
@@ -178,13 +179,11 @@ const HomeHighlights = () => {
                             : recipe.category_en}
                         </span>
                       </div>
-
                       <p className="text-[#8c6b5d] text-xs md:text-sm leading-relaxed mb-6 opacity-80">
                         {language === "pt"
                           ? recipe.description_pt
                           : recipe.description_en}
                       </p>
-
                       {/* rodapé do card com tempo de preparo e link para detalhe */}
                       <footer className="mt-auto flex items-center justify-between pt-4 border-t-2 border-[#e5dcd3] border-dashed">
                         <div className="flex items-center gap-2.5 text-[#8c6b5d] font-bold text-[11px] md:text-sm">

@@ -26,9 +26,7 @@ const Footer = () => {
   return (
     <footer className="w-full bg-[#fdf8f1] border-t-2 border-[#eee3d5] overflow-hidden">
       <div className="max-w-[1200px] mx-auto px-6 pt-16 pb-8 relative z-10">
-        
         <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start gap-12 pb-12 border-b border-[#eee3d5] text-center lg:text-left">
-          
           {/* LADO ESQUERDO: LOGO + FRASE (FOCO AQUI) */}
           <div className="flex flex-col items-center lg:items-start">
             <Link to="/" className="transition-transform hover:scale-105">
@@ -82,14 +80,14 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-8 flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
-          <nav className="flex flex-wrap justify-center gap-6 md:gap-8">
+        <div className="mt-8 flex flex-col md:flex-row justify-between items-center gap-10 md:gap-6 text-center md:text-left">
+          <nav className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8">
             {[
               { label: texts.navHome, path: "/" },
               { label: texts.navRecipes, path: "/receitas" },
               { label: texts.navCategories, path: "/categorias" },
               { label: texts.navAbout, path: "/sobre" },
-              { label: texts.navContact, path: "/contato" }
+              { label: texts.navContact, path: "/contato" },
             ].map((item) => (
               <Link
                 key={item.path}

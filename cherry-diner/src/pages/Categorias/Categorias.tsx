@@ -58,7 +58,7 @@ const Categorias = () => {
   };
 
   return (
-    <main className="w-full min-h-screen bg-[#f9f6f2] py-16 pb-20 md:pb-30 lg:pb-40">
+    <main className="w-full min-h-screen bg-[#fdfaf5] py-16 pb-20 md:pb-30 lg:pb-40">
       <div className="max-w-[1200px] mx-auto px-6">
         {/* cabeçalho reutilizável da página */}
         <PageHeader page="categorias" />
