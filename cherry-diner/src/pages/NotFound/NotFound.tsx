@@ -11,9 +11,10 @@ const NotFound = () => {
 
   return (
     <main className="min-h-[100svh] bg-[#f1efe9] flex flex-col items-center justify-center px-6 relative overflow-hidden">
-      {/* detalhe decorativo: borda xadrez superior sutil */}
+      {/* detalhe decorativo: borda xadrez superior sutil - aria-hidden esconde do leitor de tela */}
       <div
         className="absolute top-0 left-0 w-full h-4 opacity-[0.05]"
+        aria-hidden="true"
         style={{
           backgroundImage:
             "repeating-conic-gradient(#3d5a5a 100% 5%, #fdfaf5 0% 50%)",
@@ -22,7 +23,10 @@ const NotFound = () => {
       ></div>
 
       {/* cereja decorativa flutuante com animação de bounce suave */}
-      <div className="absolute top-20 left-1/2 -translate-x-1/2 opacity-10 pointer-events-none select-none">
+      <div
+        className="absolute top-20 left-1/2 -translate-x-1/2 opacity-10 pointer-events-none select-none"
+        aria-hidden="true"
+      >
         <span className="text-[200px] md:text-[300px] animate-bounce duration-[3000ms]">
           🍒
         </span>
@@ -61,9 +65,17 @@ const NotFound = () => {
             : "Looks like you took the wrong turn. This dish isn't on our menu today!"}
         </p>
 
-        {/* 🍔 botão estilo jukebox: efeito de profundidade ao clicar (active:shadow-none) */}
-        <div className="mt-12 group relative">
-          <div className="absolute inset-0 bg-[#ca4952] blur-xl opacity-20 group-hover:opacity-40 transition-opacity"></div>
+        {/* botão estilo jukebox: efeito de profundidade ao clicar */}
+        <nav
+          className="mt-12 group relative"
+          aria-label={
+            language === "pt" ? "Navegação de erro" : "Error navigation"
+          }
+        >
+          <div
+            className="absolute inset-0 bg-[#ca4952] blur-xl opacity-20 group-hover:opacity-40 transition-opacity"
+            aria-hidden="true"
+          ></div>
 
           <Link
             to="/"
@@ -77,17 +89,19 @@ const NotFound = () => {
               stroke="currentColor"
               strokeWidth="3"
               viewBox="0 0 24 24"
+              aria-hidden="true"
             >
               <path d="m15 18-6-6 6-6" />
             </svg>
             {language === "pt" ? "voltar ao balcão" : "back to counter"}
           </Link>
-        </div>
+        </nav>
       </div>
 
       {/* detalhe decorativo: borda xadrez inferior */}
       <div
         className="absolute bottom-0 left-0 w-full h-4 opacity-[0.05]"
+        aria-hidden="true"
         style={{
           backgroundImage:
             "repeating-conic-gradient(#3d5a5a 0% 25%, #fdfaf5 0% 50%)",
@@ -96,9 +110,12 @@ const NotFound = () => {
       ></div>
 
       {/* carimbo decorativo 'quality service' no rodapé do desktop */}
-      <div className="absolute bottom-10 right-10 hidden md:block opacity-10 rotate-12 border-4 border-[#ca4952] p-4 text-[#ca4952] font-black uppercase tracking-widest pointer-events-none">
+      <footer
+        className="absolute bottom-10 right-10 hidden md:block opacity-10 rotate-12 border-4 border-[#ca4952] p-4 text-[#ca4952] font-black uppercase tracking-widest pointer-events-none"
+        aria-hidden="true"
+      >
         quality service
-      </div>
+      </footer>
     </main>
   );
 };

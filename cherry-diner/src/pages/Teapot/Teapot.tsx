@@ -10,10 +10,12 @@ const Teapot = () => {
   const { language } = useLanguage();
 
   return (
+    /* utilizacao da tag main para identificar o conteudo principal desta rota de easter egg. */
     <main className="min-h-[100svh] bg-[#f1efe9] flex flex-col items-center justify-center px-6 relative overflow-hidden">
-      {/* detalhe decorativo: borda checkerboard sutil no topo */}
+      {/* detalhe decorativo: borda checkerboard sutil no topo - aria-hidden esconde elementos decorativos. */}
       <div
         className="absolute top-0 left-0 w-full h-4 opacity-[0.05]"
+        aria-hidden="true"
         style={{
           backgroundImage:
             "repeating-conic-gradient(#3d5a5a 0% 25%, #fdfaf5 0% 50%)",
@@ -23,7 +25,7 @@ const Teapot = () => {
 
       <div className="relative z-10 flex flex-col items-center text-center max-w-2xl">
         {/* ícone do bule: possui interação de hover e fumaça animada com delay */}
-        <div className="relative mb-8 group">
+        <div className="relative mb-8 group" aria-hidden="true">
           <span className="text-[120px] md:text-[180px] leading-none block group-hover:rotate-[-10deg] transition-transform duration-500">
             🫖
           </span>
@@ -53,7 +55,10 @@ const Teapot = () => {
         </h1>
 
         {/* box de descrição: estilo cartão postal/receita com borda tracejada */}
-        <div className="mt-8 p-6 bg-white border-2 border-dashed border-[#e9dcc9] rounded-2xl shadow-sm relative">
+        <div
+          className="mt-8 p-6 bg-white border-2 border-dashed border-[#e9dcc9] rounded-2xl shadow-sm relative"
+          role="alert"
+        >
           <p className="text-[#5c3d2e] text-sm md:text-lg font-medium italic leading-relaxed font-serif">
             {language === "pt"
               ? "Erro Inesperado: O servidor do Cherry Diner tentou passar café, mas descobriu que é, permanentemente, um bule de chá."
@@ -66,20 +71,28 @@ const Teapot = () => {
         </div>
 
         {/* botão de retorno: estilo jukebox com sombra sólida que 'afunda' no clique */}
-        <Link
-          to="/"
-          className="mt-12 inline-flex items-center gap-3 px-8 py-3 bg-[#3d5a5a] text-white rounded-full font-black uppercase text-xs tracking-[0.2em] shadow-[0_6px_0px_#2a3f3f] active:shadow-none active:translate-y-[6px] transition-all hover:bg-[#4a6b6b]"
-          style={{ fontFamily: "'Comfortaa', cursive" }}
+        <nav
+          className="mt-12"
+          aria-label={
+            language === "pt" ? "Navegação de erro" : "Error navigation"
+          }
         >
-          {language === "pt"
-            ? "aceitar o chá e voltar"
-            : "accept the tea & go back"}
-        </Link>
+          <Link
+            to="/"
+            className="inline-flex items-center gap-3 px-8 py-3 bg-[#3d5a5a] text-white rounded-full font-black uppercase text-xs tracking-[0.2em] shadow-[0_6px_0px_#2a3f3f] active:shadow-none active:translate-y-[6px] transition-all hover:bg-[#4a6b6b]"
+            style={{ fontFamily: "'Comfortaa', cursive" }}
+          >
+            {language === "pt"
+              ? "aceitar o chá e voltar"
+              : "accept the tea & go back"}
+          </Link>
+        </nav>
       </div>
 
       {/* detalhe decorativo: borda checkerboard na base */}
       <div
         className="absolute bottom-0 left-0 w-full h-4 opacity-[0.05]"
+        aria-hidden="true"
         style={{
           backgroundImage:
             "repeating-conic-gradient(#3d5a5a 0% 25%, #fdfaf5 0% 50%)",

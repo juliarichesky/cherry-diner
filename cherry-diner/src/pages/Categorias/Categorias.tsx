@@ -48,32 +48,39 @@ const Categorias = () => {
   }, []);
 
   return (
+    /* tag main: define o conteudo principal da pagina, essencial para acessibilidade e seo. */
     <main className="w-full min-h-screen bg-[#fdfaf5] py-16 pb-20 md:pb-30 lg:pb-40">
-      <div className="max-w-[1200px] mx-auto px-6">
-        {/* componente de cabecalho padronizado para as paginas internas. */}
-        <PageHeader page="categorias" />
-        {/* mapeamento das secoes de categoria: renderiza cada bloco com suporte
-        a tradução e alternancia de layout. */}
+      {/* container com max-width sincronizado (1300px) para evitar saltos visuais entre paginas. */}
+      <div className="max-w-[1300px] mx-auto px-6 md:px-10">
+        {/* header semantico: isola o cabecalho da pagina garantindo alinhamento total. */}
+        <header className="w-full">
+          <PageHeader page="categorias" />
+        </header>
+
+        {/* container de fluxo: organiza as secoes de categoria com espacamento responsivo. */}
         <div className="mt-24 space-y-24 md:space-y-32">
           {!isLoading &&
             categories.map((cat, index) => (
-              <CategorySection
-                key={cat.id}
-                catId={cat.id}
-                index={index}
-                /* logica de traducao manual para termos que nao estao mapeados diretamente no dicionario global. */
-                label={
-                  cat.id === "principais" && language === "en"
-                    ? "main courses"
-                    : cat.id === "entradas" && language === "en"
-                      ? "starters"
-                      : cat.labelKey
-                }
-                /* recupera a descricao dinamicamente do contexto de idioma usando a chave descKey. */
-                desc={texts[cat.descKey as keyof typeof texts]}
-                color={cat.color}
-                image={categoryImages[cat.id]}
-              />
+              /* utilizacao de section com aria-label: fornece contexto semantico para 
+                 tecnologias assistivas sem interferir no box model do layout original. */
+              <section key={cat.id} aria-label={cat.labelKey}>
+                <CategorySection
+                  catId={cat.id}
+                  index={index}
+                  /* logica de traducao manual para termos especificos de rota. */
+                  label={
+                    cat.id === "principais" && language === "en"
+                      ? "main courses"
+                      : cat.id === "entradas" && language === "en"
+                        ? "starters"
+                        : cat.labelKey
+                  }
+                  /* mapeamento dinamico da descricao via context de idioma. */
+                  desc={texts[cat.descKey as keyof typeof texts]}
+                  color={cat.color}
+                  image={categoryImages[cat.id]}
+                />
+              </section>
             ))}
         </div>
       </div>

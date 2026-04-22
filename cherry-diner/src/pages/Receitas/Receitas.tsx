@@ -112,9 +112,14 @@ const Receitas = () => {
   // tela de carregamento com animação bounce e ícone temático
   if (isLoading) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-[#fdfaf5]">
+      <div
+        className="min-h-screen flex items-center justify-center bg-[#fdfaf5]"
+        role="status"
+      >
         <div className="text-center animate-bounce">
-          <span className="text-4xl">🍒</span>
+          <span className="text-4xl" aria-hidden="true">
+            🍒
+          </span>
           <p className="text-[#ca4952] font-black mt-4 uppercase tracking-widest">
             {texts.loadingText}
           </p>
@@ -132,7 +137,10 @@ const Receitas = () => {
         </header>
 
         {/* barra de navegação superior: contém filtros e contador de resultados */}
-        <nav className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16">
+        <nav
+          className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16"
+          aria-label="Filtros de categorias"
+        >
           <div className="flex-1">
             <RecipeFilters
               activeCategory={category}
@@ -142,7 +150,10 @@ const Receitas = () => {
           </div>
 
           {/* contador visual: exibe a quantidade de itens mostrados no momento */}
-          <div className="hidden lg:flex flex-col items-end border-r-4 border-[#ca4952] pr-6">
+          <div
+            className="hidden lg:flex flex-col items-end border-r-4 border-[#ca4952] pr-6"
+            aria-live="polite"
+          >
             <span className="text-[10px] font-black uppercase tracking-[0.4em] text-[#8c6b5d]">
               {texts.showingText}
             </span>
@@ -156,35 +167,44 @@ const Receitas = () => {
         </nav>
 
         {/* galeria: renderiza os cards de receita ou uma mensagem de "não encontrado" */}
-        <section aria-label="galeria de receitas">
+        <section aria-label="Galeria de receitas">
           {currentRecipes.length > 0 ? (
             <>
-              {/* grid responsivo: ajusta o número de colunas conforme o tamanho da tela */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12">
+              {/* grid responsivo: estruturado como lista (ul) para melhor semântica */}
+              <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12">
                 {currentRecipes.map((recipe) => (
-                  <article key={recipe.id}>
-                    <RecipeCard recipe={recipe} />
-                  </article>
+                  <li key={recipe.id}>
+                    <article>
+                      <RecipeCard recipe={recipe} />
+                    </article>
+                  </li>
                 ))}
-              </div>
+              </ul>
 
-              {/* componente de navegação entre páginas */}
-              <Pagination
-                currentPage={currentPage}
-                totalPages={totalPages}
-                onPageChange={handlePageChange}
-              />
+              {/* componente de navegação entre páginas envolto em nav */}
+              <nav className="mt-12" aria-label="Paginação">
+                <Pagination
+                  currentPage={currentPage}
+                  totalPages={totalPages}
+                  onPageChange={handlePageChange}
+                />
+              </nav>
             </>
           ) : (
             /* feedback visual para buscas/filtros sem resultado */
-            <div className="py-32 flex flex-col items-center justify-center border-4 border-double border-[#e5dcd3] bg-white/40">
-              <span className="text-4xl mb-4">🍒</span>
+            <div
+              className="py-32 flex flex-col items-center justify-center border-4 border-double border-[#e5dcd3] bg-white/40"
+              role="status"
+            >
+              <span className="text-4xl mb-4" aria-hidden="true">
+                🍒
+              </span>
               <h2 className="text-2xl italic text-[#3d5a5a] text-center mb-6">
                 "{texts.noRecipesFound}"
               </h2>
               <button
                 onClick={() => handleCategoryChange("todas")}
-                className="px-8 py-3 bg-[#ca4952] text-white font-black uppercase text-[10px] shadow-[6px_6px_0px_#3d5a5a] cursor-pointer"
+                className="px-8 py-3 bg-[#ca4952] text-white font-black uppercase text-[10px] shadow-[6px_6px_0px_#3d5a5a] cursor-pointer hover:brightness-110 transition-all"
               >
                 {texts.btnExplore || "Ver cardápio completo!"}
               </button>

@@ -117,7 +117,7 @@ const Login = () => {
     };
 
   return (
-    <div className="min-h-screen bg-[#fdf8f1] flex flex-col items-center justify-center p-6 relative overflow-hidden">
+    <main className="min-h-screen bg-[#fdf8f1] flex flex-col items-center justify-center p-6 relative overflow-hidden">
       {/* detalhe decorativo: padrão de pontos (polka dots) sutil ao fundo */}
       <div
         className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none"
@@ -125,10 +125,11 @@ const Login = () => {
           backgroundImage: "radial-gradient(#ca4952 2px, transparent 2px)",
           backgroundSize: "30px 30px",
         }}
+        aria-hidden="true"
       ></div>
 
       {/* card do formulário estilizado como cardápio diner */}
-      <div className="w-full max-w-md bg-white p-8 md:p-10 rounded-[2rem] shadow-[10px_10px_0px_#f3ede4] border-4 border-double border-[#e9dcc9] relative z-10 flex flex-col items-center">
+      <article className="w-full max-w-md bg-white p-8 md:p-10 rounded-[2rem] shadow-[10px_10px_0px_#f3ede4] border-4 border-double border-[#e9dcc9] relative z-10 flex flex-col items-center">
         {/* container de navegação superior: voltar e seletor de idioma */}
         <div className="flex items-center gap-3 mb-10">
           <Link
@@ -142,13 +143,17 @@ const Login = () => {
               stroke="currentColor"
               strokeWidth="3"
               viewBox="0 0 24 24"
+              aria-hidden="true"
             >
               <path d="m15 18-6-6 6-6" />
             </svg>
             {texts.backToHome}
           </Link>
 
-          <div className="flex bg-[#f3ede4] rounded-full p-1 border border-[#e9dcc9] shadow-sm">
+          <nav
+            className="flex bg-[#f3ede4] rounded-full p-1 border border-[#e9dcc9] shadow-sm"
+            aria-label="Idioma"
+          >
             <button
               type="button"
               onClick={() => setLanguage("pt")}
@@ -163,7 +168,7 @@ const Login = () => {
             >
               EN
             </button>
-          </div>
+          </nav>
         </div>
 
         <Link to="/" className="mb-6 hover:scale-105 transition-transform">
@@ -177,7 +182,10 @@ const Login = () => {
 
         {/* exibição de erro principal (ex: senha incorreta) */}
         {mainError && (
-          <div className="w-full bg-[#ca4952]/10 border border-[#ca4952]/30 text-[#ca4952] text-sm font-bold text-center py-3 px-4 rounded-xl mb-4 animate-pulse">
+          <div
+            role="alert"
+            className="w-full bg-[#ca4952]/10 border border-[#ca4952]/30 text-[#ca4952] text-sm font-bold text-center py-3 px-4 rounded-xl mb-4 animate-pulse"
+          >
             {mainError}
           </div>
         )}
@@ -190,10 +198,14 @@ const Login = () => {
           {/* campo de nome: exibido apenas no modo de cadastro */}
           {!isLogin && (
             <div className="flex flex-col gap-1">
-              <label className="text-[#5c3d2e] font-bold text-xs uppercase tracking-widest pl-2">
+              <label
+                htmlFor="name"
+                className="text-[#5c3d2e] font-bold text-xs uppercase tracking-widest pl-2"
+              >
                 {texts.labelName}
               </label>
               <input
+                id="name"
                 type="text"
                 value={name}
                 onChange={handleInputChange(setName, "name")}
@@ -211,10 +223,14 @@ const Login = () => {
 
           {/* campo de email */}
           <div className="flex flex-col gap-1">
-            <label className="text-[#5c3d2e] font-bold text-xs uppercase tracking-widest pl-2">
+            <label
+              htmlFor="email"
+              className="text-[#5c3d2e] font-bold text-xs uppercase tracking-widest pl-2"
+            >
               Email
             </label>
             <input
+              id="email"
               type="email"
               value={email}
               onChange={handleInputChange(setEmail, "email")}
@@ -231,11 +247,15 @@ const Login = () => {
 
           {/* campo de senha com toggle de visibilidade */}
           <div className="flex flex-col gap-1">
-            <label className="text-[#5c3d2e] font-bold text-xs uppercase tracking-widest pl-2">
+            <label
+              htmlFor="password"
+              className="text-[#5c3d2e] font-bold text-xs uppercase tracking-widest pl-2"
+            >
               {texts.labelPassword}
             </label>
             <div className="relative">
               <input
+                id="password"
                 type={showPassword ? "text" : "password"}
                 value={password}
                 onChange={handleInputChange(setPassword, "password")}
@@ -247,6 +267,7 @@ const Login = () => {
                 type="button"
                 onClick={() => setShowPassword(!showPassword)}
                 className="absolute right-4 top-1/2 -translate-y-1/2 text-[#a89d91] hover:text-[#ca4952] transition-colors cursor-pointer p-1"
+                aria-label={showPassword ? "Esconder senha" : "Mostrar senha"}
               >
                 {/* ícone condicional para olho aberto/fechado */}
                 {showPassword ? (
@@ -257,6 +278,7 @@ const Login = () => {
                     stroke="currentColor"
                     strokeWidth="2.5"
                     viewBox="0 0 24 24"
+                    aria-hidden="true"
                   >
                     <path d="M9.88 9.88a3 3 0 1 0 4.24 4.24" />
                     <path d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68" />
@@ -271,6 +293,7 @@ const Login = () => {
                     stroke="currentColor"
                     strokeWidth="2.5"
                     viewBox="0 0 24 24"
+                    aria-hidden="true"
                   >
                     <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
                     <circle cx="12" cy="12" r="3" />
@@ -295,7 +318,7 @@ const Login = () => {
         </form>
 
         {/* alternância entre modos login/cadastro */}
-        <div className="mt-8 pt-6 border-t border-[#e9dcc9]/50 w-full text-center">
+        <footer className="mt-8 pt-6 border-t border-[#e9dcc9]/50 w-full text-center">
           <button
             type="button"
             onClick={() => {
@@ -307,9 +330,9 @@ const Login = () => {
           >
             {isLogin ? texts.toggleToRegister : texts.toggleToLogin}
           </button>
-        </div>
-      </div>
-    </div>
+        </footer>
+      </article>
+    </main>
   );
 };
 

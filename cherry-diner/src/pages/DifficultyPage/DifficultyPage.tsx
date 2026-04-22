@@ -123,20 +123,25 @@ const DifficultyPage = () => {
         <section aria-label="Galeria de Receitas">
           {currentRecipes.length > 0 ? (
             <>
-              {/* grid responsivo para exibicao dos cards de receita */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12">
+              {/* grid responsivo para exibicao dos cards de receita estruturado em lista */}
+              <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12">
                 {currentRecipes.map((recipe) => (
-                  <article key={recipe.id}>
-                    <RecipeCard recipe={recipe} />
-                  </article>
+                  <li key={recipe.id}>
+                    <article>
+                      <RecipeCard recipe={recipe} />
+                    </article>
+                  </li>
                 ))}
-              </div>
+              </ul>
 
-              <Pagination
-                currentPage={currentPage}
-                totalPages={totalPages}
-                onPageChange={handlePageChange}
-              />
+              {/* area de navegacao da paginacao */}
+              <nav className="mt-12">
+                <Pagination
+                  currentPage={currentPage}
+                  totalPages={totalPages}
+                  onPageChange={handlePageChange}
+                />
+              </nav>
             </>
           ) : (
             /* feedback visual caso nenhuma receita seja encontrada para o filtro */
