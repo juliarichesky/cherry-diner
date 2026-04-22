@@ -10,6 +10,8 @@ import Categorias from "./pages/Categorias/Categorias";
 import RecipeDetail from "./components/RecipeDetail/RecipeDetails";
 import Login from "./pages/Login/Login";
 import DifficultyPage from "./pages/DifficultyPage/DifficultyPage";
+import NotFound from "./pages/NotFound/NotFound";
+import Teapot from "./pages/Teapot/Teapot";
 
 /**
  * componente: scrolltotop
@@ -54,6 +56,13 @@ const App = () => {
 
         {/* rota isolada: a página de login não utiliza o layout padrão (navbar/footer) */}
         <Route path="/login" element={<Login />} />
+
+        {/* rota teapot: HTTP 418 i'm a teapot */}
+        <Route path="/cha" element={<Teapot />} />
+        <Route path="/teapot" element={<Teapot />} />
+
+        {/* rota notfound: quando a página não encontra nenhum caminho */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );
