@@ -1,15 +1,20 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { useLanguage } from "../../context/LanguageContext"; // 1. IMPORTAR O HOOK
+import { useLanguage } from "../../context/LanguageContext";
 import PageHeader from "../../components/PageHeader/PageHeader";
 import RecipeCard from "../../components/RecipeCard/RecipeCard";
 import Pagination from "../../components/Pagination/Pagination";
 
+/**
+ * interface: recipe
+ * define a estrutura de dados para as receitas filtradas por dificuldade.
+ * inclui campos opcionais de categoria para evitar conflitos de tipagem com o componente card.
+ */
 interface Recipe {
   id: string;
   category: string;
-  category_pt?: string; // opcional para bater com o RecipeCard
-  category_en?: string; // opcional para bater com o RecipeCard
+  category_pt?: string;
+  category_en?: string;
   title_pt: string;
   title_en: string;
   difficulty_pt: string;
@@ -21,16 +26,22 @@ interface Recipe {
 }
 
 const DifficultyPage = () => {
+  // recupera o nivel de dificuldade diretamente da url
   const { level } = useParams<{ level: string }>();
-  const { texts } = useLanguage(); // 2. PEGAR AS TRADUÇÕES
+  // acessa o contexto de traducao para textos dinamicos
+  const { texts } = useLanguage();
 
   const [allFilteredRecipes, setAllFilteredRecipes] = useState<Recipe[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [isLoading, setIsLoading] = useState(true);
 
+  // define a quantidade de cards exibidos por pagina
   const recipesPerPage = 8;
 
-  // 3. LÓGICA DE TÍTULO USANDO AS CHAVES NOVAS
+  /**
+   * funcao: getdifficultylabel
+   * mapeia o parametro da url para o texto traduzido correspondente.
+   */
   const getDifficultyLabel = () => {
     if (level === "facil") return texts.difficultyBeginner;
     if (level === "medio") return texts.difficultyInter;
@@ -40,6 +51,11 @@ const DifficultyPage = () => {
 
   const difficultyLabel = getDifficultyLabel();
 
+  /**
+   * hook: carregamento e filtragem
+   * busca as receitas do arquivo json e filtra conforme a dificuldade selecionada.
+   * utiliza normalizacao de caracteres para garantir a comparacao correta de strings.
+   */
   useEffect(() => {
     const loadRecipes = async () => {
       try {
@@ -48,7 +64,7 @@ const DifficultyPage = () => {
         const data = await response.json();
 
         const filtered = data.filter((recipe: Recipe) => {
-          // Normaliza o texto do JSON para bater com o ID da URL
+          // transforma o texto em minusculo e remove acentuacao para comparacao
           const recipeLevel = recipe.difficulty_pt
             ?.toLowerCase()
             .normalize("NFD")
@@ -68,6 +84,7 @@ const DifficultyPage = () => {
     loadRecipes();
   }, [level]);
 
+  // calculo de indices para a logica de paginacao
   const indexOfLastRecipe = currentPage * recipesPerPage;
   const indexOfFirstRecipe = indexOfLastRecipe - recipesPerPage;
   const currentRecipes = allFilteredRecipes.slice(
@@ -76,11 +93,13 @@ const DifficultyPage = () => {
   );
   const totalPages = Math.ceil(allFilteredRecipes.length / recipesPerPage);
 
+  // gerencia a troca de pagina e reseta o scroll para o topo
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  // tela de carregamento temporaria
   if (isLoading) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-[#fdfaf5]">
@@ -104,6 +123,7 @@ const DifficultyPage = () => {
         <section aria-label="Galeria de Receitas">
           {currentRecipes.length > 0 ? (
             <>
+              {/* grid responsivo para exibicao dos cards de receita */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12">
                 {currentRecipes.map((recipe) => (
                   <article key={recipe.id}>
@@ -119,6 +139,7 @@ const DifficultyPage = () => {
               />
             </>
           ) : (
+            /* feedback visual caso nenhuma receita seja encontrada para o filtro */
             <div className="py-32 flex flex-col items-center justify-center border-4 border-double border-[#e5dcd3] bg-white/40">
               <span className="text-4xl mb-4">🍒</span>
               <h2 className="text-2xl italic text-[#3d5a5a] text-center mb-6">
