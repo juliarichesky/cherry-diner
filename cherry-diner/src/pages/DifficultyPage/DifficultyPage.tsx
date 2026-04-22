@@ -8,6 +8,8 @@ import Pagination from "../../components/Pagination/Pagination";
 interface Recipe {
   id: string;
   category: string;
+  category_pt?: string; // opcional para bater com o RecipeCard
+  category_en?: string; // opcional para bater com o RecipeCard
   title_pt: string;
   title_en: string;
   difficulty_pt: string;
@@ -51,7 +53,7 @@ const DifficultyPage = () => {
             ?.toLowerCase()
             .normalize("NFD")
             .replace(/[\u0300-\u036f]/g, "");
-            
+
           return recipeLevel === level?.toLowerCase();
         });
 
@@ -68,7 +70,10 @@ const DifficultyPage = () => {
 
   const indexOfLastRecipe = currentPage * recipesPerPage;
   const indexOfFirstRecipe = indexOfLastRecipe - recipesPerPage;
-  const currentRecipes = allFilteredRecipes.slice(indexOfFirstRecipe, indexOfLastRecipe);
+  const currentRecipes = allFilteredRecipes.slice(
+    indexOfFirstRecipe,
+    indexOfLastRecipe,
+  );
   const totalPages = Math.ceil(allFilteredRecipes.length / recipesPerPage);
 
   const handlePageChange = (page: number) => {
@@ -92,7 +97,6 @@ const DifficultyPage = () => {
   return (
     <main className="w-full min-h-screen bg-[#fdfaf5] pt-16 pb-12 relative overflow-hidden">
       <div className="max-w-[1300px] mx-auto px-6 md:px-10 relative z-10">
-        
         <header className="mb-20">
           <PageHeader page="dificuldade" dynamicTitle={difficultyLabel} />
         </header>
@@ -118,7 +122,10 @@ const DifficultyPage = () => {
             <div className="py-32 flex flex-col items-center justify-center border-4 border-double border-[#e5dcd3] bg-white/40">
               <span className="text-4xl mb-4">🍒</span>
               <h2 className="text-2xl italic text-[#3d5a5a] text-center mb-6">
-                "{texts.noRecipesLevel || "Não encontramos receitas para esse nível ainda."}"
+                "
+                {texts.noRecipesLevel ||
+                  "Não encontramos receitas para esse nível ainda."}
+                "
               </h2>
             </div>
           )}

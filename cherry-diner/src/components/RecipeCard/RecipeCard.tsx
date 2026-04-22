@@ -10,8 +10,8 @@ interface RecipeProps {
   recipe: {
     id: string;
     category: string;
-    category_pt: string;
-    category_en: string;
+    category_pt?: string;
+    category_en?: string;
     prepTime: string;
     title_pt: string;
     title_en: string;
