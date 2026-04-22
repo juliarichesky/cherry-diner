@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./cherry-diner/.github/assets/welcome.png" alt="Welcome to Cherry Diner" width="100%">
+  <img src=".github/assets/welcome.png" alt="Welcome to Cherry Diner" width="100%">
 </p>
 
 <h1 align="center">Cherry Diner</h1>
@@ -23,7 +23,7 @@
 ## ✦ Objetivo do Projeto
 
 <p align="justify">
-  <img src="./cherry-diner/.github/assets/cerejinha.png" align="left" width="100" style="margin-right: 18px;">
+  <img src=".github/assets/cerejinha.png" align="left" width="100" style="margin-right: 18px;">
   
   O <strong>Cherry Diner</strong> nasce da intenção de traduzir a atmosfera acolhedora das lanchonetes clássicas dos anos 50 para o ambiente digital, combinando nostalgia, estética e tecnologia de forma harmônica. O projeto vai além da proposta funcional de um site de receitas. Ele foi concebido como uma experiência completa, onde o usuário não apenas encontra conteúdos, mas percorre uma jornada visual cuidadosamente construída, guiada por ritmo, composição e identidade.
   
@@ -84,13 +84,13 @@
 <table align="center">
   <tr>
     <td width="50%" valign="top">
-      <img src="./cherry-diner/.github/assets/home.png" width="100%" alt="Página Inicial">
+      <img src=".github/assets/home.png" width="100%" alt="Página Inicial">
       <br/><br/>
       <strong>🏠 Página Inicial</strong><br/>
       <sub>Uma vitrine acolhedora com receitas em destaque, níveis de dificuldade e categorias organizadas com cuidado.</sub>
     </td>
     <td width="50%" valign="top">
-      <img src="./cherry-diner/.github/assets/receitas.png" width="100%" alt="Lista de Receitas">
+      <img src=".github/assets/receitas.png" width="100%" alt="Lista de Receitas">
       <br/><br/>
       <strong>🍽️ Todas as Receitas</strong><br/>
       <sub>Visualização completa das receitas com filtros por categorias como entradas, pratos principais, bebidas e sobremesas.</sub>
@@ -99,13 +99,13 @@
 
   <tr>
     <td width="50%" valign="top">
-      <img src="./cherry-diner/.github/assets/search.png" width="100%" alt="Busca em Tempo Real">
+      <img src=".github/assets/search.png" width="100%" alt="Busca em Tempo Real">
       <br/><br/>
       <strong>🔍 Busca em Tempo Real</strong><br/>
       <sub>Busca inteligente com debounce, permitindo encontrar receitas de forma rápida e intuitiva.</sub>
     </td>
     <td width="50%" valign="top">
-      <img src="./cherry-diner/.github/assets/categorias.png" width="100%" alt="Exploração por Categorias">
+      <img src=".github/assets/categorias.png" width="100%" alt="Exploração por Categorias">
       <br/><br/>
       <strong>📂 Exploração por Categorias</strong><br/>
       <sub>Seções organizadas visualmente que facilitam a escolha do próximo prato.</sub>
@@ -114,13 +114,13 @@
 
   <tr>
     <td width="50%" valign="top">
-      <img src="./cherry-diner/.github/assets/detalhes-receitas.png" width="100%" alt="Caderno de Receitas">
+      <img src=".github/assets/detalhes-receitas.png" width="100%" alt="Caderno de Receitas">
       <br/><br/>
       <strong>📖 Caderno de Receitas</strong><br/>
       <sub>Página inspirada em revistas vintage, com foco na clareza e experiência de leitura.</sub>
     </td>
     <td width="50%" valign="top">
-      <img src="./cherry-diner/.github/assets/bilingue.png" width="100%" alt="Sistema Bilíngue">
+      <img src=".github/assets/bilingue.png" width="100%" alt="Sistema Bilíngue">
       <br/><br/>
       <strong>🌍 Sistema Bilíngue</strong><br/>
       <sub>Alternância completa entre Português e Inglês com apenas um clique.</sub>
@@ -129,13 +129,13 @@
 
   <tr>
     <td width="50%" valign="top">
-      <img src="./cherry-diner/.github/assets/contato.png" width="100%" alt="Carta de Contato">
+      <img src=".github/assets/contato.png" width="100%" alt="Carta de Contato">
       <br/><br/>
       <strong>✉️ Carta de Contato</strong><br/>
       <sub>Formulário inspirado em “Air Mail”, com estética retrô e interação delicada.</sub>
     </td>
     <td width="50%" valign="top">
-      <img src="./cherry-diner/.github/assets/login.png" width="100%" alt="Área do Cliente">
+      <img src=".github/assets/login.png" width="100%" alt="Área do Cliente">
       <br/><br/>
       <strong>🔑 Área do Cliente</strong><br/>
       <sub>Sistema de login que personaliza a experiência e mantém a sessão ativa.</sub>
@@ -224,7 +224,7 @@ cherry-diner
   <tr>
     <td align="center">
       <a href="https://github.com/juliarichesky">
-        <img src="./cherry-diner/.github/assets/julia-guimaraes.png" width="200px;" style="border-radius: 50%;" alt="Julia Guimarães"/><br>
+        <img src=".github/assets/julia-guimaraes.png" width="200px;" style="border-radius: 50%;" alt="Julia Guimarães"/><br>
         <sub><b>🍒 Julia Guimarães 🍒</b></sub>
       </a><br>
       RM: 568275<br>
@@ -238,7 +238,7 @@ cherry-diner
     </td>
     <td align="center">
       <a href="https://github.com/juspanopoulos">
-        <img src="./cherry-diner/.github/assets/julia-spanopoulos.png" width="200px;" style="border-radius: 50%;" alt="Julia Spanopoulos"/><br>
+        <img src=".github/assets/julia-spanopoulos.png" width="200px;" style="border-radius: 50%;" alt="Julia Spanopoulos"/><br>
         <sub><b>🍒 Julia Spanopoulos 🍒</b></sub>
       </a><br>
       RM: 566754<br>
