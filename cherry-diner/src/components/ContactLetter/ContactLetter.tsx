@@ -1,3 +1,4 @@
+import { useEffect } from "react"; // Adicionado para controlar o reset
 import { useForm } from "react-hook-form";
 import { useLanguage } from "../../context/LanguageContext";
 
@@ -25,12 +26,20 @@ const ContactLetter = ({ enviado, onSubmit }: ContactLetterProps) => {
   // acesso ao contexto de idioma para textos bilingues
   const { texts, language } = useLanguage();
 
-  // inicialização do formulário com desestruturação para registro e validação
+  // inicialização do formulário com desestruturação para registro, validação e RESET
   const {
     register,
     handleSubmit,
+    reset, // 🛠️ Implementado o método reset
     formState: { errors },
   } = useForm<ContactFormData>();
+
+  // efeito para limpar o formulário assim que o envio for confirmado
+  useEffect(() => {
+    if (enviado) {
+      reset();
+    }
+  }, [enviado, reset]);
 
   return (
     <div className="w-full max-w-[1000px] bg-white p-1 shadow-[0_40px_80px_rgba(0,0,0,0.15)] transform rotate-[-0.5deg] font-serif">
