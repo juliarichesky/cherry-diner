@@ -58,7 +58,7 @@ const HomeHighlights = () => {
   }, []);
 
   return (
-    <section className="relative w-full pt-40 md:pt-60 pb-32 overflow-hidden">
+    <section className="relative w-full pt-40 md:pt-60 pb-32 md:pb-50 lg:pb-58 overflow-hidden">
       {/* backgrounds responsivos com efeito de overlay para legibilidade */}
       {/* versão mobile */}
       <div
@@ -135,7 +135,7 @@ const HomeHighlights = () => {
         </header>
 
         {/* vitrine de receitas: grid que agrupa os cards buscados do json */}
-        <div className="relative bg-[#fdfaf5]/90 border-t-[5px] border-[#ca4952] border-x-4 border-b-4 border-x-white border-b-white rounded-[1rem] p-8 md:p-16 shadow-[0_25px_80px_-20px_rgba(0,0,0,0.15)] flex flex-col items-center">
+        <div className="relative bg-[#fdfaf5]/90 border-t-4 border-t-[#ca4952] border-x border-b border-[#e9dcc9] rounded-[1rem] p-8 md:p-16 shadow-[0_25px_80px_-20px_rgba(0,0,0,0.15)] flex flex-col items-center">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-14 w-full mb-16 md:mb-20">
             {!isLoading &&
               recipes.map((recipe) => (

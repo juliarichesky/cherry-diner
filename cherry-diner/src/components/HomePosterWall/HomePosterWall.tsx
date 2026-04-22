@@ -112,12 +112,12 @@ const HomePosterWall = () => {
           </h2>
 
           <p className="mt-8 md:mt-12 text-[#8c6b5d] text-md md:text-xl font-medium italic opacity-80 leading-relaxed font-serif">
-            — {texts.categoriesSubtitle}
+            {texts.categoriesSubtitle}
           </p>
         </header>
 
         {/* container vitrine: mural estilo bento grid ou poster wall */}
-        <div className="relative bg-[#fdfaf5]/90 border-t-[5px] border-[#ca4952] border-x-4 border-b-4 border-x-white border-b-white rounded-[1rem] p-4 md:p-12 shadow-[0_25px_80px_-20px_rgba(0,0,0,0.15)]">
+        <div className="relative bg-[#fdfaf5]/90 border-t-[4px] border-t-[#ca4952] border-x border-b border-[#e9dcc9] rounded-[1rem] p-4 md:p-12 shadow-[0_25px_80px_-20px_rgba(0,0,0,0.15)]">
           <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 md:gap-8 h-auto md:h-[750px]">
             {/* skeleton screen: exibido enquanto os dados carregam */}
             {isLoading
