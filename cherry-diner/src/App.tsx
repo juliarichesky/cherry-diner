@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
+import { useLanguage } from "./context/LanguageContext";
 
 import Layout from "./components/Layout/Layout";
 import Home from "./pages/Home/Home";
@@ -30,6 +31,19 @@ const ScrollToTop = () => {
 };
 
 const App = () => {
+  // pega o idioma atual
+  const { language } = useLanguage();
+
+  // useEffect para mudar o nome do site na aba do navegador
+  useEffect(() => {
+    const siteTitle =
+      language === "pt"
+        ? "Cherry Diner | Receitas Anos 50"
+        : "Cherry Diner | 50's Recipes";
+
+    document.title = siteTitle;
+  }, [language]); // roda sempre que o idioma mudar
+
   return (
     <>
       {/* injeta a lógica de reset de scroll em todas as rotas */}
