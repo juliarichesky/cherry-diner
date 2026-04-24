@@ -73,7 +73,11 @@ const Categorias = () => {
                       ? "main courses"
                       : cat.id === "entradas" && language === "en"
                         ? "starters"
-                        : cat.labelKey
+                        : cat.id === "bebidas" && language === "en"
+                          ? "drinks"
+                          : cat.id === "sobremesas" && language === "en"
+                            ? "desserts"
+                            : cat.labelKey
                   }
                   /* mapeamento dinamico da descricao via context de idioma. */
                   desc={texts[cat.descKey as keyof typeof texts]}

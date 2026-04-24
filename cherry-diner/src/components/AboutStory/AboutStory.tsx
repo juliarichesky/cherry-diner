@@ -1,7 +1,7 @@
 import { useLanguage } from "../../context/LanguageContext";
 import CadillacPin from "../../assets/images/pins/cadillac.png";
 import KissPin from "../../assets/images/pins/kiss.png";
-import JuliasPhoto from "../../assets/images/devs/julias.jpg";
+import JuliasPhoto from "../../assets/images/devs/julias.png";
 
 /**
  * componente: aboutstory

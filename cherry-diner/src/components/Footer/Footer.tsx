@@ -115,7 +115,7 @@ const Footer = () => {
 
           <div className="flex flex-col items-center md:items-end text-center md:text-right">
             <p className="text-[#8b6c5e] text-[10px] font-bold uppercase tracking-[0.3em]">
-              © 2026 Cherry Diner • FIAP • 1TDSPA
+              © 2026 Cherry Diner • FIAP • 1TDSPA-2025
             </p>
           </div>
         </div>

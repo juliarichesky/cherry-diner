@@ -14,9 +14,6 @@
     "servings_pt": "1 pessoa",
     "servings_en": "1 serving",
     "calories": 650,
-    "price": "R$ 28,00",
-    "tags_pt": ["carne", "diner", "rapido"],
-    "tags_en": ["meat", "diner", "fast"],
     "ingredients_pt": [
       "150g de carne bovina",
       "Pão brioche",
@@ -44,9 +41,6 @@
       "Assemble with cheese, pickles, and sauces."
     ]
   },
-
-
-
 
   {
     "id": "milkshake-de-morango",
@@ -55,46 +49,39 @@
     "category_en": "Desserts",
     "title_pt": "Milkshake de Morango",
     "title_en": "Strawberry Milkshake",
-    "description_pt": "Um batido cremoso e saboroso, perfeito para aqueles que amam morangos.",
-    "description_en": "A creamy and delicious smoothie, perfect for those who love strawberries.",
+    "description_pt": "Milkshake cremoso de morango com sorvete e leite, doce e refrescante para dias quentes.",
+    "description_en": "A creamy strawberry milkshake made with ice cream and milk, sweet and refreshing for warm days.",
     "prepTime": "10 min",
     "difficulty_pt": "Fácil",
     "difficulty_en": "Easy",
     "servings_pt": "1 pessoa",
     "servings_en": "1 serving",
-    "calories": 650,
-    "tags_pt": ["carne", "diner", "rapido"],
-    "tags_en": ["meat", "diner", "fast"],
+    "calories": 420,
     "ingredients_pt": [
-      "150g de carne bovina",
-      "Pão brioche",
-      "Queijo cheddar",
-      "Picles",
-      "Ketchup e mostarda"
+      "6 morangos frescos",
+      "2 bolas de sorvete de baunilha",
+      "200ml de leite gelado",
+      "2 colheres de sopa de calda de morango",
+      "Chantilly para finalizar"
     ],
     "ingredients_en": [
-      "150g beef patty",
-      "Brioche bun",
-      "Cheddar cheese",
-      "Pickles",
-      "Ketchup and mustard"
+      "6 fresh strawberries",
+      "2 scoops vanilla ice cream",
+      "200ml cold milk",
+      "2 tablespoons strawberry syrup",
+      "Whipped cream to finish"
     ],
     "instructions_pt": [
-      "Modele a carne em formato de hambúrguer.",
-      "Grelhe até o ponto desejado.",
-      "Toste o pão na manteiga.",
-      "Monte com queijo, picles e molhos."
+      "Bata os morangos, o sorvete, o leite e a calda no liquidificador até ficar cremoso.",
+      "Ajuste a textura com mais leite, se necessário.",
+      "Sirva em copo alto e finalize com chantilly."
     ],
     "instructions_en": [
-      "Shape the beef into a patty.",
-      "Grill to desired doneness.",
-      "Toast the bun with butter.",
-      "Assemble with cheese, pickles, and sauces."
+      "Blend the strawberries, ice cream, milk, and syrup until smooth and creamy.",
+      "Adjust the texture with a little more milk if needed.",
+      "Serve in a tall glass and finish with whipped cream."
     ]
   },
-
-
-
 
   {
     "id": "moscow-mule",
@@ -103,47 +90,39 @@
     "category_en": "Drinks",
     "title_pt": "Moscow Mule",
     "title_en": "Moscow Mule",
-    "description_pt": "Um drink refrescante e saboroso, perfeito para aqueles que amam cocktails.",
-    "description_en": "A refreshing and delicious cocktail, perfect for those who love mixed drinks.",
-    "prepTime": "10 min",
+    "description_pt": "Coquetel cítrico e borbulhante com vodca, ginger beer e limão, servido bem gelado.",
+    "description_en": "A bright and fizzy cocktail with vodka, ginger beer, and lime, served ice cold.",
+    "prepTime": "5 min",
     "difficulty_pt": "Fácil",
     "difficulty_en": "Easy",
     "servings_pt": "1 pessoa",
     "servings_en": "1 serving",
-    "calories": 650,
-    "tags_pt": ["carne", "diner", "rapido"],
-    "tags_en": ["meat", "diner", "fast"],
+    "calories": 180,
     "ingredients_pt": [
-      "150g de carne bovina",
-      "Pão brioche",
-      "Queijo cheddar",
-      "Picles",
-      "Ketchup e mostarda"
+      "50ml de vodca",
+      "100ml de ginger beer",
+      "20ml de suco de limão",
+      "Gelo",
+      "Rodela de limão e hortelã para decorar"
     ],
     "ingredients_en": [
-      "150g beef patty",
-      "Brioche bun",
-      "Cheddar cheese",
-      "Pickles",
-      "Ketchup and mustard"
+      "50ml vodka",
+      "100ml ginger beer",
+      "20ml lime juice",
+      "Ice",
+      "Lime wheel and mint for garnish"
     ],
     "instructions_pt": [
-      "Modele a carne em formato de hambúrguer.",
-      "Grelhe até o ponto desejado.",
-      "Toste o pão na manteiga.",
-      "Monte com queijo, picles e molhos."
+      "Encha uma caneca ou copo com gelo.",
+      "Adicione a vodca e o suco de limão.",
+      "Complete com ginger beer, misture delicadamente e decore."
     ],
     "instructions_en": [
-      "Shape the beef into a patty.",
-      "Grill to desired doneness.",
-      "Toast the bun with butter.",
-      "Assemble with cheese, pickles, and sauces."
+      "Fill a mug or glass with ice.",
+      "Add the vodka and lime juice.",
+      "Top with ginger beer, stir gently, and garnish."
     ]
   },
-
-
-
-
 
   {
     "id": "salada-caeser",
@@ -152,46 +131,39 @@
     "category_en": "Starters",
     "title_pt": "Salada Caesar",
     "title_en": "Caesar Salad",
-    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
-    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
-    "prepTime": "10 min",
+    "description_pt": "Clássica salada crocante com alface-romana, croutons, parmesão e molho cremoso.",
+    "description_en": "A classic crisp salad with romaine lettuce, croutons, Parmesan, and creamy dressing.",
+    "prepTime": "15 min",
     "difficulty_pt": "Fácil",
     "difficulty_en": "Easy",
-    "servings_pt": "1 pessoa",
-    "servings_en": "1 serving",
-    "calories": 650,
-    "tags_pt": ["carne", "diner", "rapido"],
-    "tags_en": ["meat", "diner", "fast"],
+    "servings_pt": "2 pessoas",
+    "servings_en": "2 servings",
+    "calories": 320,
     "ingredients_pt": [
-      "150g de carne bovina",
-      "Pão brioche",
-      "Queijo cheddar",
-      "Picles",
-      "Ketchup e mostarda"
+      "1 pé de alface-romana",
+      "1 xícara de croutons",
+      "40g de parmesão ralado",
+      "3 colheres de sopa de molho caesar",
+      "Pimenta-do-reino a gosto"
     ],
     "ingredients_en": [
-      "150g beef patty",
-      "Brioche bun",
-      "Cheddar cheese",
-      "Pickles",
-      "Ketchup and mustard"
+      "1 head romaine lettuce",
+      "1 cup croutons",
+      "40g grated Parmesan",
+      "3 tablespoons Caesar dressing",
+      "Black pepper to taste"
     ],
     "instructions_pt": [
-      "Modele a carne em formato de hambúrguer.",
-      "Grelhe até o ponto desejado.",
-      "Toste o pão na manteiga.",
-      "Monte com queijo, picles e molhos."
+      "Lave, seque e rasgue a alface em pedaços grandes.",
+      "Misture com o molho caesar até envolver bem as folhas.",
+      "Finalize com croutons, parmesão e pimenta-do-reino."
     ],
     "instructions_en": [
-      "Shape the beef into a patty.",
-      "Grill to desired doneness.",
-      "Toast the bun with butter.",
-      "Assemble with cheese, pickles, and sauces."
+      "Wash, dry, and tear the lettuce into large pieces.",
+      "Toss with the Caesar dressing until the leaves are well coated.",
+      "Finish with croutons, Parmesan, and black pepper."
     ]
   },
-
-
-
 
   {
     "id": "bolo-de-abacaxi-invertido",
@@ -199,49 +171,44 @@
     "category_pt": "Sobremesas",
     "category_en": "Desserts",
     "title_pt": "Bolo de Abacaxi Invertido",
-    "title_en": "Inverted Pineapple Cake",
-    "description_pt": "Um bolo refrescante e saboroso, perfeito para aqueles que amam sobremesas doces.",
-    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
-    "prepTime": "10 min",
+    "title_en": "Upside-Down Pineapple Cake",
+    "description_pt": "Bolo macio com rodelas caramelizadas de abacaxi, assado de cabeça para baixo para um visual marcante.",
+    "description_en": "A soft cake topped with caramelized pineapple rings, baked upside down for a striking finish.",
+    "prepTime": "1 h",
     "difficulty_pt": "Médio",
     "difficulty_en": "Medium",
-    "servings_pt": "1 pessoa",
-    "servings_en": "1 serving",
-    "calories": 650,
-    "tags_pt": ["carne", "diner", "rapido"],
-    "tags_en": ["meat", "diner", "fast"],
+    "servings_pt": "8 pessoas",
+    "servings_en": "8 servings",
+    "calories": 360,
     "ingredients_pt": [
-      "150g de carne bovina",
-      "Pão brioche",
-      "Queijo cheddar",
-      "Picles",
-      "Ketchup e mostarda"
+      "1 abacaxi em rodelas",
+      "1 xícara de açúcar",
+      "2 ovos",
+      "1 e 1/2 xícara de farinha de trigo",
+      "1/2 xícara de leite",
+      "1 colher de sopa de fermento em pó"
     ],
     "ingredients_en": [
-      "150g beef patty",
-      "Brioche bun",
-      "Cheddar cheese",
-      "Pickles",
-      "Ketchup and mustard"
+      "1 pineapple cut into rings",
+      "1 cup sugar",
+      "2 eggs",
+      "1 1/2 cups all-purpose flour",
+      "1/2 cup milk",
+      "1 tablespoon baking powder"
     ],
     "instructions_pt": [
-      "Modele a carne em formato de hambúrguer.",
-      "Grelhe até o ponto desejado.",
-      "Toste o pão na manteiga.",
-      "Monte com queijo, picles e molhos."
+      "Caramelize parte do açúcar na forma e distribua as rodelas de abacaxi.",
+      "Bata os ovos com o restante do açúcar, junte os ingredientes secos e o leite.",
+      "Misture o fermento, despeje sobre o abacaxi e asse até dourar.",
+      "Desenforme ainda morno para revelar a cobertura caramelizada."
     ],
     "instructions_en": [
-      "Shape the beef into a patty.",
-      "Grill to desired doneness.",
-      "Toast the bun with butter.",
-      "Assemble with cheese, pickles, and sauces."
+      "Caramelize part of the sugar in the pan and arrange the pineapple rings.",
+      "Beat the eggs with the remaining sugar, then add the dry ingredients and milk.",
+      "Fold in the baking powder, pour over the pineapple, and bake until golden.",
+      "Unmold while still warm to reveal the caramelized topping."
     ]
   },
-
-
-
-
-
 
   {
     "id": "bolo-de-carne",
@@ -249,50 +216,44 @@
     "category_pt": "Pratos Principais",
     "category_en": "Main Courses",
     "title_pt": "Bolo de Carne",
-    "title_en": "Meat Cake",
-    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
-    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
-    "prepTime": "10 min",
-    "difficulty_pt": "Fácil",
-    "difficulty_en": "Easy",
-    "servings_pt": "1 pessoa",
-    "servings_en": "1 serving",
-    "calories": 650,
-    "tags_pt": ["carne", "diner", "rapido"],
-    "tags_en": ["meat", "diner", "fast"],
+    "title_en": "Meatloaf",
+    "description_pt": "Bolo de carne suculento e bem temperado, assado até dourar e perfeito para refeições reconfortantes.",
+    "description_en": "A juicy, well-seasoned meatloaf baked until golden brown, perfect for a comforting meal.",
+    "prepTime": "1 h 10 min",
+    "difficulty_pt": "Médio",
+    "difficulty_en": "Medium",
+    "servings_pt": "6 pessoas",
+    "servings_en": "6 servings",
+    "calories": 430,
     "ingredients_pt": [
-      "150g de carne bovina",
-      "Pão brioche",
-      "Queijo cheddar",
-      "Picles",
-      "Ketchup e mostarda"
+      "700g de carne moída",
+      "1 cebola picada",
+      "2 dentes de alho",
+      "1 ovo",
+      "1/2 xícara de farinha de rosca",
+      "3 colheres de sopa de ketchup"
     ],
     "ingredients_en": [
-      "150g beef patty",
-      "Brioche bun",
-      "Cheddar cheese",
-      "Pickles",
-      "Ketchup and mustard"
+      "700g ground beef",
+      "1 chopped onion",
+      "2 garlic cloves",
+      "1 egg",
+      "1/2 cup breadcrumbs",
+      "3 tablespoons ketchup"
     ],
     "instructions_pt": [
-      "Modele a carne em formato de hambúrguer.",
-      "Grelhe até o ponto desejado.",
-      "Toste o pão na manteiga.",
-      "Monte com queijo, picles e molhos."
+      "Misture a carne com cebola, alho, ovo e farinha de rosca até dar liga.",
+      "Modele em formato de pão e coloque em uma assadeira.",
+      "Cubra com ketchup e asse até ficar cozido e dourado.",
+      "Descanse por alguns minutos antes de fatiar."
     ],
     "instructions_en": [
-      "Shape the beef into a patty.",
-      "Grill to desired doneness.",
-      "Toast the bun with butter.",
-      "Assemble with cheese, pickles, and sauces."
+      "Mix the beef with onion, garlic, egg, and breadcrumbs until combined.",
+      "Shape into a loaf and place it on a baking tray.",
+      "Spread ketchup on top and bake until cooked through and browned.",
+      "Let it rest for a few minutes before slicing."
     ]
   },
-
-
-
-
-
-
 
   {
     "id": "gelatina-mosaico",
@@ -301,52 +262,41 @@
     "category_en": "Desserts",
     "title_pt": "Gelatina Mosaico",
     "title_en": "Mosaic Jello",
-    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
-    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
-    "prepTime": "10 min",
+    "description_pt": "Sobremesa colorida com cubos de gelatina e creme suave, leve e divertida de servir.",
+    "description_en": "A colorful dessert made with jello cubes and a creamy base, light and fun to serve.",
+    "prepTime": "4 h 30 min",
     "difficulty_pt": "Fácil",
     "difficulty_en": "Easy",
-    "servings_pt": "1 pessoa",
-    "servings_en": "1 serving",
-    "calories": 650,
-    "tags_pt": ["carne", "diner", "rapido"],
-    "tags_en": ["meat", "diner", "fast"],
+    "servings_pt": "8 pessoas",
+    "servings_en": "8 servings",
+    "calories": 220,
     "ingredients_pt": [
-      "150g de carne bovina",
-      "Pão brioche",
-      "Queijo cheddar",
-      "Picles",
-      "Ketchup e mostarda"
+      "3 sabores de gelatina",
+      "1 lata de leite condensado",
+      "1 lata de creme de leite",
+      "1 envelope de gelatina incolor",
+      "Água quente e fria conforme a embalagem"
     ],
     "ingredients_en": [
-      "150g beef patty",
-      "Brioche bun",
-      "Cheddar cheese",
-      "Pickles",
-      "Ketchup and mustard"
+      "3 flavors of gelatin",
+      "1 can sweetened condensed milk",
+      "1 can cream",
+      "1 packet unflavored gelatin",
+      "Hot and cold water as directed on the box"
     ],
     "instructions_pt": [
-      "Modele a carne em formato de hambúrguer.",
-      "Grelhe até o ponto desejado.",
-      "Toste o pão na manteiga.",
-      "Monte com queijo, picles e molhos."
+      "Prepare as gelatinas coloridas separadamente e leve para firmar.",
+      "Corte em cubos e reserve.",
+      "Bata o leite condensado, o creme de leite e a gelatina incolor dissolvida.",
+      "Misture com os cubos e leve à geladeira até firmar."
     ],
     "instructions_en": [
-      "Shape the beef into a patty.",
-      "Grill to desired doneness.",
-      "Toast the bun with butter.",
-      "Assemble with cheese, pickles, and sauces."
+      "Prepare the flavored gelatins separately and chill until set.",
+      "Cut them into cubes and set aside.",
+      "Blend the condensed milk, cream, and dissolved unflavored gelatin.",
+      "Fold in the cubes and refrigerate until firm."
     ]
   },
-
-
-
-
-
-
-
-
-
 
   {
     "id": "martini",
@@ -355,52 +305,37 @@
     "category_en": "Drinks",
     "title_pt": "Martini",
     "title_en": "Martini",
-    "description_pt": "Um drink clássico e refinado, perfeito para aqueles que apreciam bebidas alcoólicas com sabor equilibrado.",
-    "description_en": "A classic and refined drink, perfect for those who appreciate balanced alcoholic beverages.",
-    "prepTime": "10 min",
+    "description_pt": "Coquetel elegante e seco à base de gim e vermute, finalizado com azeitona ou twist de limão.",
+    "description_en": "An elegant, dry cocktail made with gin and vermouth, finished with an olive or lemon twist.",
+    "prepTime": "5 min",
     "difficulty_pt": "Fácil",
     "difficulty_en": "Easy",
     "servings_pt": "1 pessoa",
     "servings_en": "1 serving",
-    "calories": 650,
-    "tags_pt": ["carne", "diner", "rapido"],
-    "tags_en": ["meat", "diner", "fast"],
+    "calories": 170,
     "ingredients_pt": [
-      "150g de carne bovina",
-      "Pão brioche",
-      "Queijo cheddar",
-      "Picles",
-      "Ketchup e mostarda"
+      "60ml de gim",
+      "10ml de vermute seco",
+      "Gelo",
+      "1 azeitona ou twist de limão"
     ],
     "ingredients_en": [
-      "150g beef patty",
-      "Brioche bun",
-      "Cheddar cheese",
-      "Pickles",
-      "Ketchup and mustard"
+      "60ml gin",
+      "10ml dry vermouth",
+      "Ice",
+      "1 olive or lemon twist"
     ],
     "instructions_pt": [
-      "Modele a carne em formato de hambúrguer.",
-      "Grelhe até o ponto desejado.",
-      "Toste o pão na manteiga.",
-      "Monte com queijo, picles e molhos."
+      "Resfrie a taça previamente.",
+      "Misture o gim e o vermute com gelo em um mixing glass.",
+      "Coe para a taça e finalize com azeitona ou twist de limão."
     ],
     "instructions_en": [
-      "Shape the beef into a patty.",
-      "Grill to desired doneness.",
-      "Toast the bun with butter.",
-      "Assemble with cheese, pickles, and sauces."
+      "Chill the glass beforehand.",
+      "Stir the gin and vermouth with ice in a mixing glass.",
+      "Strain into the glass and finish with an olive or lemon twist."
     ]
   },
-
-
-
-
-
-
-
-
-
 
   {
     "id": "bolo-de-chocolate",
@@ -409,54 +344,41 @@
     "category_en": "Desserts",
     "title_pt": "Bolo de Chocolate",
     "title_en": "Chocolate Cake",
-    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
-    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
-    "prepTime": "10 min",
+    "description_pt": "Bolo fofo e intenso de chocolate, ideal para acompanhar café ou celebrar ocasiões especiais.",
+    "description_en": "A fluffy, rich chocolate cake that is perfect with coffee or for special occasions.",
+    "prepTime": "55 min",
     "difficulty_pt": "Fácil",
     "difficulty_en": "Easy",
-    "servings_pt": "1 pessoa",
-    "servings_en": "1 serving",
-    "calories": 650,
-    "tags_pt": ["carne", "diner", "rapido"],
-    "tags_en": ["meat", "diner", "fast"],
+    "servings_pt": "10 pessoas",
+    "servings_en": "10 servings",
+    "calories": 390,
     "ingredients_pt": [
-      "150g de carne bovina",
-      "Pão brioche",
-      "Queijo cheddar",
-      "Picles",
-      "Ketchup e mostarda"
+      "2 xícaras de farinha de trigo",
+      "1 xícara de chocolate em pó",
+      "3 ovos",
+      "1 xícara de leite",
+      "1/2 xícara de óleo",
+      "1 colher de sopa de fermento em pó"
     ],
     "ingredients_en": [
-      "150g beef patty",
-      "Brioche bun",
-      "Cheddar cheese",
-      "Pickles",
-      "Ketchup and mustard"
+      "2 cups all-purpose flour",
+      "1 cup cocoa powder",
+      "3 eggs",
+      "1 cup milk",
+      "1/2 cup oil",
+      "1 tablespoon baking powder"
     ],
     "instructions_pt": [
-      "Modele a carne em formato de hambúrguer.",
-      "Grelhe até o ponto desejado.",
-      "Toste o pão na manteiga.",
-      "Monte com queijo, picles e molhos."
+      "Misture os ovos, o leite, o óleo e os ingredientes secos até obter uma massa lisa.",
+      "Acrescente o fermento por último.",
+      "Despeje em forma untada e asse até o bolo crescer e firmar."
     ],
     "instructions_en": [
-      "Shape the beef into a patty.",
-      "Grill to desired doneness.",
-      "Toast the bun with butter.",
-      "Assemble with cheese, pickles, and sauces."
+      "Mix the eggs, milk, oil, and dry ingredients until smooth.",
+      "Fold in the baking powder last.",
+      "Pour into a greased pan and bake until the cake rises and sets."
     ]
   },
-
-
-
-
-
-
-
-
-
-
-
 
   {
     "id": "ostras-rockefeller",
@@ -464,106 +386,89 @@
     "category_pt": "Entradas",
     "category_en": "Starters",
     "title_pt": "Ostras Rockefeller",
-    "title_en": "Rockefeller Oysters",
-    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
-    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
-    "prepTime": "10 min",
-    "difficulty_pt": "Fácil",
-    "difficulty_en": "Easy",
-    "servings_pt": "1 pessoa",
-    "servings_en": "1 serving",
-    "calories": 650,
-    "tags_pt": ["carne", "diner", "rapido"],
-    "tags_en": ["meat", "diner", "fast"],
+    "title_en": "Oysters Rockefeller",
+    "description_pt": "Ostras gratinadas com cobertura amanteigada de ervas e pão, ricas e sofisticadas.",
+    "description_en": "Baked oysters topped with a buttery herb crust, rich and sophisticated.",
+    "prepTime": "25 min",
+    "difficulty_pt": "Médio",
+    "difficulty_en": "Medium",
+    "servings_pt": "4 pessoas",
+    "servings_en": "4 servings",
+    "calories": 210,
     "ingredients_pt": [
-      "150g de carne bovina",
-      "Pão brioche",
-      "Queijo cheddar",
-      "Picles",
-      "Ketchup e mostarda"
+      "12 ostras frescas",
+      "2 colheres de sopa de manteiga",
+      "Espinafre picado",
+      "Farinha de rosca",
+      "Parmesão ralado",
+      "Suco de limão"
     ],
     "ingredients_en": [
-      "150g beef patty",
-      "Brioche bun",
-      "Cheddar cheese",
-      "Pickles",
-      "Ketchup and mustard"
+      "12 fresh oysters",
+      "2 tablespoons butter",
+      "Chopped spinach",
+      "Breadcrumbs",
+      "Grated Parmesan",
+      "Lemon juice"
     ],
     "instructions_pt": [
-      "Modele a carne em formato de hambúrguer.",
-      "Grelhe até o ponto desejado.",
-      "Toste o pão na manteiga.",
-      "Monte com queijo, picles e molhos."
+      "Abra as ostras e acomode-as em uma assadeira com sal grosso.",
+      "Misture manteiga, espinafre, farinha de rosca e parmesão.",
+      "Cubra cada ostra com a mistura e leve ao forno até gratinar.",
+      "Finalize com algumas gotas de limão."
     ],
     "instructions_en": [
-      "Shape the beef into a patty.",
-      "Grill to desired doneness.",
-      "Toast the bun with butter.",
-      "Assemble with cheese, pickles, and sauces."
+      "Shuck the oysters and place them on a tray lined with coarse salt.",
+      "Mix the butter, spinach, breadcrumbs, and Parmesan.",
+      "Top each oyster with the mixture and bake until browned.",
+      "Finish with a few drops of lemon juice."
     ]
   },
-
-
-
-
-
-
-
-
-
 
   {
     "id": "presunto-assado-com-abacaxi",
     "category": "principais",
-    "category_pt": "Principais",
+    "category_pt": "Pratos Principais",
     "category_en": "Main Courses",
     "title_pt": "Presunto Assado com Abacaxi",
-    "title_en": "Grilled Ham with Pineapple",
-    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
-    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
-    "prepTime": "10 min",
-    "difficulty_pt": "Fácil",
-    "difficulty_en": "Easy",
-    "servings_pt": "1 pessoa",
-    "servings_en": "1 serving",
-    "calories": 650,
-    "tags_pt": ["carne", "diner", "rapido"],
-    "tags_en": ["meat", "diner", "fast"],
+    "title_en": "Baked Ham with Pineapple",
+    "description_pt": "Presunto assado agridoce com abacaxi caramelizado, clássico de mesas festivas.",
+    "description_en": "A sweet-and-savory baked ham with caramelized pineapple, a classic for festive tables.",
+    "prepTime": "1 h 40 min",
+    "difficulty_pt": "Médio",
+    "difficulty_en": "Medium",
+    "servings_pt": "8 pessoas",
+    "servings_en": "8 servings",
+    "calories": 520,
     "ingredients_pt": [
-      "150g de carne bovina",
-      "Pão brioche",
-      "Queijo cheddar",
-      "Picles",
-      "Ketchup e mostarda"
+      "1 peça pequena de presunto",
+      "Rodelas de abacaxi",
+      "Açúcar mascavo",
+      "Cravos-da-índia",
+      "Mostarda",
+      "Suco de laranja"
     ],
     "ingredients_en": [
-      "150g beef patty",
-      "Brioche bun",
-      "Cheddar cheese",
-      "Pickles",
-      "Ketchup and mustard"
+      "1 small ham",
+      "Pineapple rings",
+      "Brown sugar",
+      "Cloves",
+      "Mustard",
+      "Orange juice"
     ],
     "instructions_pt": [
-      "Modele a carne em formato de hambúrguer.",
-      "Grelhe até o ponto desejado.",
-      "Toste o pão na manteiga.",
-      "Monte com queijo, picles e molhos."
+      "Faça cortes superficiais no presunto e espete cravos.",
+      "Misture mostarda, açúcar mascavo e suco de laranja para formar a cobertura.",
+      "Cubra o presunto, disponha as rodelas de abacaxi e asse até caramelizar.",
+      "Regue com o molho da assadeira antes de servir."
     ],
     "instructions_en": [
-      "Shape the beef into a patty.",
-      "Grill to desired doneness.",
-      "Toast the bun with butter.",
-      "Assemble with cheese, pickles, and sauces."
+      "Score the ham lightly and stud it with cloves.",
+      "Mix mustard, brown sugar, and orange juice to make the glaze.",
+      "Coat the ham, arrange the pineapple rings, and bake until caramelized.",
+      "Spoon the pan juices over the ham before serving."
     ]
   },
-
-
-
-
-
-
-
-
 
   {
     "id": "salada-de-ambrosia",
@@ -572,105 +477,86 @@
     "category_en": "Desserts",
     "title_pt": "Salada de Ambrosia",
     "title_en": "Ambrosia Salad",
-    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
-    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
-    "prepTime": "10 min",
+    "description_pt": "Sobremesa cremosa e nostálgica com frutas, marshmallows e chantilly.",
+    "description_en": "A nostalgic creamy dessert with fruit, marshmallows, and whipped topping.",
+    "prepTime": "20 min",
     "difficulty_pt": "Fácil",
     "difficulty_en": "Easy",
-    "servings_pt": "1 pessoa",
-    "servings_en": "1 serving",
-    "calories": 650,
-    "tags_pt": ["carne", "diner", "rapido"],
-    "tags_en": ["meat", "diner", "fast"],
+    "servings_pt": "6 pessoas",
+    "servings_en": "6 servings",
+    "calories": 280,
     "ingredients_pt": [
-      "150g de carne bovina",
-      "Pão brioche",
-      "Queijo cheddar",
-      "Picles",
-      "Ketchup e mostarda"
+      "1 xícara de creme de leite",
+      "1 xícara de chantilly",
+      "1 xícara de mini marshmallows",
+      "Abacaxi picado",
+      "Uvas sem sementes",
+      "Coco ralado"
     ],
     "ingredients_en": [
-      "150g beef patty",
-      "Brioche bun",
-      "Cheddar cheese",
-      "Pickles",
-      "Ketchup and mustard"
+      "1 cup cream",
+      "1 cup whipped topping",
+      "1 cup mini marshmallows",
+      "Diced pineapple",
+      "Seedless grapes",
+      "Shredded coconut"
     ],
     "instructions_pt": [
-      "Modele a carne em formato de hambúrguer.",
-      "Grelhe até o ponto desejado.",
-      "Toste o pão na manteiga.",
-      "Monte com queijo, picles e molhos."
+      "Misture o creme de leite com o chantilly até ficar homogêneo.",
+      "Junte as frutas, os marshmallows e o coco.",
+      "Leve à geladeira por pelo menos 1 hora antes de servir."
     ],
     "instructions_en": [
-      "Shape the beef into a patty.",
-      "Grill to desired doneness.",
-      "Toast the bun with butter.",
-      "Assemble with cheese, pickles, and sauces."
+      "Mix the cream and whipped topping until smooth.",
+      "Fold in the fruit, marshmallows, and coconut.",
+      "Chill for at least 1 hour before serving."
     ]
   },
-
-
-
-
-
-
-
-
-
 
   {
     "id": "torta-de-frango",
     "category": "principais",
-    "category_pt": "Principais",
+    "category_pt": "Pratos Principais",
     "category_en": "Main Courses",
     "title_pt": "Torta de Frango",
     "title_en": "Chicken Pie",
-    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
-    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
-    "prepTime": "10 min",
-    "difficulty_pt": "Fácil",
-    "difficulty_en": "Easy",
-    "servings_pt": "1 pessoa",
-    "servings_en": "1 serving",
-    "calories": 650,
-    "tags_pt": ["carne", "diner", "rapido"],
-    "tags_en": ["meat", "diner", "fast"],
+    "description_pt": "Torta salgada recheada com frango cremoso e massa dourada, ótima para almoço ou lanche.",
+    "description_en": "A savory pie filled with creamy chicken and baked until golden, great for lunch or a hearty snack.",
+    "prepTime": "1 h 20 min",
+    "difficulty_pt": "Médio",
+    "difficulty_en": "Medium",
+    "servings_pt": "8 pessoas",
+    "servings_en": "8 servings",
+    "calories": 410,
     "ingredients_pt": [
-      "150g de carne bovina",
-      "Pão brioche",
-      "Queijo cheddar",
-      "Picles",
-      "Ketchup e mostarda"
+      "2 xícaras de frango desfiado",
+      "1 cebola picada",
+      "1 tomate picado",
+      "Requeijão cremoso",
+      "Massa de torta",
+      "Gema para pincelar"
     ],
     "ingredients_en": [
-      "150g beef patty",
-      "Brioche bun",
-      "Cheddar cheese",
-      "Pickles",
-      "Ketchup and mustard"
+      "2 cups shredded chicken",
+      "1 chopped onion",
+      "1 chopped tomato",
+      "Cream cheese spread",
+      "Pie dough",
+      "Egg yolk for brushing"
     ],
     "instructions_pt": [
-      "Modele a carne em formato de hambúrguer.",
-      "Grelhe até o ponto desejado.",
-      "Toste o pão na manteiga.",
-      "Monte com queijo, picles e molhos."
+      "Refogue cebola, tomate e frango até ficar bem temperado.",
+      "Misture requeijão para deixar o recheio cremoso.",
+      "Forre a forma com a massa, recheie e cubra com mais massa.",
+      "Pincele gema e asse até dourar."
     ],
     "instructions_en": [
-      "Shape the beef into a patty.",
-      "Grill to desired doneness.",
-      "Toast the bun with butter.",
-      "Assemble with cheese, pickles, and sauces."
+      "Saute the onion, tomato, and chicken until well seasoned.",
+      "Stir in the cream cheese spread for a creamy filling.",
+      "Line the pan with dough, add the filling, and cover with more dough.",
+      "Brush with egg yolk and bake until golden."
     ]
   },
-
-
-
-
-
-
-
-
 
   {
     "id": "banana-daiquiri-rum",
@@ -679,51 +565,39 @@
     "category_en": "Drinks",
     "title_pt": "Banana Daiquiri (Rum)",
     "title_en": "Banana Daiquiri (Rum)",
-    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
-    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
-    "prepTime": "10 min",
+    "description_pt": "Drink tropical e aveludado com banana, rum e toque cítrico.",
+    "description_en": "A smooth tropical drink made with banana, rum, and a citrusy touch.",
+    "prepTime": "5 min",
     "difficulty_pt": "Fácil",
     "difficulty_en": "Easy",
     "servings_pt": "1 pessoa",
     "servings_en": "1 serving",
-    "calories": 650,
-    "tags_pt": ["carne", "diner", "rapido"],
-    "tags_en": ["meat", "diner", "fast"],
+    "calories": 230,
     "ingredients_pt": [
-      "150g de carne bovina",
-      "Pão brioche",
-      "Queijo cheddar",
-      "Picles",
-      "Ketchup e mostarda"
+      "1 banana madura",
+      "50ml de rum branco",
+      "20ml de suco de limão",
+      "10ml de xarope de açúcar",
+      "Gelo"
     ],
     "ingredients_en": [
-      "150g beef patty",
-      "Brioche bun",
-      "Cheddar cheese",
-      "Pickles",
-      "Ketchup and mustard"
+      "1 ripe banana",
+      "50ml white rum",
+      "20ml lime juice",
+      "10ml simple syrup",
+      "Ice"
     ],
     "instructions_pt": [
-      "Modele a carne em formato de hambúrguer.",
-      "Grelhe até o ponto desejado.",
-      "Toste o pão na manteiga.",
-      "Monte com queijo, picles e molhos."
+      "Coloque todos os ingredientes no liquidificador.",
+      "Bata até ficar liso e gelado.",
+      "Sirva imediatamente em taça resfriada."
     ],
     "instructions_en": [
-      "Shape the beef into a patty.",
-      "Grill to desired doneness.",
-      "Toast the bun with butter.",
-      "Assemble with cheese, pickles, and sauces."
+      "Place all the ingredients in a blender.",
+      "Blend until smooth and chilled.",
+      "Serve immediately in a chilled glass."
     ]
   },
-
-
-
-
-
-
-
-
 
   {
     "id": "torta-de-maca",
@@ -732,52 +606,41 @@
     "category_en": "Desserts",
     "title_pt": "Torta de Maçã",
     "title_en": "Apple Pie",
-    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
-    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
-    "prepTime": "10 min",
-    "difficulty_pt": "Fácil",
-    "difficulty_en": "Easy",
-    "servings_pt": "1 pessoa",
-    "servings_en": "1 serving",
-    "calories": 650,
-    "tags_pt": ["carne", "diner", "rapido"],
-    "tags_en": ["meat", "diner", "fast"],
+    "description_pt": "Torta clássica de maçã com recheio aromático e massa amanteigada.",
+    "description_en": "A classic apple pie with fragrant filling and a buttery crust.",
+    "prepTime": "1 h 30 min",
+    "difficulty_pt": "Médio",
+    "difficulty_en": "Medium",
+    "servings_pt": "8 pessoas",
+    "servings_en": "8 servings",
+    "calories": 340,
     "ingredients_pt": [
-      "150g de carne bovina",
-      "Pão brioche",
-      "Queijo cheddar",
-      "Picles",
-      "Ketchup e mostarda"
+      "4 maçãs fatiadas",
+      "1 massa de torta",
+      "1/2 xícara de açúcar",
+      "Canela em pó",
+      "1 colher de sopa de manteiga",
+      "1 gema para pincelar"
     ],
     "ingredients_en": [
-      "150g beef patty",
-      "Brioche bun",
-      "Cheddar cheese",
-      "Pickles",
-      "Ketchup and mustard"
+      "4 sliced apples",
+      "1 pie crust",
+      "1/2 cup sugar",
+      "Ground cinnamon",
+      "1 tablespoon butter",
+      "1 egg yolk for brushing"
     ],
     "instructions_pt": [
-      "Modele a carne em formato de hambúrguer.",
-      "Grelhe até o ponto desejado.",
-      "Toste o pão na manteiga.",
-      "Monte com queijo, picles e molhos."
+      "Misture as maçãs com açúcar e canela.",
+      "Disponha o recheio sobre a massa, adicione pedacinhos de manteiga e cubra.",
+      "Pincele gema e asse até a massa dourar e o recheio borbulhar."
     ],
     "instructions_en": [
-      "Shape the beef into a patty.",
-      "Grill to desired doneness.",
-      "Toast the bun with butter.",
-      "Assemble with cheese, pickles, and sauces."
+      "Toss the apples with sugar and cinnamon.",
+      "Place the filling on the crust, add small pieces of butter, and cover.",
+      "Brush with egg yolk and bake until the crust is golden and the filling bubbles."
     ]
   },
-
-
-
-
-
-
-
-
-
 
   {
     "id": "gin-daisy",
@@ -786,106 +649,80 @@
     "category_en": "Drinks",
     "title_pt": "Gin Daisy",
     "title_en": "Gin Daisy",
-    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
-    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
-    "prepTime": "10 min",
+    "description_pt": "Coquetel retrô e refrescante de gim, cítrico e levemente adocicado.",
+    "description_en": "A retro gin cocktail that is refreshing, citrusy, and lightly sweet.",
+    "prepTime": "5 min",
     "difficulty_pt": "Fácil",
     "difficulty_en": "Easy",
     "servings_pt": "1 pessoa",
     "servings_en": "1 serving",
-    "calories": 650,
-    "tags_pt": ["carne", "diner", "rapido"],
-    "tags_en": ["meat", "diner", "fast"],
+    "calories": 190,
     "ingredients_pt": [
-      "150g de carne bovina",
-      "Pão brioche",
-      "Queijo cheddar",
-      "Picles",
-      "Ketchup e mostarda"
+      "45ml de gim",
+      "20ml de suco de limão",
+      "15ml de grenadine",
+      "Água com gás",
+      "Gelo"
     ],
     "ingredients_en": [
-      "150g beef patty",
-      "Brioche bun",
-      "Cheddar cheese",
-      "Pickles",
-      "Ketchup and mustard"
+      "45ml gin",
+      "20ml lemon juice",
+      "15ml grenadine",
+      "Sparkling water",
+      "Ice"
     ],
     "instructions_pt": [
-      "Modele a carne em formato de hambúrguer.",
-      "Grelhe até o ponto desejado.",
-      "Toste o pão na manteiga.",
-      "Monte com queijo, picles e molhos."
+      "Bata o gim, o suco de limão e a grenadine com gelo.",
+      "Coe para um copo com gelo novo.",
+      "Complete com água com gás e sirva."
     ],
     "instructions_en": [
-      "Shape the beef into a patty.",
-      "Grill to desired doneness.",
-      "Toast the bun with butter.",
-      "Assemble with cheese, pickles, and sauces."
+      "Shake the gin, lemon juice, and grenadine with ice.",
+      "Strain into a glass filled with fresh ice.",
+      "Top with sparkling water and serve."
     ]
   },
 
-
-
-
-
-
-
-
-  
   {
     "id": "pate-de-atum-com-torradas",
     "category": "entradas",
     "category_pt": "Entradas",
     "category_en": "Starters",
-    "title_pt": "Pate de Atum com Torradas",
-    "title_en": "Tuna Pate with Toasted Bread",
-    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
-    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
-    "prepTime": "10 min",
+    "title_pt": "Patê de Atum com Torradas",
+    "title_en": "Tuna Pate with Toasts",
+    "description_pt": "Patê cremoso de atum servido com torradas crocantes, prático para entradas e reuniões.",
+    "description_en": "A creamy tuna pate served with crisp toasts, practical for starters and gatherings.",
+    "prepTime": "15 min",
     "difficulty_pt": "Fácil",
     "difficulty_en": "Easy",
-    "servings_pt": "1 pessoa",
-    "servings_en": "1 serving",
-    "calories": 650,
-    "tags_pt": ["carne", "diner", "rapido"],
-    "tags_en": ["meat", "diner", "fast"],
+    "servings_pt": "4 pessoas",
+    "servings_en": "4 servings",
+    "calories": 240,
     "ingredients_pt": [
-      "150g de carne bovina",
-      "Pão brioche",
-      "Queijo cheddar",
-      "Picles",
-      "Ketchup e mostarda"
+      "1 lata de atum escorrido",
+      "3 colheres de sopa de maionese",
+      "1 colher de sopa de cebola picada",
+      "Salsinha picada",
+      "Torradas"
     ],
     "ingredients_en": [
-      "150g beef patty",
-      "Brioche bun",
-      "Cheddar cheese",
-      "Pickles",
-      "Ketchup and mustard"
+      "1 can tuna, drained",
+      "3 tablespoons mayonnaise",
+      "1 tablespoon chopped onion",
+      "Chopped parsley",
+      "Toasts"
     ],
     "instructions_pt": [
-      "Modele a carne em formato de hambúrguer.",
-      "Grelhe até o ponto desejado.",
-      "Toste o pão na manteiga.",
-      "Monte com queijo, picles e molhos."
+      "Amasse o atum com a maionese até formar um creme.",
+      "Misture a cebola e a salsinha.",
+      "Sirva gelado acompanhado de torradas."
     ],
     "instructions_en": [
-      "Shape the beef into a patty.",
-      "Grill to desired doneness.",
-      "Toast the bun with butter.",
-      "Assemble with cheese, pickles, and sauces."
+      "Mash the tuna with the mayonnaise until creamy.",
+      "Mix in the onion and parsley.",
+      "Serve chilled with toasts."
     ]
   },
-
-
-
-
-
-
-
-
-
-
 
   {
     "id": "ponche-de-champanhe",
@@ -894,51 +731,39 @@
     "category_en": "Drinks",
     "title_pt": "Ponche de Champanhe",
     "title_en": "Champagne Punch",
-    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
-    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
+    "description_pt": "Bebida festiva com champanhe, frutas e toque cítrico, ideal para brindar.",
+    "description_en": "A festive drink with champagne, fruit, and a citrusy touch, ideal for celebrations.",
     "prepTime": "10 min",
     "difficulty_pt": "Fácil",
     "difficulty_en": "Easy",
-    "servings_pt": "1 pessoa",
-    "servings_en": "1 serving",
-    "calories": 650,
-    "tags_pt": ["carne", "diner", "rapido"],
-    "tags_en": ["meat", "diner", "fast"],
+    "servings_pt": "6 pessoas",
+    "servings_en": "6 servings",
+    "calories": 160,
     "ingredients_pt": [
-      "150g de carne bovina",
-      "Pão brioche",
-      "Queijo cheddar",
-      "Picles",
-      "Ketchup e mostarda"
+      "750ml de champanhe ou espumante",
+      "250ml de suco de laranja",
+      "Morangos fatiados",
+      "Rodelas de laranja",
+      "Gelo"
     ],
     "ingredients_en": [
-      "150g beef patty",
-      "Brioche bun",
-      "Cheddar cheese",
-      "Pickles",
-      "Ketchup and mustard"
+      "750ml champagne or sparkling wine",
+      "250ml orange juice",
+      "Sliced strawberries",
+      "Orange slices",
+      "Ice"
     ],
     "instructions_pt": [
-      "Modele a carne em formato de hambúrguer.",
-      "Grelhe até o ponto desejado.",
-      "Toste o pão na manteiga.",
-      "Monte com queijo, picles e molhos."
+      "Coloque as frutas em uma jarra grande.",
+      "Adicione o suco de laranja e o gelo.",
+      "Complete com o espumante gelado e sirva na hora."
     ],
     "instructions_en": [
-      "Shape the beef into a patty.",
-      "Grill to desired doneness.",
-      "Toast the bun with butter.",
-      "Assemble with cheese, pickles, and sauces."
+      "Place the fruit in a large pitcher.",
+      "Add the orange juice and ice.",
+      "Top with chilled sparkling wine and serve right away."
     ]
   },
-
-
-
-
-
-
-
-
 
   {
     "id": "banana-split",
@@ -947,50 +772,39 @@
     "category_en": "Desserts",
     "title_pt": "Banana Split",
     "title_en": "Banana Split",
-    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
-    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
+    "description_pt": "Sobremesa clássica com banana, sorvete e coberturas generosas.",
+    "description_en": "A classic dessert with banana, ice cream, and generous toppings.",
     "prepTime": "10 min",
     "difficulty_pt": "Fácil",
     "difficulty_en": "Easy",
     "servings_pt": "1 pessoa",
     "servings_en": "1 serving",
-    "calories": 650,
-    "tags_pt": ["carne", "diner", "rapido"],
-    "tags_en": ["meat", "diner", "fast"],
+    "calories": 520,
     "ingredients_pt": [
-      "150g de carne bovina",
-      "Pão brioche",
-      "Queijo cheddar",
-      "Picles",
-      "Ketchup e mostarda"
+      "1 banana",
+      "3 bolas de sorvete",
+      "Calda de chocolate",
+      "Chantilly",
+      "Cereja e castanhas para finalizar"
     ],
     "ingredients_en": [
-      "150g beef patty",
-      "Brioche bun",
-      "Cheddar cheese",
-      "Pickles",
-      "Ketchup and mustard"
+      "1 banana",
+      "3 scoops of ice cream",
+      "Chocolate sauce",
+      "Whipped cream",
+      "Cherry and nuts to finish"
     ],
     "instructions_pt": [
-      "Modele a carne em formato de hambúrguer.",
-      "Grelhe até o ponto desejado.",
-      "Toste o pão na manteiga.",
-      "Monte com queijo, picles e molhos."
+      "Corte a banana ao meio no sentido do comprimento.",
+      "Disponha em um prato e coloque as bolas de sorvete ao centro.",
+      "Cubra com calda, chantilly e finalize com cereja e castanhas."
     ],
     "instructions_en": [
-      "Shape the beef into a patty.",
-      "Grill to desired doneness.",
-      "Toast the bun with butter.",
-      "Assemble with cheese, pickles, and sauces."
+      "Slice the banana in half lengthwise.",
+      "Arrange it on a plate and place the scoops of ice cream in the center.",
+      "Top with sauce, whipped cream, cherry, and nuts."
     ]
   },
-
-
-
-
-
-
-
 
   {
     "id": "canapes-de-camarao",
@@ -998,104 +812,85 @@
     "category_pt": "Entradas",
     "category_en": "Starters",
     "title_pt": "Canapés de Camarão",
-    "title_en": "Shrimp Canapés",
-    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
-    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
-    "prepTime": "10 min",
-    "difficulty_pt": "Fácil",
-    "difficulty_en": "Easy",
-    "servings_pt": "1 pessoa",
-    "servings_en": "1 serving",
-    "calories": 650,
-    "tags_pt": ["carne", "diner", "rapido"],
-    "tags_en": ["meat", "diner", "fast"],
+    "title_en": "Shrimp Canapes",
+    "description_pt": "Pequenas torradas cobertas com camarão temperado, elegantes e saborosas.",
+    "description_en": "Small toasts topped with seasoned shrimp, elegant and full of flavor.",
+    "prepTime": "20 min",
+    "difficulty_pt": "Médio",
+    "difficulty_en": "Medium",
+    "servings_pt": "6 pessoas",
+    "servings_en": "6 servings",
+    "calories": 190,
     "ingredients_pt": [
-      "150g de carne bovina",
-      "Pão brioche",
-      "Queijo cheddar",
-      "Picles",
-      "Ketchup e mostarda"
+      "200g de camarão limpo",
+      "Torradas ou blinis",
+      "Cream cheese",
+      "Suco de limão",
+      "Cebolinha picada"
     ],
     "ingredients_en": [
-      "150g beef patty",
-      "Brioche bun",
-      "Cheddar cheese",
-      "Pickles",
-      "Ketchup and mustard"
+      "200g cleaned shrimp",
+      "Toasts or blinis",
+      "Cream cheese",
+      "Lemon juice",
+      "Chopped chives"
     ],
     "instructions_pt": [
-      "Modele a carne em formato de hambúrguer.",
-      "Grelhe até o ponto desejado.",
-      "Toste o pão na manteiga.",
-      "Monte com queijo, picles e molhos."
+      "Tempere e salteie rapidamente os camarões.",
+      "Passe cream cheese nas torradas.",
+      "Coloque os camarões por cima e finalize com limão e cebolinha."
     ],
     "instructions_en": [
-      "Shape the beef into a patty.",
-      "Grill to desired doneness.",
-      "Toast the bun with butter.",
-      "Assemble with cheese, pickles, and sauces."
+      "Season and quickly saute the shrimp.",
+      "Spread cream cheese on the toasts.",
+      "Top with the shrimp and finish with lemon juice and chives."
     ]
   },
-
-
-
-
-
-
-
-
 
   {
     "id": "bolo-red-velvet",
     "category": "sobremesas",
     "category_pt": "Sobremesas",
     "category_en": "Desserts",
-    "title_pt": "Bolo de Red Velvet",
+    "title_pt": "Bolo Red Velvet",
     "title_en": "Red Velvet Cake",
-    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
-    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
-    "prepTime": "10 min",
-    "difficulty_pt": "Fácil",
-    "difficulty_en": "Easy",
-    "servings_pt": "1 pessoa",
-    "servings_en": "1 serving",
-    "calories": 650,
-    "tags_pt": ["carne", "diner", "rapido"],
-    "tags_en": ["meat", "diner", "fast"],
+    "description_pt": "Bolo macio de cacau com coloração vermelha e cobertura cremosa de cream cheese.",
+    "description_en": "A soft cocoa cake with a red crumb and a creamy cream cheese frosting.",
+    "prepTime": "1 h 20 min",
+    "difficulty_pt": "Médio",
+    "difficulty_en": "Medium",
+    "servings_pt": "10 pessoas",
+    "servings_en": "10 servings",
+    "calories": 410,
     "ingredients_pt": [
-      "150g de carne bovina",
-      "Pão brioche",
-      "Queijo cheddar",
-      "Picles",
-      "Ketchup e mostarda"
+      "2 xícaras de farinha de trigo",
+      "1 colher de sopa de cacau em pó",
+      "2 ovos",
+      "Corante vermelho",
+      "Buttermilk",
+      "Cobertura de cream cheese"
     ],
     "ingredients_en": [
-      "150g beef patty",
-      "Brioche bun",
-      "Cheddar cheese",
-      "Pickles",
-      "Ketchup and mustard"
+      "2 cups all-purpose flour",
+      "1 tablespoon cocoa powder",
+      "2 eggs",
+      "Red food coloring",
+      "Buttermilk",
+      "Cream cheese frosting"
     ],
     "instructions_pt": [
-      "Modele a carne em formato de hambúrguer.",
-      "Grelhe até o ponto desejado.",
-      "Toste o pão na manteiga.",
-      "Monte com queijo, picles e molhos."
+      "Misture os ingredientes líquidos com o corante.",
+      "Incorpore os secos e bata até a massa ficar uniforme.",
+      "Asse em forma untada e deixe esfriar.",
+      "Cubra com cream cheese frosting."
     ],
     "instructions_en": [
-      "Shape the beef into a patty.",
-      "Grill to desired doneness.",
-      "Toast the bun with butter.",
-      "Assemble with cheese, pickles, and sauces."
+      "Mix the wet ingredients with the food coloring.",
+      "Add the dry ingredients and whisk until uniform.",
+      "Bake in a greased pan and let it cool.",
+      "Frost with cream cheese frosting."
     ]
   },
-
-
-
-
-
-
-
 
   {
     "id": "carne-ao-molho-de-cogumelos",
@@ -1103,52 +898,44 @@
     "category_pt": "Pratos Principais",
     "category_en": "Main Courses",
     "title_pt": "Carne ao Molho de Cogumelos",
-    "title_en": "Meat in Mushroom Sauce",
-    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
-    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
-    "prepTime": "10 min",
-    "difficulty_pt": "Fácil",
-    "difficulty_en": "Easy",
-    "servings_pt": "1 pessoa",
-    "servings_en": "1 serving",
-    "calories": 650,
-    "tags_pt": ["carne", "diner", "rapido"],
-    "tags_en": ["meat", "diner", "fast"],
+    "title_en": "Steak with Mushroom Sauce",
+    "description_pt": "Carne macia servida em molho cremoso de cogumelos, intensa e reconfortante.",
+    "description_en": "Tender meat served with a creamy mushroom sauce, rich and comforting.",
+    "prepTime": "40 min",
+    "difficulty_pt": "Médio",
+    "difficulty_en": "Medium",
+    "servings_pt": "4 pessoas",
+    "servings_en": "4 servings",
+    "calories": 540,
     "ingredients_pt": [
-      "150g de carne bovina",
-      "Pão brioche",
-      "Queijo cheddar",
-      "Picles",
-      "Ketchup e mostarda"
+      "4 bifes",
+      "200g de cogumelos fatiados",
+      "1 colher de sopa de manteiga",
+      "200ml de creme de leite",
+      "1 dente de alho",
+      "Sal e pimenta"
     ],
     "ingredients_en": [
-      "150g beef patty",
-      "Brioche bun",
-      "Cheddar cheese",
-      "Pickles",
-      "Ketchup and mustard"
+      "4 steaks",
+      "200g sliced mushrooms",
+      "1 tablespoon butter",
+      "200ml cream",
+      "1 garlic clove",
+      "Salt and pepper"
     ],
     "instructions_pt": [
-      "Modele a carne em formato de hambúrguer.",
-      "Grelhe até o ponto desejado.",
-      "Toste o pão na manteiga.",
-      "Monte com queijo, picles e molhos."
+      "Tempere e grelhe os bifes até o ponto desejado.",
+      "Na mesma frigideira, refogue alho e cogumelos na manteiga.",
+      "Adicione o creme de leite, ajuste o tempero e deixe encorpar.",
+      "Sirva a carne coberta com o molho."
     ],
     "instructions_en": [
-      "Shape the beef into a patty.",
-      "Grill to desired doneness.",
-      "Toast the bun with butter.",
-      "Assemble with cheese, pickles, and sauces."
+      "Season and sear the steaks to your preferred doneness.",
+      "In the same pan, saute the garlic and mushrooms in butter.",
+      "Add the cream, adjust the seasoning, and let the sauce thicken.",
+      "Serve the steaks topped with the sauce."
     ]
   },
-
-
-
-
-
-
-
-
 
   {
     "id": "grasshopper",
@@ -1157,154 +944,119 @@
     "category_en": "Drinks",
     "title_pt": "Grasshopper",
     "title_en": "Grasshopper",
-    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
-    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
-    "prepTime": "10 min",
+    "description_pt": "Coquetel doce e cremoso de menta e chocolate, servido gelado.",
+    "description_en": "A sweet and creamy mint-chocolate cocktail served chilled.",
+    "prepTime": "5 min",
     "difficulty_pt": "Fácil",
     "difficulty_en": "Easy",
     "servings_pt": "1 pessoa",
     "servings_en": "1 serving",
-    "calories": 650,
-    "tags_pt": ["carne", "diner", "rapido"],
-    "tags_en": ["meat", "diner", "fast"],
+    "calories": 210,
     "ingredients_pt": [
-      "150g de carne bovina",
-      "Pão brioche",
-      "Queijo cheddar",
-      "Picles",
-      "Ketchup e mostarda"
+      "30ml de creme de menta",
+      "30ml de creme de cacau",
+      "30ml de creme de leite",
+      "Gelo"
     ],
     "ingredients_en": [
-      "150g beef patty",
-      "Brioche bun",
-      "Cheddar cheese",
-      "Pickles",
-      "Ketchup and mustard"
+      "30ml creme de menthe",
+      "30ml creme de cacao",
+      "30ml cream",
+      "Ice"
     ],
     "instructions_pt": [
-      "Modele a carne em formato de hambúrguer.",
-      "Grelhe até o ponto desejado.",
-      "Toste o pão na manteiga.",
-      "Monte com queijo, picles e molhos."
+      "Bata todos os ingredientes com gelo em uma coqueteleira.",
+      "Coe para uma taça resfriada.",
+      "Sirva imediatamente."
     ],
     "instructions_en": [
-      "Shape the beef into a patty.",
-      "Grill to desired doneness.",
-      "Toast the bun with butter.",
-      "Assemble with cheese, pickles, and sauces."
+      "Shake all the ingredients with ice in a cocktail shaker.",
+      "Strain into a chilled glass.",
+      "Serve immediately."
     ]
   },
-
-
-
-
-
-
-
 
   {
     "id": "salada-de-batatas",
-    "category": "principais",
-    "category_pt": "Pratos Principais",
-    "category_en": "Main Courses",
+    "category": "entradas",
+    "category_pt": "Entradas",
+    "category_en": "Starters",
     "title_pt": "Salada de Batatas",
     "title_en": "Potato Salad",
-    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
-    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
-    "prepTime": "10 min",
+    "description_pt": "Salada cremosa de batatas cozidas com maionese e ervas, ótima para acompanhar grelhados.",
+    "description_en": "A creamy potato salad with mayonnaise and herbs, excellent alongside grilled dishes.",
+    "prepTime": "30 min",
     "difficulty_pt": "Fácil",
     "difficulty_en": "Easy",
-    "servings_pt": "1 pessoa",
-    "servings_en": "1 serving",
-    "calories": 650,
-    "tags_pt": ["carne", "diner", "rapido"],
-    "tags_en": ["meat", "diner", "fast"],
+    "servings_pt": "6 pessoas",
+    "servings_en": "6 servings",
+    "calories": 260,
     "ingredients_pt": [
-      "150g de carne bovina",
-      "Pão brioche",
-      "Queijo cheddar",
-      "Picles",
-      "Ketchup e mostarda"
+      "4 batatas cozidas em cubos",
+      "3 colheres de sopa de maionese",
+      "1 colher de sopa de mostarda",
+      "Salsinha picada",
+      "1/2 cebola roxa picada"
     ],
     "ingredients_en": [
-      "150g beef patty",
-      "Brioche bun",
-      "Cheddar cheese",
-      "Pickles",
-      "Ketchup and mustard"
+      "4 cooked potatoes, cubed",
+      "3 tablespoons mayonnaise",
+      "1 tablespoon mustard",
+      "Chopped parsley",
+      "1/2 red onion, chopped"
     ],
     "instructions_pt": [
-      "Modele a carne em formato de hambúrguer.",
-      "Grelhe até o ponto desejado.",
-      "Toste o pão na manteiga.",
-      "Monte com queijo, picles e molhos."
+      "Cozinhe as batatas até ficarem macias e deixe esfriar.",
+      "Misture maionese, mostarda, cebola e salsinha.",
+      "Envolva as batatas no molho e sirva gelada ou em temperatura ambiente."
     ],
     "instructions_en": [
-      "Shape the beef into a patty.",
-      "Grill to desired doneness.",
-      "Toast the bun with butter.",
-      "Assemble with cheese, pickles, and sauces."
+      "Cook the potatoes until tender and let them cool.",
+      "Mix the mayonnaise, mustard, onion, and parsley.",
+      "Toss the potatoes in the dressing and serve chilled or at room temperature."
     ]
   },
-
-
-
-
-
-
 
   {
     "id": "sopa-de-cebola",
-    "category": "principais",
-    "category_pt": "Pratos Principais",
-    "category_en": "Main Courses",
+    "category": "entradas",
+    "category_pt": "Entradas",
+    "category_en": "Starters",
     "title_pt": "Sopa de Cebola",
-    "title_en": "Onion Soup",
-    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
-    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
-    "prepTime": "10 min",
-    "difficulty_pt": "Fácil",
-    "difficulty_en": "Easy",
-    "servings_pt": "1 pessoa",
-    "servings_en": "1 serving",
-    "calories": 650,
-    "tags_pt": ["carne", "diner", "rapido"],
-    "tags_en": ["meat", "diner", "fast"],
+    "title_en": "French Onion Soup",
+    "description_pt": "Sopa rica de cebolas caramelizadas com caldo quente, coberta com pão e queijo gratinado.",
+    "description_en": "A rich soup of caramelized onions and hot broth, topped with bread and melted cheese.",
+    "prepTime": "1 h",
+    "difficulty_pt": "Médio",
+    "difficulty_en": "Medium",
+    "servings_pt": "4 pessoas",
+    "servings_en": "4 servings",
+    "calories": 310,
     "ingredients_pt": [
-      "150g de carne bovina",
-      "Pão brioche",
-      "Queijo cheddar",
-      "Picles",
-      "Ketchup e mostarda"
+      "4 cebolas fatiadas",
+      "1 colher de sopa de manteiga",
+      "1 litro de caldo de carne",
+      "Fatias de pão",
+      "Queijo gruyère ou muçarela"
     ],
     "ingredients_en": [
-      "150g beef patty",
-      "Brioche bun",
-      "Cheddar cheese",
-      "Pickles",
-      "Ketchup and mustard"
+      "4 sliced onions",
+      "1 tablespoon butter",
+      "1 liter beef broth",
+      "Bread slices",
+      "Gruyere or mozzarella cheese"
     ],
     "instructions_pt": [
-      "Modele a carne em formato de hambúrguer.",
-      "Grelhe até o ponto desejado.",
-      "Toste o pão na manteiga.",
-      "Monte com queijo, picles e molhos."
+      "Caramelize lentamente as cebolas na manteiga até ficarem douradas.",
+      "Adicione o caldo e cozinhe para apurar o sabor.",
+      "Sirva em tigelas, cubra com pão e queijo e gratine no forno."
     ],
     "instructions_en": [
-      "Shape the beef into a patty.",
-      "Grill to desired doneness.",
-      "Toast the bun with butter.",
-      "Assemble with cheese, pickles, and sauces."
+      "Slowly caramelize the onions in butter until deeply golden.",
+      "Add the broth and simmer to develop the flavor.",
+      "Serve in bowls, top with bread and cheese, and broil until melted."
     ]
   },
-
-
-
-
-
-
-
-
 
   {
     "id": "panqueca-salgada",
@@ -1312,50 +1064,40 @@
     "category_pt": "Pratos Principais",
     "category_en": "Main Courses",
     "title_pt": "Panqueca Salgada",
-    "title_en": "Salty Pancake",
-    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
-    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
-    "prepTime": "10 min",
+    "title_en": "Savory Pancake",
+    "description_pt": "Panquecas recheadas com preparação salgada e gratinadas com molho, versáteis e fartas.",
+    "description_en": "Pancakes filled with a savory stuffing and baked with sauce, versatile and satisfying.",
+    "prepTime": "45 min",
     "difficulty_pt": "Fácil",
     "difficulty_en": "Easy",
-    "servings_pt": "1 pessoa",
-    "servings_en": "1 serving",
-    "calories": 650,
-    "tags_pt": ["carne", "diner", "rapido"],
-    "tags_en": ["meat", "diner", "fast"],
+    "servings_pt": "4 pessoas",
+    "servings_en": "4 servings",
+    "calories": 380,
     "ingredients_pt": [
-      "150g de carne bovina",
-      "Pão brioche",
-      "Queijo cheddar",
-      "Picles",
-      "Ketchup e mostarda"
+      "Massa de panqueca pronta",
+      "2 xícaras de frango ou carne moída refogada",
+      "Molho de tomate",
+      "Queijo ralado",
+      "Salsinha"
     ],
     "ingredients_en": [
-      "150g beef patty",
-      "Brioche bun",
-      "Cheddar cheese",
-      "Pickles",
-      "Ketchup and mustard"
+      "Prepared pancake batter or crepes",
+      "2 cups cooked chicken or ground beef filling",
+      "Tomato sauce",
+      "Grated cheese",
+      "Parsley"
     ],
     "instructions_pt": [
-      "Modele a carne em formato de hambúrguer.",
-      "Grelhe até o ponto desejado.",
-      "Toste o pão na manteiga.",
-      "Monte com queijo, picles e molhos."
+      "Prepare e cozinhe as panquecas em frigideira antiaderente.",
+      "Recheie cada unidade e enrole.",
+      "Disponha em refratário, cubra com molho e queijo e leve ao forno para gratinar."
     ],
     "instructions_en": [
-      "Shape the beef into a patty.",
-      "Grill to desired doneness.",
-      "Toast the bun with butter.",
-      "Assemble with cheese, pickles, and sauces."
+      "Prepare and cook the pancakes in a nonstick pan.",
+      "Fill each one and roll it up.",
+      "Arrange in a baking dish, top with sauce and cheese, and bake until gratinated."
     ]
   },
-
-
-
-
-
-
 
   {
     "id": "bolo-de-banana",
@@ -1364,49 +1106,41 @@
     "category_en": "Desserts",
     "title_pt": "Bolo de Banana",
     "title_en": "Banana Cake",
-    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
-    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
-    "prepTime": "10 min",
+    "description_pt": "Bolo macio de banana madura, perfumado com canela e ótimo para o café.",
+    "description_en": "A soft banana cake scented with cinnamon and perfect with coffee.",
+    "prepTime": "55 min",
     "difficulty_pt": "Fácil",
     "difficulty_en": "Easy",
-    "servings_pt": "1 pessoa",
-    "servings_en": "1 serving",
-    "calories": 650,
-    "tags_pt": ["carne", "diner", "rapido"],
-    "tags_en": ["meat", "diner", "fast"],
+    "servings_pt": "8 pessoas",
+    "servings_en": "8 servings",
+    "calories": 300,
     "ingredients_pt": [
-      "150g de carne bovina",
-      "Pão brioche",
-      "Queijo cheddar",
-      "Picles",
-      "Ketchup e mostarda"
+      "3 bananas maduras",
+      "2 ovos",
+      "1 xícara de açúcar",
+      "2 xícaras de farinha de trigo",
+      "1/2 xícara de óleo",
+      "Canela e fermento em pó"
     ],
     "ingredients_en": [
-      "150g beef patty",
-      "Brioche bun",
-      "Cheddar cheese",
-      "Pickles",
-      "Ketchup and mustard"
+      "3 ripe bananas",
+      "2 eggs",
+      "1 cup sugar",
+      "2 cups all-purpose flour",
+      "1/2 cup oil",
+      "Cinnamon and baking powder"
     ],
     "instructions_pt": [
-      "Modele a carne em formato de hambúrguer.",
-      "Grelhe até o ponto desejado.",
-      "Toste o pão na manteiga.",
-      "Monte com queijo, picles e molhos."
+      "Amasse as bananas e misture com ovos, açúcar e óleo.",
+      "Incorpore a farinha, a canela e o fermento.",
+      "Asse em forma untada até dourar e firmar."
     ],
     "instructions_en": [
-      "Shape the beef into a patty.",
-      "Grill to desired doneness.",
-      "Toast the bun with butter.",
-      "Assemble with cheese, pickles, and sauces."
+      "Mash the bananas and mix them with the eggs, sugar, and oil.",
+      "Stir in the flour, cinnamon, and baking powder.",
+      "Bake in a greased pan until golden and set."
     ]
   },
-
-
-
-
-
-
 
   {
     "id": "pina-colada",
@@ -1415,50 +1149,39 @@
     "category_en": "Drinks",
     "title_pt": "Pina Colada",
     "title_en": "Pina Colada",
-    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
-    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
-    "prepTime": "10 min",
+    "description_pt": "Coquetel tropical cremoso com rum, coco e abacaxi.",
+    "description_en": "A creamy tropical cocktail made with rum, coconut, and pineapple.",
+    "prepTime": "5 min",
     "difficulty_pt": "Fácil",
     "difficulty_en": "Easy",
     "servings_pt": "1 pessoa",
     "servings_en": "1 serving",
-    "calories": 650,
-    "tags_pt": ["carne", "diner", "rapido"],
-    "tags_en": ["meat", "diner", "fast"],
+    "calories": 260,
     "ingredients_pt": [
-      "150g de carne bovina",
-      "Pão brioche",
-      "Queijo cheddar",
-      "Picles",
-      "Ketchup e mostarda"
+      "50ml de rum branco",
+      "80ml de suco de abacaxi",
+      "40ml de leite de coco",
+      "Gelo",
+      "Pedaço de abacaxi para decorar"
     ],
     "ingredients_en": [
-      "150g beef patty",
-      "Brioche bun",
-      "Cheddar cheese",
-      "Pickles",
-      "Ketchup and mustard"
+      "50ml white rum",
+      "80ml pineapple juice",
+      "40ml coconut milk",
+      "Ice",
+      "Pineapple wedge for garnish"
     ],
     "instructions_pt": [
-      "Modele a carne em formato de hambúrguer.",
-      "Grelhe até o ponto desejado.",
-      "Toste o pão na manteiga.",
-      "Monte com queijo, picles e molhos."
+      "Bata o rum, o suco de abacaxi, o leite de coco e o gelo no liquidificador.",
+      "Sirva em copo alto.",
+      "Decore com pedaço de abacaxi."
     ],
     "instructions_en": [
-      "Shape the beef into a patty.",
-      "Grill to desired doneness.",
-      "Toast the bun with butter.",
-      "Assemble with cheese, pickles, and sauces."
+      "Blend the rum, pineapple juice, coconut milk, and ice until smooth.",
+      "Serve in a tall glass.",
+      "Garnish with a pineapple wedge."
     ]
   },
-
-
-
-
-
-
-
 
   {
     "id": "panqueca-doce",
@@ -1467,49 +1190,41 @@
     "category_en": "Desserts",
     "title_pt": "Panqueca Doce",
     "title_en": "Sweet Pancake",
-    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
-    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
-    "prepTime": "10 min",
+    "description_pt": "Panquecas macias servidas com recheios ou coberturas doces, perfeitas para sobremesa ou café.",
+    "description_en": "Soft pancakes served with sweet fillings or toppings, perfect for dessert or coffee time.",
+    "prepTime": "25 min",
     "difficulty_pt": "Fácil",
     "difficulty_en": "Easy",
-    "servings_pt": "1 pessoa",
-    "servings_en": "1 serving",
-    "calories": 650,
-    "tags_pt": ["carne", "diner", "rapido"],
-    "tags_en": ["meat", "diner", "fast"],
+    "servings_pt": "4 pessoas",
+    "servings_en": "4 servings",
+    "calories": 290,
     "ingredients_pt": [
-      "150g de carne bovina",
-      "Pão brioche",
-      "Queijo cheddar",
-      "Picles",
-      "Ketchup e mostarda"
+      "1 xícara de farinha de trigo",
+      "1 colher de sopa de açúcar",
+      "1 ovo",
+      "1 xícara de leite",
+      "Manteiga para untar",
+      "Mel, frutas ou doce de leite para servir"
     ],
     "ingredients_en": [
-      "150g beef patty",
-      "Brioche bun",
-      "Cheddar cheese",
-      "Pickles",
-      "Ketchup and mustard"
+      "1 cup all-purpose flour",
+      "1 tablespoon sugar",
+      "1 egg",
+      "1 cup milk",
+      "Butter for greasing",
+      "Honey, fruit, or dulce de leche for serving"
     ],
     "instructions_pt": [
-      "Modele a carne em formato de hambúrguer.",
-      "Grelhe até o ponto desejado.",
-      "Toste o pão na manteiga.",
-      "Monte com queijo, picles e molhos."
+      "Misture a farinha, o açúcar, o ovo e o leite até formar uma massa lisa.",
+      "Cozinhe pequenas porções em frigideira untada.",
+      "Sirva com a cobertura doce de sua preferência."
     ],
     "instructions_en": [
-      "Shape the beef into a patty.",
-      "Grill to desired doneness.",
-      "Toast the bun with butter.",
-      "Assemble with cheese, pickles, and sauces."
+      "Mix the flour, sugar, egg, and milk until smooth.",
+      "Cook small portions in a greased skillet.",
+      "Serve with your favorite sweet topping."
     ]
   },
-
-
-
-
-
-
 
   {
     "id": "muffins",
@@ -1518,321 +1233,1340 @@
     "category_en": "Desserts",
     "title_pt": "Muffins",
     "title_en": "Muffins",
-    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
-    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
-    "prepTime": "10 min",
+    "description_pt": "Bolinho macio e individual, fácil de variar com frutas, chocolate ou especiarias.",
+    "description_en": "A soft individual cake that is easy to vary with fruit, chocolate, or spices.",
+    "prepTime": "35 min",
     "difficulty_pt": "Fácil",
     "difficulty_en": "Easy",
-    "servings_pt": "1 pessoa",
-    "servings_en": "1 serving",
-    "calories": 650,
-    "tags_pt": ["carne", "diner", "rapido"],
-    "tags_en": ["meat", "diner", "fast"],
+    "servings_pt": "12 unidades",
+    "servings_en": "12 muffins",
+    "calories": 210,
     "ingredients_pt": [
-      "150g de carne bovina",
-      "Pão brioche",
-      "Queijo cheddar",
-      "Picles",
-      "Ketchup e mostarda"
+      "2 xícaras de farinha de trigo",
+      "1/2 xícara de açúcar",
+      "2 ovos",
+      "1 xícara de leite",
+      "1/3 xícara de manteiga derretida",
+      "Gotas de chocolate ou frutas"
     ],
     "ingredients_en": [
-      "150g beef patty",
-      "Brioche bun",
-      "Cheddar cheese",
-      "Pickles",
-      "Ketchup and mustard"
+      "2 cups all-purpose flour",
+      "1/2 cup sugar",
+      "2 eggs",
+      "1 cup milk",
+      "1/3 cup melted butter",
+      "Chocolate chips or fruit"
     ],
     "instructions_pt": [
-      "Modele a carne em formato de hambúrguer.",
-      "Grelhe até o ponto desejado.",
-      "Toste o pão na manteiga.",
-      "Monte com queijo, picles e molhos."
+      "Misture os ingredientes secos e, em outra tigela, os líquidos.",
+      "Junte as duas partes sem bater demais e adicione o recheio desejado.",
+      "Distribua nas forminhas e asse até crescer e dourar."
     ],
     "instructions_en": [
-      "Shape the beef into a patty.",
-      "Grill to desired doneness.",
-      "Toast the bun with butter.",
-      "Assemble with cheese, pickles, and sauces."
+      "Mix the dry ingredients and, in another bowl, the wet ingredients.",
+      "Combine the two mixtures without overmixing and add your chosen filling.",
+      "Portion into muffin cups and bake until risen and golden."
     ]
   },
 
-
-
-
-    {
+  {
     "id": "frango-a-parmegiana",
     "category": "principais",
     "category_pt": "Pratos Principais",
     "category_en": "Main Courses",
-    "title_pt": "Frango a Parmegiana",
+    "title_pt": "Frango à Parmegiana",
     "title_en": "Chicken Parmigiana",
-    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
-    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
-    "prepTime": "10 min",
-    "difficulty_pt": "Fácil",
-    "difficulty_en": "Easy",
-    "servings_pt": "1 pessoa",
-    "servings_en": "1 serving",
-    "calories": 650,
+    "description_pt": "Peito de frango empanado, coberto com molho de tomate e queijo gratinado.",
+    "description_en": "Breaded chicken breast topped with tomato sauce and melted cheese.",
+    "prepTime": "50 min",
+    "difficulty_pt": "Médio",
+    "difficulty_en": "Medium",
+    "servings_pt": "4 pessoas",
+    "servings_en": "4 servings",
+    "calories": 560,
     "ingredients_pt": [
-      "150g de carne bovina",
-      "Pão brioche",
-      "Queijo cheddar",
-      "Picles",
-      "Ketchup e mostarda"
+      "4 filés de peito de frango",
+      "Farinha de trigo, ovo e farinha de rosca para empanar",
+      "Molho de tomate",
+      "Muçarela fatiada",
+      "Parmesão ralado"
     ],
     "ingredients_en": [
-      "150g beef patty",
-      "Brioche bun",
-      "Cheddar cheese",
-      "Pickles",
-      "Ketchup and mustard"
+      "4 chicken breast fillets",
+      "Flour, egg, and breadcrumbs for breading",
+      "Tomato sauce",
+      "Sliced mozzarella",
+      "Grated Parmesan"
     ],
     "instructions_pt": [
-      "Modele a carne em formato de hambúrguer.",
-      "Grelhe até o ponto desejado.",
-      "Toste o pão na manteiga.",
-      "Monte com queijo, picles e molhos."
+      "Tempere o frango, empane e frite ou asse até dourar.",
+      "Cubra com molho de tomate e os queijos.",
+      "Leve ao forno para gratinar antes de servir."
     ],
     "instructions_en": [
-      "Shape the beef into a patty.",
-      "Grill to desired doneness.",
-      "Toast the bun with butter.",
-      "Assemble with cheese, pickles, and sauces."
+      "Season the chicken, bread it, and fry or bake until golden.",
+      "Top with tomato sauce and both cheeses.",
+      "Bake until the cheese melts and browns before serving."
     ]
   },
 
-
-
-
-
-      {
+  {
     "id": "steak-com-batatas",
     "category": "principais",
     "category_pt": "Pratos Principais",
     "category_en": "Main Courses",
     "title_pt": "Carne com Batatas",
     "title_en": "Steak with Potatoes",
-    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
-    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
-    "prepTime": "10 min",
+    "description_pt": "Bife dourado servido com batatas macias e bem temperadas, refeição clássica e satisfatória.",
+    "description_en": "A seared steak served with tender, seasoned potatoes, a classic and satisfying meal.",
+    "prepTime": "40 min",
     "difficulty_pt": "Fácil",
     "difficulty_en": "Easy",
-    "servings_pt": "1 pessoa",
-    "servings_en": "1 serving",
-    "calories": 650,
+    "servings_pt": "2 pessoas",
+    "servings_en": "2 servings",
+    "calories": 620,
     "ingredients_pt": [
-      "150g de carne bovina",
-      "Pão brioche",
-      "Queijo cheddar",
-      "Picles",
-      "Ketchup e mostarda"
+      "2 bifes de sua preferência",
+      "3 batatas em cubos",
+      "1 colher de sopa de manteiga",
+      "1 dente de alho",
+      "Alecrim, sal e pimenta"
     ],
     "ingredients_en": [
-      "150g beef patty",
-      "Brioche bun",
-      "Cheddar cheese",
-      "Pickles",
-      "Ketchup and mustard"
+      "2 steaks of your choice",
+      "3 potatoes, cubed",
+      "1 tablespoon butter",
+      "1 garlic clove",
+      "Rosemary, salt, and pepper"
     ],
     "instructions_pt": [
-      "Modele a carne em formato de hambúrguer.",
-      "Grelhe até o ponto desejado.",
-      "Toste o pão na manteiga.",
-      "Monte com queijo, picles e molhos."
+      "Tempere os bifes e sele em frigideira quente até o ponto desejado.",
+      "Cozinhe ou asse as batatas até ficarem macias e douradas.",
+      "Finalize tudo com manteiga, alho e alecrim e sirva junto."
     ],
     "instructions_en": [
-      "Shape the beef into a patty.",
-      "Grill to desired doneness.",
-      "Toast the bun with butter.",
-      "Assemble with cheese, pickles, and sauces."
+      "Season the steaks and sear them in a hot pan to your preferred doneness.",
+      "Boil or roast the potatoes until tender and golden.",
+      "Finish everything with butter, garlic, and rosemary and serve together."
     ]
   },
 
-
-
-
-
-      {
+  {
     "id": "pudim-de-baunilha",
     "category": "sobremesas",
     "category_pt": "Sobremesas",
     "category_en": "Desserts",
     "title_pt": "Pudim de Baunilha",
     "title_en": "Vanilla Pudding",
-    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
-    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
-    "prepTime": "10 min",
+    "description_pt": "Sobremesa suave e cremosa com sabor delicado de baunilha.",
+    "description_en": "A smooth and creamy dessert with a delicate vanilla flavor.",
+    "prepTime": "3 h 20 min",
     "difficulty_pt": "Fácil",
     "difficulty_en": "Easy",
-    "servings_pt": "1 pessoa",
-    "servings_en": "1 serving",
-    "calories": 650,
+    "servings_pt": "8 pessoas",
+    "servings_en": "8 servings",
+    "calories": 240,
     "ingredients_pt": [
-      "150g de carne bovina",
-      "Pão brioche",
-      "Queijo cheddar",
-      "Picles",
-      "Ketchup e mostarda"
+      "500ml de leite",
+      "1 lata de leite condensado",
+      "3 ovos",
+      "1 colher de chá de essência de baunilha",
+      "Açúcar para a calda"
     ],
     "ingredients_en": [
-      "150g beef patty",
-      "Brioche bun",
-      "Cheddar cheese",
-      "Pickles",
-      "Ketchup and mustard"
+      "500ml milk",
+      "1 can sweetened condensed milk",
+      "3 eggs",
+      "1 teaspoon vanilla extract",
+      "Sugar for the caramel"
     ],
     "instructions_pt": [
-      "Modele a carne em formato de hambúrguer.",
-      "Grelhe até o ponto desejado.",
-      "Toste o pão na manteiga.",
-      "Monte com queijo, picles e molhos."
+      "Prepare uma calda de açúcar e espalhe na forma.",
+      "Bata leite, leite condensado, ovos e baunilha.",
+      "Despeje na forma e asse em banho-maria.",
+      "Leve à geladeira até gelar bem antes de desenformar."
     ],
     "instructions_en": [
-      "Shape the beef into a patty.",
-      "Grill to desired doneness.",
-      "Toast the bun with butter.",
-      "Assemble with cheese, pickles, and sauces."
+      "Make a caramel with the sugar and coat the mold.",
+      "Blend the milk, condensed milk, eggs, and vanilla.",
+      "Pour into the mold and bake in a water bath.",
+      "Chill thoroughly before unmolding."
     ]
   },
 
-  
-
-
-
-
-        {
+  {
     "id": "salada-waldorf",
-    "category": "sobremesas",
-    "category_pt": "Sobremesas",
-    "category_en": "Desserts",
-    "title_pt": "Pudim de Baunilha",
-    "title_en": "Vanilla Pudding",
-    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
-    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
-    "prepTime": "10 min",
+    "category": "entradas",
+    "category_pt": "Entradas",
+    "category_en": "Starters",
+    "title_pt": "Salada Waldorf",
+    "title_en": "Waldorf Salad",
+    "description_pt": "Salada clássica com maçã, salsão, uvas e nozes em molho cremoso.",
+    "description_en": "A classic salad with apple, celery, grapes, and walnuts in a creamy dressing.",
+    "prepTime": "15 min",
     "difficulty_pt": "Fácil",
     "difficulty_en": "Easy",
-    "servings_pt": "1 pessoa",
-    "servings_en": "1 serving",
-    "calories": 650,
+    "servings_pt": "4 pessoas",
+    "servings_en": "4 servings",
+    "calories": 230,
     "ingredients_pt": [
-      "150g de carne bovina",
-      "Pão brioche",
-      "Queijo cheddar",
-      "Picles",
-      "Ketchup e mostarda"
+      "2 maçãs em cubos",
+      "2 talos de salsão fatiados",
+      "1 xícara de uvas",
+      "1/2 xícara de nozes",
+      "3 colheres de sopa de maionese"
     ],
     "ingredients_en": [
-      "150g beef patty",
-      "Brioche bun",
-      "Cheddar cheese",
-      "Pickles",
-      "Ketchup and mustard"
+      "2 apples, diced",
+      "2 celery stalks, sliced",
+      "1 cup grapes",
+      "1/2 cup walnuts",
+      "3 tablespoons mayonnaise"
     ],
     "instructions_pt": [
-      "Modele a carne em formato de hambúrguer.",
-      "Grelhe até o ponto desejado.",
-      "Toste o pão na manteiga.",
-      "Monte com queijo, picles e molhos."
+      "Misture as maçãs, o salsão, as uvas e as nozes.",
+      "Acrescente a maionese e envolva delicadamente.",
+      "Sirva gelada."
     ],
     "instructions_en": [
-      "Shape the beef into a patty.",
-      "Grill to desired doneness.",
-      "Toast the bun with butter.",
-      "Assemble with cheese, pickles, and sauces."
+      "Combine the apples, celery, grapes, and walnuts.",
+      "Add the mayonnaise and toss gently.",
+      "Serve chilled."
     ]
   },
 
-
-
-          {
+  {
     "id": "lasanha-bolonhesa",
-    "category": "sobremesas",
-    "category_pt": "Sobremesas",
-    "category_en": "Desserts",
-    "title_pt": "Pudim de Baunilha",
-    "title_en": "Vanilla Pudding",
-    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
-    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
-    "prepTime": "10 min",
-    "difficulty_pt": "Fácil",
-    "difficulty_en": "Easy",
-    "servings_pt": "1 pessoa",
-    "servings_en": "1 serving",
-    "calories": 650,
+    "category": "principais",
+    "category_pt": "Pratos Principais",
+    "category_en": "Main Courses",
+    "title_pt": "Lasanha Bolonhesa",
+    "title_en": "Bolognese Lasagna",
+    "description_pt": "Camadas de massa, molho bolonhesa e queijo gratinado em uma lasanha farta.",
+    "description_en": "Layers of pasta, Bolognese sauce, and melted cheese in a hearty lasagna.",
+    "prepTime": "1 h 30 min",
+    "difficulty_pt": "Médio",
+    "difficulty_en": "Medium",
+    "servings_pt": "8 pessoas",
+    "servings_en": "8 servings",
+    "calories": 540,
     "ingredients_pt": [
-      "150g de carne bovina",
-      "Pão brioche",
-      "Queijo cheddar",
-      "Picles",
-      "Ketchup e mostarda"
+      "Massa para lasanha",
+      "500g de carne moída",
+      "Molho de tomate",
+      "Muçarela",
+      "Parmesão",
+      "Molho branco ou bechamel"
     ],
     "ingredients_en": [
-      "150g beef patty",
-      "Brioche bun",
-      "Cheddar cheese",
-      "Pickles",
-      "Ketchup and mustard"
+      "Lasagna noodles",
+      "500g ground beef",
+      "Tomato sauce",
+      "Mozzarella",
+      "Parmesan",
+      "White sauce or bechamel"
     ],
     "instructions_pt": [
-      "Modele a carne em formato de hambúrguer.",
-      "Grelhe até o ponto desejado.",
-      "Toste o pão na manteiga.",
-      "Monte com queijo, picles e molhos."
+      "Prepare um molho bolonhesa bem encorpado com a carne e o tomate.",
+      "Monte camadas de massa, molho, queijo e molho branco.",
+      "Finalize com queijo por cima e asse até borbulhar e gratinar."
     ],
     "instructions_en": [
-      "Shape the beef into a patty.",
-      "Grill to desired doneness.",
-      "Toast the bun with butter.",
-      "Assemble with cheese, pickles, and sauces."
+      "Prepare a rich Bolognese sauce with the beef and tomato sauce.",
+      "Layer pasta, sauce, cheese, and white sauce.",
+      "Finish with cheese on top and bake until bubbling and browned."
     ]
   },
 
-
-
-
-
-          {
+  {
     "id": "salada-waldorf",
-    "category": "sobremesas",
-    "category_pt": "Sobremesas",
-    "category_en": "Desserts",
-    "title_pt": "Pudim de Baunilha",
-    "title_en": "Vanilla Pudding",
-    "description_pt": "Uma salada refrescante e saborosa, perfeita para aqueles que amam alimentos leves.",
-    "description_en": "A refreshing and delicious salad, perfect for those who love light meals.",
-    "prepTime": "10 min",
+    "category": "entradas",
+    "category_pt": "Entradas",
+    "category_en": "Starters",
+    "title_pt": "Salada Waldorf",
+    "title_en": "Waldorf Salad",
+    "description_pt": "Salada clássica com maçã, salsão, uvas e nozes em molho cremoso.",
+    "description_en": "A classic salad with apple, celery, grapes, and walnuts in a creamy dressing.",
+    "prepTime": "15 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "4 pessoas",
+    "servings_en": "4 servings",
+    "calories": 230,
+    "ingredients_pt": [
+      "2 maçãs em cubos",
+      "2 talos de salsão fatiados",
+      "1 xícara de uvas",
+      "1/2 xícara de nozes",
+      "3 colheres de sopa de maionese"
+    ],
+    "ingredients_en": [
+      "2 apples, diced",
+      "2 celery stalks, sliced",
+      "1 cup grapes",
+      "1/2 cup walnuts",
+      "3 tablespoons mayonnaise"
+    ],
+    "instructions_pt": [
+      "Misture as maçãs, o salsão, as uvas e as nozes.",
+      "Acrescente a maionese e envolva delicadamente.",
+      "Sirva gelada."
+    ],
+    "instructions_en": [
+      "Combine the apples, celery, grapes, and walnuts.",
+      "Add the mayonnaise and toss gently.",
+      "Serve chilled."
+    ]
+  },
+
+  {
+    "id": "coquetel-de-camarao",
+    "category": "entradas",
+    "category_pt": "Entradas",
+    "category_en": "Starters",
+    "title_pt": "Coquetel de Camarão",
+    "title_en": "Shrimp Cocktail",
+    "description_pt": "Entrada clássica de camarões gelados servidos com molho rosé cítrico e refrescante.",
+    "description_en": "A classic starter of chilled shrimp served with a refreshing citrusy cocktail sauce.",
+    "prepTime": "20 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "4 pessoas",
+    "servings_en": "4 servings",
+    "calories": 180,
+    "ingredients_pt": [
+      "300g de camarão cozido e limpo",
+      "4 folhas de alface",
+      "3 colheres de sopa de ketchup",
+      "2 colheres de sopa de maionese",
+      "1 colher de sopa de suco de limão",
+      "Molho inglês a gosto"
+    ],
+    "ingredients_en": [
+      "300g cooked and peeled shrimp",
+      "4 lettuce leaves",
+      "3 tablespoons ketchup",
+      "2 tablespoons mayonnaise",
+      "1 tablespoon lemon juice",
+      "Worcestershire sauce to taste"
+    ],
+    "instructions_pt": [
+      "Misture ketchup, maionese, limão e molho inglês para preparar o molho.",
+      "Distribua a alface e os camarões em taças ou porções individuais.",
+      "Cubra com o molho rosé e sirva bem gelado."
+    ],
+    "instructions_en": [
+      "Mix the ketchup, mayonnaise, lemon juice, and Worcestershire sauce to make the dressing.",
+      "Arrange the lettuce and shrimp in glasses or individual dishes.",
+      "Top with the cocktail sauce and serve well chilled."
+    ]
+  },
+  {
+    "id": "old-fashioned",
+    "category": "bebidas",
+    "category_pt": "Bebidas",
+    "category_en": "Drinks",
+    "title_pt": "Old Fashioned",
+    "title_en": "Old Fashioned",
+    "description_pt": "Coquetel clássico de whiskey com açúcar, bitter e toque de laranja, intenso e elegante.",
+    "description_en": "A classic whiskey cocktail with sugar, bitters, and orange, bold and elegant.",
+    "prepTime": "5 min",
     "difficulty_pt": "Fácil",
     "difficulty_en": "Easy",
     "servings_pt": "1 pessoa",
     "servings_en": "1 serving",
-    "calories": 650,
+    "calories": 190,
     "ingredients_pt": [
-      "150g de carne bovina",
-      "Pão brioche",
-      "Queijo cheddar",
-      "Picles",
-      "Ketchup e mostarda"
+      "50ml de bourbon ou rye whiskey",
+      "1 cubo de açúcar",
+      "2 dashes de angostura bitter",
+      "1 rodela de laranja",
+      "Gelo"
     ],
     "ingredients_en": [
-      "150g beef patty",
-      "Brioche bun",
-      "Cheddar cheese",
-      "Pickles",
-      "Ketchup and mustard"
+      "50ml bourbon or rye whiskey",
+      "1 sugar cube",
+      "2 dashes Angostura bitters",
+      "1 orange slice",
+      "Ice"
     ],
     "instructions_pt": [
-      "Modele a carne em formato de hambúrguer.",
-      "Grelhe até o ponto desejado.",
-      "Toste o pão na manteiga.",
-      "Monte com queijo, picles e molhos."
+      "Macere o açúcar com o bitter no copo.",
+      "Adicione gelo e despeje o whiskey.",
+      "Mexa delicadamente e finalize com a laranja."
     ],
     "instructions_en": [
-      "Shape the beef into a patty.",
-      "Grill to desired doneness.",
-      "Toast the bun with butter.",
-      "Assemble with cheese, pickles, and sauces."
+      "Muddle the sugar cube with the bitters in the glass.",
+      "Add ice and pour in the whiskey.",
+      "Stir gently and finish with the orange slice."
+    ]
+  },
+  {
+    "id": "costela-bbq",
+    "category": "principais",
+    "category_pt": "Pratos Principais",
+    "category_en": "Main Courses",
+    "title_pt": "Costela BBQ",
+    "title_en": "BBQ Ribs",
+    "description_pt": "Costelas assadas lentamente com molho barbecue agridoce, macias e cheias de sabor.",
+    "description_en": "Slow-roasted ribs glazed with sweet and smoky barbecue sauce, tender and flavorful.",
+    "prepTime": "2 h 30 min",
+    "difficulty_pt": "Médio",
+    "difficulty_en": "Medium",
+    "servings_pt": "4 pessoas",
+    "servings_en": "4 servings",
+    "calories": 680,
+    "ingredients_pt": [
+      "1kg de costela suína",
+      "1 xícara de molho barbecue",
+      "1 colher de sopa de páprica",
+      "1 colher de chá de alho em pó",
+      "Sal e pimenta a gosto"
+    ],
+    "ingredients_en": [
+      "1kg pork ribs",
+      "1 cup barbecue sauce",
+      "1 tablespoon paprika",
+      "1 teaspoon garlic powder",
+      "Salt and pepper to taste"
+    ],
+    "instructions_pt": [
+      "Tempere a costela com páprica, alho, sal e pimenta.",
+      "Asse coberta em forno baixo até ficar macia.",
+      "Pincele com molho barbecue e volte ao forno para caramelizar."
+    ],
+    "instructions_en": [
+      "Season the ribs with paprika, garlic powder, salt, and pepper.",
+      "Bake covered in a low oven until tender.",
+      "Brush with barbecue sauce and return to the oven to caramelize."
+    ]
+  },
+  {
+    "id": "cheesecake-new-york",
+    "category": "sobremesas",
+    "category_pt": "Sobremesas",
+    "category_en": "Desserts",
+    "title_pt": "Cheesecake de Nova York",
+    "title_en": "New York Cheesecake",
+    "description_pt": "Cheesecake denso e cremoso com base amanteigada, clássico e sofisticado.",
+    "description_en": "A dense and creamy cheesecake with a buttery crust, classic and elegant.",
+    "prepTime": "5 h",
+    "difficulty_pt": "Médio",
+    "difficulty_en": "Medium",
+    "servings_pt": "10 pessoas",
+    "servings_en": "10 servings",
+    "calories": 420,
+    "ingredients_pt": [
+      "200g de biscoito triturado",
+      "80g de manteiga derretida",
+      "600g de cream cheese",
+      "1 xícara de açúcar",
+      "3 ovos",
+      "1 colher de chá de baunilha"
+    ],
+    "ingredients_en": [
+      "200g crushed cookies",
+      "80g melted butter",
+      "600g cream cheese",
+      "1 cup sugar",
+      "3 eggs",
+      "1 teaspoon vanilla"
+    ],
+    "instructions_pt": [
+      "Misture o biscoito com a manteiga e pressione no fundo da forma.",
+      "Bata cream cheese, açúcar, ovos e baunilha até ficar liso.",
+      "Despeje sobre a base, asse e leve à geladeira até firmar."
+    ],
+    "instructions_en": [
+      "Mix the cookie crumbs with the butter and press into the bottom of the pan.",
+      "Beat the cream cheese, sugar, eggs, and vanilla until smooth.",
+      "Pour over the crust, bake, and chill until fully set."
+    ]
+  },
+  {
+    "id": "ovos-recheados",
+    "category": "entradas",
+    "category_pt": "Entradas",
+    "category_en": "Starters",
+    "title_pt": "Ovos Recheados",
+    "title_en": "Deviled Eggs",
+    "description_pt": "Metades de ovos cozidos recheadas com creme temperado, simples e tradicionais.",
+    "description_en": "Boiled egg halves filled with a seasoned creamy yolk mixture, simple and traditional.",
+    "prepTime": "20 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "6 pessoas",
+    "servings_en": "6 servings",
+    "calories": 150,
+    "ingredients_pt": [
+      "6 ovos",
+      "3 colheres de sopa de maionese",
+      "1 colher de chá de mostarda",
+      "Páprica para finalizar",
+      "Sal e pimenta a gosto"
+    ],
+    "ingredients_en": [
+      "6 eggs",
+      "3 tablespoons mayonnaise",
+      "1 teaspoon mustard",
+      "Paprika for garnish",
+      "Salt and pepper to taste"
+    ],
+    "instructions_pt": [
+      "Cozinhe os ovos, descasque e corte ao meio.",
+      "Retire as gemas e misture com maionese, mostarda, sal e pimenta.",
+      "Recheie as claras com o creme e finalize com páprica."
+    ],
+    "instructions_en": [
+      "Boil the eggs, peel them, and cut them in half.",
+      "Remove the yolks and mix them with mayonnaise, mustard, salt, and pepper.",
+      "Fill the egg whites with the mixture and sprinkle with paprika."
+    ]
+  },
+  {
+    "id": "whiskey-sour",
+    "category": "bebidas",
+    "category_pt": "Bebidas",
+    "category_en": "Drinks",
+    "title_pt": "Whiskey Sour",
+    "title_en": "Whiskey Sour",
+    "description_pt": "Drink equilibrado de whiskey, limão e açúcar, com sabor cítrico e textura sedosa.",
+    "description_en": "A balanced whiskey cocktail with lemon and sugar, bright and silky.",
+    "prepTime": "5 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "1 pessoa",
+    "servings_en": "1 serving",
+    "calories": 175,
+    "ingredients_pt": [
+      "50ml de whiskey",
+      "25ml de suco de limão",
+      "20ml de xarope de açúcar",
+      "Gelo",
+      "Cereja ou fatia de limão para decorar"
+    ],
+    "ingredients_en": [
+      "50ml whiskey",
+      "25ml lemon juice",
+      "20ml simple syrup",
+      "Ice",
+      "Cherry or lemon slice for garnish"
+    ],
+    "instructions_pt": [
+      "Coloque o whiskey, o limão e o xarope na coqueteleira com gelo.",
+      "Agite bem até gelar.",
+      "Coe para um copo baixo e decore."
+    ],
+    "instructions_en": [
+      "Add the whiskey, lemon juice, and syrup to a shaker with ice.",
+      "Shake well until chilled.",
+      "Strain into a low glass and garnish."
+    ]
+  },
+  {
+    "id": "fish-and-chips",
+    "category": "principais",
+    "category_pt": "Pratos Principais",
+    "category_en": "Main Courses",
+    "title_pt": "Fish and Chips",
+    "title_en": "Fish and Chips",
+    "description_pt": "Peixe empanado crocante servido com batatas fritas douradas, clássico de pub inglês.",
+    "description_en": "Crispy battered fish served with golden fries, a classic British pub meal.",
+    "prepTime": "40 min",
+    "difficulty_pt": "Médio",
+    "difficulty_en": "Medium",
+    "servings_pt": "4 pessoas",
+    "servings_en": "4 servings",
+    "calories": 590,
+    "ingredients_pt": [
+      "4 filés de peixe branco",
+      "1 xícara de farinha de trigo",
+      "150ml de água com gás",
+      "4 batatas",
+      "Sal e limão"
+    ],
+    "ingredients_en": [
+      "4 white fish fillets",
+      "1 cup all-purpose flour",
+      "150ml sparkling water",
+      "4 potatoes",
+      "Salt and lemon"
+    ],
+    "instructions_pt": [
+      "Prepare a massa do empanado com farinha, sal e água com gás.",
+      "Passe o peixe na massa e frite até dourar e ficar crocante.",
+      "Frite as batatas e sirva tudo com limão."
+    ],
+    "instructions_en": [
+      "Make the batter with flour, salt, and sparkling water.",
+      "Dip the fish in the batter and fry until golden and crisp.",
+      "Fry the potatoes and serve everything with lemon."
+    ]
+  },
+  {
+    "id": "brownie",
+    "category": "sobremesas",
+    "category_pt": "Sobremesas",
+    "category_en": "Desserts",
+    "title_pt": "Brownie",
+    "title_en": "Brownie",
+    "description_pt": "Quadradinhos intensos de chocolate com centro úmido e casquinha fina por cima.",
+    "description_en": "Rich chocolate squares with a fudgy center and a thin crackly top.",
+    "prepTime": "45 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "9 porções",
+    "servings_en": "9 servings",
+    "calories": 330,
+    "ingredients_pt": [
+      "200g de chocolate meio amargo",
+      "100g de manteiga",
+      "2 ovos",
+      "1 xícara de açúcar",
+      "1/2 xícara de farinha de trigo"
+    ],
+    "ingredients_en": [
+      "200g dark chocolate",
+      "100g butter",
+      "2 eggs",
+      "1 cup sugar",
+      "1/2 cup all-purpose flour"
+    ],
+    "instructions_pt": [
+      "Derreta o chocolate com a manteiga.",
+      "Misture os ovos, o açúcar e depois incorpore a farinha.",
+      "Asse em forma pequena até firmar nas bordas e manter o centro úmido."
+    ],
+    "instructions_en": [
+      "Melt the chocolate with the butter.",
+      "Mix in the eggs and sugar, then fold in the flour.",
+      "Bake in a small pan until the edges are set but the center stays fudgy."
+    ]
+  },
+  {
+    "id": "bolinhas-de-queijo",
+    "category": "entradas",
+    "category_pt": "Entradas",
+    "category_en": "Starters",
+    "title_pt": "Bolinhas de Queijo",
+    "title_en": "Cheese Balls",
+    "description_pt": "Petiscos crocantes por fora e macios por dentro, com sabor marcante de queijo.",
+    "description_en": "Crunchy on the outside and soft inside, these cheese bites are full of flavor.",
+    "prepTime": "35 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "20 unidades",
+    "servings_en": "20 pieces",
+    "calories": 210,
+    "ingredients_pt": [
+      "200g de queijo muçarela ralado",
+      "1 xícara de farinha de trigo",
+      "1 ovo",
+      "Farinha de rosca para empanar",
+      "Óleo para fritar"
+    ],
+    "ingredients_en": [
+      "200g shredded mozzarella",
+      "1 cup all-purpose flour",
+      "1 egg",
+      "Breadcrumbs for coating",
+      "Oil for frying"
+    ],
+    "instructions_pt": [
+      "Misture o queijo com a farinha e o ovo até formar uma massa.",
+      "Modele bolinhas, passe na farinha de rosca e leve para gelar por alguns minutos.",
+      "Frite até dourar e sirva quente."
+    ],
+    "instructions_en": [
+      "Mix the cheese with the flour and egg until a dough forms.",
+      "Shape into balls, coat with breadcrumbs, and chill briefly.",
+      "Fry until golden and serve hot."
+    ]
+  },
+  {
+    "id": "manhattan",
+    "category": "bebidas",
+    "category_pt": "Bebidas",
+    "category_en": "Drinks",
+    "title_pt": "Manhattan",
+    "title_en": "Manhattan",
+    "description_pt": "Coquetel clássico com whiskey, vermute tinto e bitter, robusto e aromático.",
+    "description_en": "A classic cocktail of whiskey, sweet vermouth, and bitters, robust and aromatic.",
+    "prepTime": "5 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "1 pessoa",
+    "servings_en": "1 serving",
+    "calories": 185,
+    "ingredients_pt": [
+      "50ml de rye whiskey ou bourbon",
+      "20ml de vermute tinto",
+      "2 dashes de angostura bitter",
+      "Gelo",
+      "Cereja para decorar"
+    ],
+    "ingredients_en": [
+      "50ml rye whiskey or bourbon",
+      "20ml sweet vermouth",
+      "2 dashes Angostura bitters",
+      "Ice",
+      "Cherry for garnish"
+    ],
+    "instructions_pt": [
+      "Misture o whiskey, o vermute e o bitter com gelo em um mixing glass.",
+      "Mexa até gelar bem.",
+      "Coe para a taça e finalize com a cereja."
+    ],
+    "instructions_en": [
+      "Stir the whiskey, vermouth, and bitters with ice in a mixing glass.",
+      "Mix until thoroughly chilled.",
+      "Strain into a glass and garnish with the cherry."
+    ]
+  },
+  {
+    "id": "macarrao-com-queijo",
+    "category": "principais",
+    "category_pt": "Pratos Principais",
+    "category_en": "Main Courses",
+    "title_pt": "Macarrão com Queijo",
+    "title_en": "Mac and Cheese",
+    "description_pt": "Massa envolvida em molho cremoso de queijo, reconfortante e irresistível.",
+    "description_en": "Pasta coated in a creamy cheese sauce, comforting and irresistible.",
+    "prepTime": "30 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "4 pessoas",
+    "servings_en": "4 servings",
+    "calories": 510,
+    "ingredients_pt": [
+      "300g de macarrão curto",
+      "2 colheres de sopa de manteiga",
+      "2 colheres de sopa de farinha de trigo",
+      "500ml de leite",
+      "200g de queijo cheddar ralado"
+    ],
+    "ingredients_en": [
+      "300g short pasta",
+      "2 tablespoons butter",
+      "2 tablespoons all-purpose flour",
+      "500ml milk",
+      "200g shredded cheddar cheese"
+    ],
+    "instructions_pt": [
+      "Cozinhe o macarrão até ficar al dente.",
+      "Prepare um molho branco com manteiga, farinha e leite, depois adicione o queijo.",
+      "Misture a massa ao molho e sirva bem quente."
+    ],
+    "instructions_en": [
+      "Cook the pasta until al dente.",
+      "Make a white sauce with butter, flour, and milk, then add the cheese.",
+      "Toss the pasta with the sauce and serve hot."
+    ]
+  },
+  {
+    "id": "cupcake-de-baunilha",
+    "category": "sobremesas",
+    "category_pt": "Sobremesas",
+    "category_en": "Desserts",
+    "title_pt": "Cupcake de Baunilha",
+    "title_en": "Vanilla Cupcake",
+    "description_pt": "Bolinho leve de baunilha coberto com creme macio, delicado e festivo.",
+    "description_en": "A light vanilla cupcake topped with soft frosting, delicate and festive.",
+    "prepTime": "40 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "12 unidades",
+    "servings_en": "12 cupcakes",
+    "calories": 240,
+    "ingredients_pt": [
+      "1 e 1/2 xícara de farinha de trigo",
+      "3/4 de xícara de açúcar",
+      "2 ovos",
+      "1/2 xícara de leite",
+      "1 colher de chá de essência de baunilha",
+      "Cobertura de buttercream"
+    ],
+    "ingredients_en": [
+      "1 1/2 cups all-purpose flour",
+      "3/4 cup sugar",
+      "2 eggs",
+      "1/2 cup milk",
+      "1 teaspoon vanilla extract",
+      "Buttercream frosting"
+    ],
+    "instructions_pt": [
+      "Misture ovos, açúcar, leite, baunilha e os ingredientes secos.",
+      "Distribua nas forminhas e asse até crescer e dourar levemente.",
+      "Espere esfriar e cubra com buttercream."
+    ],
+    "instructions_en": [
+      "Mix the eggs, sugar, milk, vanilla, and dry ingredients.",
+      "Divide into cupcake liners and bake until risen and lightly golden.",
+      "Let cool and top with buttercream."
+    ]
+  },
+  {
+    "id": "aspic-de-carne",
+    "category": "entradas",
+    "category_pt": "Entradas",
+    "category_en": "Starters",
+    "title_pt": "Aspic de Carne",
+    "title_en": "Meat Aspic",
+    "description_pt": "Entrada retrô feita com carne e legumes envolvidos em caldo gelificado bem temperado.",
+    "description_en": "A retro starter made with meat and vegetables suspended in a savory set broth.",
+    "prepTime": "5 h",
+    "difficulty_pt": "Difícil",
+    "difficulty_en": "Hard",
+    "servings_pt": "8 pessoas",
+    "servings_en": "8 servings",
+    "calories": 190,
+    "ingredients_pt": [
+      "300g de carne cozida desfiada",
+      "1 cenoura cozida em cubos",
+      "1/2 xícara de ervilhas",
+      "500ml de caldo de carne",
+      "1 envelope de gelatina incolor"
+    ],
+    "ingredients_en": [
+      "300g cooked shredded beef",
+      "1 cooked carrot, diced",
+      "1/2 cup peas",
+      "500ml beef broth",
+      "1 packet unflavored gelatin"
+    ],
+    "instructions_pt": [
+      "Dissolva a gelatina no caldo quente e ajuste os temperos.",
+      "Distribua a carne e os legumes em uma forma.",
+      "Cubra com o caldo, leve à geladeira até firmar e desenforme para servir."
+    ],
+    "instructions_en": [
+      "Dissolve the gelatin in the hot broth and adjust the seasoning.",
+      "Arrange the meat and vegetables in a mold.",
+      "Pour over the broth, chill until firm, and unmold to serve."
+    ]
+  },
+  {
+    "id": "chilli-com-carne",
+    "category": "principais",
+    "category_pt": "Pratos Principais",
+    "category_en": "Main Courses",
+    "title_pt": "Chilli com Carne",
+    "title_en": "Chili con Carne",
+    "description_pt": "Ensopado picante de carne moída com feijão e tomate, encorpado e reconfortante.",
+    "description_en": "A spicy stew of ground beef, beans, and tomatoes, hearty and comforting.",
+    "prepTime": "50 min",
+    "difficulty_pt": "Médio",
+    "difficulty_en": "Medium",
+    "servings_pt": "6 pessoas",
+    "servings_en": "6 servings",
+    "calories": 470,
+    "ingredients_pt": [
+      "500g de carne moída",
+      "1 lata de feijão vermelho",
+      "1 lata de tomate pelado",
+      "1 cebola picada",
+      "Páprica e pimenta em pó"
+    ],
+    "ingredients_en": [
+      "500g ground beef",
+      "1 can red beans",
+      "1 can peeled tomatoes",
+      "1 chopped onion",
+      "Paprika and chili powder"
+    ],
+    "instructions_pt": [
+      "Refogue a cebola e doure a carne moída.",
+      "Adicione o tomate, o feijão e os temperos e cozinhe até engrossar.",
+      "Sirva quente, puro ou acompanhado de arroz."
+    ],
+    "instructions_en": [
+      "Saute the onion and brown the ground beef.",
+      "Add the tomatoes, beans, and spices and simmer until thickened.",
+      "Serve hot on its own or with rice."
+    ]
+  },
+  {
+    "id": "torta-de-limao",
+    "category": "sobremesas",
+    "category_pt": "Sobremesas",
+    "category_en": "Desserts",
+    "title_pt": "Torta de Limão",
+    "title_en": "Lemon Pie",
+    "description_pt": "Sobremesa cremosa e cítrica com base crocante e cobertura leve.",
+    "description_en": "A creamy, citrusy dessert with a crisp crust and a light topping.",
+    "prepTime": "3 h 30 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "8 pessoas",
+    "servings_en": "8 servings",
+    "calories": 320,
+    "ingredients_pt": [
+      "200g de biscoito triturado",
+      "80g de manteiga derretida",
+      "1 lata de leite condensado",
+      "1/2 xícara de suco de limão",
+      "Creme ou merengue para cobertura"
+    ],
+    "ingredients_en": [
+      "200g crushed cookies",
+      "80g melted butter",
+      "1 can sweetened condensed milk",
+      "1/2 cup lime juice",
+      "Cream or meringue for topping"
+    ],
+    "instructions_pt": [
+      "Misture o biscoito com a manteiga e forre a forma.",
+      "Mexa o leite condensado com o suco de limão até engrossar.",
+      "Recheie a base, cubra e leve à geladeira até firmar."
+    ],
+    "instructions_en": [
+      "Mix the cookie crumbs with the butter and line the pan.",
+      "Stir the condensed milk with the lime juice until thickened.",
+      "Fill the crust, add the topping, and chill until set."
+    ]
+  },
+  {
+    "id": "croquetes-de-carne",
+    "category": "entradas",
+    "category_pt": "Entradas",
+    "category_en": "Starters",
+    "title_pt": "Croquetes de Carne",
+    "title_en": "Beef Croquettes",
+    "description_pt": "Croquetes dourados e crocantes com recheio macio de carne bem temperada.",
+    "description_en": "Golden crispy croquettes with a soft, savory beef filling.",
+    "prepTime": "45 min",
+    "difficulty_pt": "Médio",
+    "difficulty_en": "Medium",
+    "servings_pt": "18 unidades",
+    "servings_en": "18 croquettes",
+    "calories": 260,
+    "ingredients_pt": [
+      "300g de carne moída cozida",
+      "1 colher de sopa de manteiga",
+      "2 colheres de sopa de farinha de trigo",
+      "1 xícara de leite",
+      "Farinha de rosca para empanar"
+    ],
+    "ingredients_en": [
+      "300g cooked ground beef",
+      "1 tablespoon butter",
+      "2 tablespoons all-purpose flour",
+      "1 cup milk",
+      "Breadcrumbs for coating"
+    ],
+    "instructions_pt": [
+      "Prepare uma massa cremosa com manteiga, farinha e leite.",
+      "Misture a carne temperada e deixe esfriar.",
+      "Modele os croquetes, empane e frite até dourar."
+    ],
+    "instructions_en": [
+      "Make a creamy base with butter, flour, and milk.",
+      "Stir in the seasoned beef and let it cool.",
+      "Shape the croquettes, coat them, and fry until golden."
+    ]
+  },
+  {
+    "id": "roast-beef",
+    "category": "principais",
+    "category_pt": "Pratos Principais",
+    "category_en": "Main Courses",
+    "title_pt": "Roast Beef",
+    "title_en": "Roast Beef",
+    "description_pt": "Carne assada suculenta, fatiada finamente e com sabor marcante de ervas.",
+    "description_en": "Juicy roasted beef, thinly sliced and infused with savory herbs.",
+    "prepTime": "1 h 40 min",
+    "difficulty_pt": "Médio",
+    "difficulty_en": "Medium",
+    "servings_pt": "6 pessoas",
+    "servings_en": "6 servings",
+    "calories": 560,
+    "ingredients_pt": [
+      "1kg de peça de carne bovina",
+      "2 dentes de alho",
+      "1 colher de sopa de mostarda",
+      "Alecrim e tomilho",
+      "Sal e pimenta"
+    ],
+    "ingredients_en": [
+      "1kg beef roast",
+      "2 garlic cloves",
+      "1 tablespoon mustard",
+      "Rosemary and thyme",
+      "Salt and pepper"
+    ],
+    "instructions_pt": [
+      "Tempere a carne com alho, mostarda, ervas, sal e pimenta.",
+      "Sele em frigideira quente para dourar por fora.",
+      "Asse até o ponto desejado, descanse e fatie para servir."
+    ],
+    "instructions_en": [
+      "Season the beef with garlic, mustard, herbs, salt, and pepper.",
+      "Sear it in a hot pan to brown the outside.",
+      "Roast to the desired doneness, rest, and slice to serve."
+    ]
+  },
+  {
+    "id": "baked-alaska",
+    "category": "sobremesas",
+    "category_pt": "Sobremesas",
+    "category_en": "Desserts",
+    "title_pt": "Baked Alaska",
+    "title_en": "Baked Alaska",
+    "description_pt": "Sobremesa impactante com bolo, sorvete e merengue tostado por fora.",
+    "description_en": "A showstopping dessert with cake, ice cream, and toasted meringue on the outside.",
+    "prepTime": "4 h",
+    "difficulty_pt": "Difícil",
+    "difficulty_en": "Hard",
+    "servings_pt": "8 pessoas",
+    "servings_en": "8 servings",
+    "calories": 390,
+    "ingredients_pt": [
+      "1 base de bolo simples",
+      "1 litro de sorvete",
+      "4 claras",
+      "1 xícara de açúcar",
+      "1 colher de chá de essência de baunilha"
+    ],
+    "ingredients_en": [
+      "1 plain cake base",
+      "1 liter ice cream",
+      "4 egg whites",
+      "1 cup sugar",
+      "1 teaspoon vanilla extract"
+    ],
+    "instructions_pt": [
+      "Monte o sorvete sobre a base de bolo e leve ao congelador até firmar muito bem.",
+      "Bata as claras com o açúcar até formar um merengue firme.",
+      "Cubra toda a sobremesa com o merengue e leve ao forno alto rapidamente para dourar."
+    ],
+    "instructions_en": [
+      "Place the ice cream on top of the cake base and freeze until very firm.",
+      "Whip the egg whites with sugar until stiff meringue forms.",
+      "Cover the dessert completely with meringue and bake briefly in a hot oven to brown."
+    ]
+  },
+  {
+    "id": "frango-frito",
+    "category": "principais",
+    "category_pt": "Pratos Principais",
+    "category_en": "Main Courses",
+    "title_pt": "Frango Frito",
+    "title_en": "Fried Chicken",
+    "description_pt": "Pedaços de frango crocantes por fora e suculentos por dentro, cheios de tempero.",
+    "description_en": "Pieces of chicken that are crispy outside and juicy inside, packed with seasoning.",
+    "prepTime": "45 min",
+    "difficulty_pt": "Médio",
+    "difficulty_en": "Medium",
+    "servings_pt": "4 pessoas",
+    "servings_en": "4 servings",
+    "calories": 620,
+    "ingredients_pt": [
+      "1kg de pedaços de frango",
+      "1 xícara de farinha de trigo",
+      "1 colher de chá de páprica",
+      "1 colher de chá de alho em pó",
+      "Leitelho ou leite"
+    ],
+    "ingredients_en": [
+      "1kg chicken pieces",
+      "1 cup all-purpose flour",
+      "1 teaspoon paprika",
+      "1 teaspoon garlic powder",
+      "Buttermilk or milk"
+    ],
+    "instructions_pt": [
+      "Tempere o frango e deixe marinar no leitelho ou leite.",
+      "Passe na farinha temperada.",
+      "Frite até dourar bem e cozinhar por dentro."
+    ],
+    "instructions_en": [
+      "Season the chicken and marinate it in buttermilk or milk.",
+      "Coat it in the seasoned flour.",
+      "Fry until deeply golden and cooked through."
+    ]
+  },
+  {
+    "id": "torta-de-cereja",
+    "category": "sobremesas",
+    "category_pt": "Sobremesas",
+    "category_en": "Desserts",
+    "title_pt": "Torta de Cereja",
+    "title_en": "Cherry Pie",
+    "description_pt": "Torta tradicional com recheio de cerejas adocicado e massa dourada e amanteigada.",
+    "description_en": "A traditional pie with a sweet cherry filling and a golden buttery crust.",
+    "prepTime": "1 h 20 min",
+    "difficulty_pt": "Médio",
+    "difficulty_en": "Medium",
+    "servings_pt": "8 pessoas",
+    "servings_en": "8 servings",
+    "calories": 350,
+    "ingredients_pt": [
+      "1 massa de torta",
+      "3 xícaras de cerejas sem caroço",
+      "3/4 de xícara de açúcar",
+      "1 colher de sopa de amido de milho",
+      "1 gema para pincelar"
+    ],
+    "ingredients_en": [
+      "1 pie crust",
+      "3 cups pitted cherries",
+      "3/4 cup sugar",
+      "1 tablespoon cornstarch",
+      "1 egg yolk for brushing"
+    ],
+    "instructions_pt": [
+      "Misture as cerejas com açúcar e amido.",
+      "Coloque o recheio sobre a massa e cubra como preferir.",
+      "Pincele gema e asse até a torta dourar e borbulhar."
+    ],
+    "instructions_en": [
+      "Mix the cherries with the sugar and cornstarch.",
+      "Place the filling in the crust and cover as desired.",
+      "Brush with egg yolk and bake until golden and bubbling."
+    ]
+  },
+  {
+    "id": "chicken-pot-pie",
+    "category": "principais",
+    "category_pt": "Pratos Principais",
+    "category_en": "Main Courses",
+    "title_pt": "Torta Cremosa de Frango",
+    "title_en": "Chicken Pot Pie",
+    "description_pt": "Torta recheada com frango e legumes em molho cremoso, assada sob massa dourada.",
+    "description_en": "A pie filled with chicken and vegetables in a creamy sauce, baked under a golden crust.",
+    "prepTime": "1 h 10 min",
+    "difficulty_pt": "Médio",
+    "difficulty_en": "Medium",
+    "servings_pt": "6 pessoas",
+    "servings_en": "6 servings",
+    "calories": 460,
+    "ingredients_pt": [
+      "2 xícaras de frango cozido em cubos",
+      "1 xícara de legumes mistos",
+      "2 colheres de sopa de manteiga",
+      "1 xícara de caldo ou creme",
+      "Massa folhada ou massa de torta"
+    ],
+    "ingredients_en": [
+      "2 cups cooked chicken, diced",
+      "1 cup mixed vegetables",
+      "2 tablespoons butter",
+      "1 cup broth or cream sauce",
+      "Puff pastry or pie dough"
+    ],
+    "instructions_pt": [
+      "Refogue os legumes e misture com o frango e o molho cremoso.",
+      "Coloque o recheio em um refratário e cubra com a massa.",
+      "Asse até a cobertura dourar e o recheio borbulhar."
+    ],
+    "instructions_en": [
+      "Saute the vegetables and mix them with the chicken and creamy sauce.",
+      "Place the filling in a baking dish and cover with dough.",
+      "Bake until the crust is golden and the filling bubbles."
+    ]
+  },
+  {
+    "id": "peach-cobbler",
+    "category": "sobremesas",
+    "category_pt": "Sobremesas",
+    "category_en": "Desserts",
+    "title_pt": "Peach Cobbler",
+    "title_en": "Peach Cobbler",
+    "description_pt": "Sobremesa assada de pêssegos macios sob cobertura rústica e dourada.",
+    "description_en": "A baked dessert of tender peaches under a rustic golden topping.",
+    "prepTime": "55 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "8 pessoas",
+    "servings_en": "8 servings",
+    "calories": 310,
+    "ingredients_pt": [
+      "5 pêssegos fatiados",
+      "3/4 de xícara de açúcar",
+      "1 xícara de farinha de trigo",
+      "1 colher de chá de fermento",
+      "1/2 xícara de leite",
+      "50g de manteiga"
+    ],
+    "ingredients_en": [
+      "5 sliced peaches",
+      "3/4 cup sugar",
+      "1 cup all-purpose flour",
+      "1 teaspoon baking powder",
+      "1/2 cup milk",
+      "50g butter"
+    ],
+    "instructions_pt": [
+      "Disponha os pêssegos com parte do açúcar em um refratário.",
+      "Misture os ingredientes da cobertura até formar uma massa rústica.",
+      "Espalhe sobre a fruta e asse até dourar."
+    ],
+    "instructions_en": [
+      "Place the peaches with some of the sugar in a baking dish.",
+      "Mix the topping ingredients into a rustic batter.",
+      "Spread over the fruit and bake until golden."
+    ]
+  },
+  {
+    "id": "peru-assado",
+    "category": "principais",
+    "category_pt": "Pratos Principais",
+    "category_en": "Main Courses",
+    "title_pt": "Peru Assado",
+    "title_en": "Roast Turkey",
+    "description_pt": "Ave assada com pele dourada e carne macia, ideal para ocasiões especiais.",
+    "description_en": "A roasted bird with golden skin and tender meat, ideal for special occasions.",
+    "prepTime": "3 h 30 min",
+    "difficulty_pt": "Médio",
+    "difficulty_en": "Medium",
+    "servings_pt": "10 pessoas",
+    "servings_en": "10 servings",
+    "calories": 540,
+    "ingredients_pt": [
+      "1 peru pequeno",
+      "3 colheres de sopa de manteiga",
+      "2 dentes de alho",
+      "Ervas frescas",
+      "Sal, pimenta e suco de laranja"
+    ],
+    "ingredients_en": [
+      "1 small turkey",
+      "3 tablespoons butter",
+      "2 garlic cloves",
+      "Fresh herbs",
+      "Salt, pepper, and orange juice"
+    ],
+    "instructions_pt": [
+      "Tempere o peru com alho, ervas, sal, pimenta e suco de laranja.",
+      "Pincele manteiga por toda a pele.",
+      "Asse até dourar bem e cozinhar por completo, regando de tempos em tempos."
+    ],
+    "instructions_en": [
+      "Season the turkey with garlic, herbs, salt, pepper, and orange juice.",
+      "Brush the skin all over with butter.",
+      "Roast until golden and fully cooked, basting from time to time."
+    ]
+  },
+  {
+    "id": "donuts",
+    "category": "sobremesas",
+    "category_pt": "Sobremesas",
+    "category_en": "Desserts",
+    "title_pt": "Donuts",
+    "title_en": "Donuts",
+    "description_pt": "Rosquinhas macias e fofas, fritas e cobertas com açúcar ou glacê.",
+    "description_en": "Soft and fluffy fried rings topped with sugar or glaze.",
+    "prepTime": "2 h",
+    "difficulty_pt": "Médio",
+    "difficulty_en": "Medium",
+    "servings_pt": "12 unidades",
+    "servings_en": "12 donuts",
+    "calories": 280,
+    "ingredients_pt": [
+      "3 xícaras de farinha de trigo",
+      "2 colheres de sopa de açúcar",
+      "10g de fermento biológico seco",
+      "1 ovo",
+      "1 xícara de leite morno",
+      "Óleo para fritar"
+    ],
+    "ingredients_en": [
+      "3 cups all-purpose flour",
+      "2 tablespoons sugar",
+      "10g dry yeast",
+      "1 egg",
+      "1 cup warm milk",
+      "Oil for frying"
+    ],
+    "instructions_pt": [
+      "Prepare a massa e deixe crescer até dobrar de volume.",
+      "Abra, corte os donuts e deixe crescer novamente.",
+      "Frite até dourar e finalize com açúcar ou cobertura."
+    ],
+    "instructions_en": [
+      "Make the dough and let it rise until doubled.",
+      "Roll it out, cut the donuts, and let them rise again.",
+      "Fry until golden and finish with sugar or glaze."
+    ]
+  },
+  {
+    "id": "hot-dog",
+    "category": "principais",
+    "category_pt": "Pratos Principais",
+    "category_en": "Main Courses",
+    "title_pt": "Hot Dog",
+    "title_en": "Hot Dog",
+    "description_pt": "Sanduíche clássico com salsicha, pão macio e coberturas simples e saborosas.",
+    "description_en": "A classic sandwich with sausage, a soft bun, and simple flavorful toppings.",
+    "prepTime": "20 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "4 pessoas",
+    "servings_en": "4 servings",
+    "calories": 430,
+    "ingredients_pt": [
+      "4 salsichas",
+      "4 pães para hot dog",
+      "Ketchup e mostarda",
+      "Cebola refogada",
+      "Batata palha opcional"
+    ],
+    "ingredients_en": [
+      "4 hot dog sausages",
+      "4 hot dog buns",
+      "Ketchup and mustard",
+      "Sauteed onions",
+      "Shoestring potatoes optional"
+    ],
+    "instructions_pt": [
+      "Cozinhe ou aqueça as salsichas.",
+      "Aqueça os pães levemente.",
+      "Monte com as coberturas de sua preferência e sirva."
+    ],
+    "instructions_en": [
+      "Cook or heat the sausages.",
+      "Warm the buns lightly.",
+      "Assemble with your preferred toppings and serve."
+    ]
+  },
+  {
+    "id": "rice-pudding",
+    "category": "sobremesas",
+    "category_pt": "Sobremesas",
+    "category_en": "Desserts",
+    "title_pt": "Arroz Doce",
+    "title_en": "Rice Pudding",
+    "description_pt": "Sobremesa cremosa de arroz cozido no leite, perfumada com canela e baunilha.",
+    "description_en": "A creamy dessert of rice cooked in milk, scented with cinnamon and vanilla.",
+    "prepTime": "40 min",
+    "difficulty_pt": "Fácil",
+    "difficulty_en": "Easy",
+    "servings_pt": "6 pessoas",
+    "servings_en": "6 servings",
+    "calories": 230,
+    "ingredients_pt": [
+      "1 xícara de arroz",
+      "500ml de leite",
+      "1/2 xícara de açúcar",
+      "1 canela em pau",
+      "1 colher de chá de baunilha"
+    ],
+    "ingredients_en": [
+      "1 cup rice",
+      "500ml milk",
+      "1/2 cup sugar",
+      "1 cinnamon stick",
+      "1 teaspoon vanilla"
+    ],
+    "instructions_pt": [
+      "Cozinhe o arroz até ficar macio.",
+      "Adicione leite, açúcar, canela e baunilha e cozinhe até ficar cremoso.",
+      "Sirva morno ou gelado com canela por cima."
+    ],
+    "instructions_en": [
+      "Cook the rice until tender.",
+      "Add the milk, sugar, cinnamon, and vanilla and cook until creamy.",
+      "Serve warm or chilled with cinnamon on top."
     ]
   }
 ]

@@ -210,7 +210,7 @@ const translations = {
     recipePhotoCaptionEnd: "is unforgettable!",
     onlyText: "Only",
     caloriesText: "Calories",
-    juliaNote: "Julia's Note",
+    juliaNote: "Julias' Note",
     cutAndKeep: "Cut and Keep",
     servingsLabel: "Serves",
     ingredientsLabel: "Ingredients",

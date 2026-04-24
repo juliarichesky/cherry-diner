@@ -228,7 +228,7 @@ cherry-diner
         <sub><b>🍒 Julia Guimarães 🍒</b></sub>
       </a><br>
       RM: 568275<br>
-      Turma: 1TDSPA<br><br>
+      Turma: 1TDSPA-2025<br><br>
       <a href="https://www.linkedin.com/in/juliarichesky/">
         <img src="https://img.shields.io/badge/LinkedIn-d66c73?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
       </a>
@@ -242,7 +242,7 @@ cherry-diner
         <sub><b>🍒 Julia Spanopoulos 🍒</b></sub>
       </a><br>
       RM: 566754<br>
-      Turma: 1TDSPA<br><br>
+      Turma: 1TDSPA-2025<br><br>
       <a href="https://www.linkedin.com/in/juspanopoulos/">
         <img src="https://img.shields.io/badge/LinkedIn-d66c73?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
       </a>
