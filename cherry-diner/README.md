@@ -6,8 +6,8 @@
 
 <p align="center">
   <em>"Receitas clássicas, memórias inesquecíveis."</em><br><br>
-  <strong>🥤 Estacione seu Cadillac e visite o site: </strong><br>
-  <a href="https://50s-cherry-diner.vercel.app/"><strong>50s-cherry-diner.vercel.app</strong></a>
+  <strong>🥤 Estacione seu Cadillac e visite: </strong><br>
+  <a href="https://50s-cherry-diner.vercel.app/"><strong>Site do Projeto</strong></a> 🍒 <a href="https://github.com/juliarichesky/cherry-diner"><strong>Repositório</strong></a>
 </p>
 
 <p align="center">
