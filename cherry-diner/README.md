@@ -5,7 +5,13 @@
 <h1 align="center">Cherry Diner</h1>
 
 <p align="center">
-  <em>Receitas clássicas, memórias inesquecíveis.</em>
+  <em>"Receitas clássicas, memórias inesquecíveis."</em><br><br>
+  <strong>🥤 Estacione seu Cadillac e visite o site: </strong><br>
+  <a href="https://50s-cherry-diner.vercel.app/"><strong>50s-cherry-diner.vercel.app</strong></a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Online-brightgreen?style=flat-square&color=d66c73" alt="Status Online">
 </p>
 
 <p align="center">
@@ -211,6 +217,8 @@ cherry-diner
 │   ├── utils            # Funções de suporte e mapeamento de recursos
 │   ├── App.tsx          # Arquivo central de configuração de rotas e lógica global
 │   └── main.tsx         # Ponto de entrada que inicia a aplicação React
+├── README.md            # Documentação principal do projeto
+├── package.json         # Manifesto do projeto, dependências e scripts de execução
 ├── tailwind.config.js   # Customizaçãos dos breakpoints
 ├── tsconfig.json        # Configurações e regras do TypeScript
 └── vite.config.ts       # Configurações de compilação e performance do Vite
