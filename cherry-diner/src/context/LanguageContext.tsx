@@ -67,14 +67,14 @@ const translations = {
     recipePhotoCaptionEnd: "é inesquecível!",
     onlyText: "Apenas",
     caloriesText: "Calorias",
-    juliaNote: "Nota da Julia",
+    juliaNote: "Nota das Julias",
     cutAndKeep: "Recorte e Guarde",
     servingsLabel: "Serve",
     ingredientsLabel: "Ingredientes",
     instructionsLabel: "Modo de Fazer",
     dinerQuality: "Qualidade Diner!",
     footerQuote:
-      "A marca que as famílias confiam para um lar feliz e um paladar satisfeito.",
+      "Mantendo viva a magia da cozinha clássica desde os tempos das jukeboxes e dos milkshakes.",
     // categorias.tsx
     catDescEntradas: "Petiscos crocantes para começar a experiência.",
     catDescPrincipais: "Burgers icônicos que definiram uma geração.",
@@ -210,14 +210,14 @@ const translations = {
     recipePhotoCaptionEnd: "is unforgettable!",
     onlyText: "Only",
     caloriesText: "Calories",
-    juliaNote: "Julias' Note",
+    juliaNote: "Julias' Notes",
     cutAndKeep: "Cut and Keep",
     servingsLabel: "Serves",
     ingredientsLabel: "Ingredients",
     instructionsLabel: "How to Make",
     dinerQuality: "Diner Quality!",
     footerQuote:
-      "The brand families trust for a happy home and a satisfied palate.",
+      "Keeping the magic of classic cooking alive since the days of jukeboxes and milkshakes.",
     // categorias.tsx
     catDescEntradas: "Crunchy snacks to start the experience.",
     catDescPrincipais: "Iconic burgers that defined a generation.",

@@ -116,7 +116,7 @@ const RecipeDetail = () => {
       <div className="max-w-[1100px] mx-auto px-6 relative z-10">
         <header className="mb-16 pb-8 border-b-4 border-[#fc2c37]">
           {/* título estilizado: a primeira palavra ganha destaque em vermelho */}
-          <h1 className="text-[#ca4952] text-5xl md:text-6xl font-black uppercase leading-tight tracking-tighter italic">
+          <h1 className="text-[#ca4952] text-4xl md:text-6xl  font-black uppercase leading-tight tracking-tighter italic">
             {title.split(" ")[0]}{" "}
             <span className="text-[#3d5a5a]">
               {title.split(" ").slice(1).join(" ")}
@@ -196,7 +196,7 @@ const RecipeDetail = () => {
             {/* bloco 'nota da julia' com inclinação oposta à imagem */}
             <section className="bg-[#3d5a5a] text-white p-6 shadow-lg rotate-[1deg]">
               <h3 className="font-black text-xl uppercase mb-2">
-                {texts.juliaNote || "Nota da Julia"}:
+                {texts.juliaNote || "Nota das Julias"}:
               </h3>
               <blockquote className="italic text-sm leading-relaxed opacity-90 text-justify">
                 "
@@ -295,10 +295,10 @@ const RecipeDetail = () => {
             </p>
           </div>
           <p className="mt-10 text-xl font-serif italic text-gray-500 max-w-xl mx-auto">
-            "
+            
             {texts.footerQuote ||
-              "A marca que as famílias confiam para um lar feliz e um paladar satisfeito."}
-            "
+              "Mantendo viva a magia da cozinha clássica desde os tempos das jukeboxes e dos milkshakes."}
+            
           </p>
         </footer>
       </div>

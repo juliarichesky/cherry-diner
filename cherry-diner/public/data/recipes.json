@@ -978,9 +978,9 @@
 
   {
     "id": "salada-de-batatas",
-    "category": "entradas",
-    "category_pt": "Entradas",
-    "category_en": "Starters",
+    "category": "principais",
+    "category_pt": "Pratos Principais",
+    "category_en": "Main Courses",
     "title_pt": "Salada de Batatas",
     "title_en": "Potato Salad",
     "description_pt": "Salada cremosa de batatas cozidas com maionese e ervas, ótima para acompanhar grelhados.",
@@ -1019,9 +1019,9 @@
 
   {
     "id": "sopa-de-cebola",
-    "category": "entradas",
-    "category_pt": "Entradas",
-    "category_en": "Starters",
+    "category": "principais",
+    "category_pt": "Pratos Principais",
+    "category_en": "Main Courses",
     "title_pt": "Sopa de Cebola",
     "title_en": "French Onion Soup",
     "description_pt": "Sopa rica de cebolas caramelizadas com caldo quente, coberta com pão e queijo gratinado.",
@@ -1391,47 +1391,6 @@
       "Blend the milk, condensed milk, eggs, and vanilla.",
       "Pour into the mold and bake in a water bath.",
       "Chill thoroughly before unmolding."
-    ]
-  },
-
-  {
-    "id": "salada-waldorf",
-    "category": "entradas",
-    "category_pt": "Entradas",
-    "category_en": "Starters",
-    "title_pt": "Salada Waldorf",
-    "title_en": "Waldorf Salad",
-    "description_pt": "Salada clássica com maçã, salsão, uvas e nozes em molho cremoso.",
-    "description_en": "A classic salad with apple, celery, grapes, and walnuts in a creamy dressing.",
-    "prepTime": "15 min",
-    "difficulty_pt": "Fácil",
-    "difficulty_en": "Easy",
-    "servings_pt": "4 pessoas",
-    "servings_en": "4 servings",
-    "calories": 230,
-    "ingredients_pt": [
-      "2 maçãs em cubos",
-      "2 talos de salsão fatiados",
-      "1 xícara de uvas",
-      "1/2 xícara de nozes",
-      "3 colheres de sopa de maionese"
-    ],
-    "ingredients_en": [
-      "2 apples, diced",
-      "2 celery stalks, sliced",
-      "1 cup grapes",
-      "1/2 cup walnuts",
-      "3 tablespoons mayonnaise"
-    ],
-    "instructions_pt": [
-      "Misture as maçãs, o salsão, as uvas e as nozes.",
-      "Acrescente a maionese e envolva delicadamente.",
-      "Sirva gelada."
-    ],
-    "instructions_en": [
-      "Combine the apples, celery, grapes, and walnuts.",
-      "Add the mayonnaise and toss gently.",
-      "Serve chilled."
     ]
   },
 
